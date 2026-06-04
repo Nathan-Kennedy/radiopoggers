@@ -7,9 +7,28 @@ import 'package:flutter/services.dart';
 
 import '../core/theme/app_colors.dart';
 
+/// Perfil de animação no celular: menos quadros + intervalo maior (evita loop rápido demais).
+enum AsciiMobileProfile {
+  /// Sem redução (desktop / web).
+  desktop,
+  /// Palco na aba Rádio (play / idle / off).
+  stage,
+  /// Miku / Hoshino falando (deck + legenda).
+  caption,
+  /// Picker de narrador (frame fixo, mas reduz memória ao carregar).
+  picker,
+}
+
 /// Port de [frontend/ascii-guitarist.js].
 class AsciiAnimator {
-  AsciiAnimator._(this.frames, this.width, this.height, this.cellSize, this.colorMode);
+  AsciiAnimator._(
+    this.frames,
+    this.width,
+    this.height,
+    this.cellSize,
+    this.colorMode,
+    this.frameIntervalMs,
+  );
 
   final List<List<List<String>>> frames;
   final int width;
@@ -17,28 +36,70 @@ class AsciiAnimator {
   final double cellSize;
   final String colorMode;
 
+  /// Intervalo entre quadros desta animação (ms).
+  final int frameIntervalMs;
+
   static const frameMs = 100;
   static const defaultCell = 6.0;
   static const mikuCell = 3.0;
   static const pickerCell = 4.0;
 
-  /// Celular: menos quadros e intervalo maior (aba Rádio).
-  static const int mobileMaxStageFrames = 14;
-  static const int mobileStageFrameMs = 160;
+  /// Palco: menos quadros; intervalo compensa para não acelerar o loop.
+  static const int mobileMaxStageFrames = 10;
+  static const int mobileStageFrameMs = 200;
+
+  static const int mobileMaxCaptionFrames = 8;
+  static const int mobileCaptionFrameMs = 195;
+
+  static const int mobileMaxPickerFrames = 8;
+  static const int mobilePickerFrameMs = 200;
 
   static bool get isMobilePlatform =>
       !kIsWeb &&
       (defaultTargetPlatform == TargetPlatform.android ||
           defaultTargetPlatform == TargetPlatform.iOS);
 
-  static int get animationIntervalMs => isMobilePlatform ? mobileStageFrameMs : frameMs;
+  /// Legado: palco na aba Rádio.
+  static int get animationIntervalMs => mobileStageFrameMs;
 
+  static int _maxFramesFor(AsciiMobileProfile profile) {
+    switch (profile) {
+      case AsciiMobileProfile.desktop:
+        return 999999;
+      case AsciiMobileProfile.stage:
+        return mobileMaxStageFrames;
+      case AsciiMobileProfile.caption:
+        return mobileMaxCaptionFrames;
+      case AsciiMobileProfile.picker:
+        return mobileMaxPickerFrames;
+    }
+  }
+
+  static int _intervalMsFor(AsciiMobileProfile profile) {
+    if (!isMobilePlatform || profile == AsciiMobileProfile.desktop) return frameMs;
+    switch (profile) {
+      case AsciiMobileProfile.stage:
+        return mobileStageFrameMs;
+      case AsciiMobileProfile.caption:
+        return mobileCaptionFrameMs;
+      case AsciiMobileProfile.picker:
+        return mobilePickerFrameMs;
+      case AsciiMobileProfile.desktop:
+        return frameMs;
+    }
+  }
+
+  /// Amostra quadros uniformemente (início e fim preservados).
   static List<dynamic> decimateFramesForMobile(List<dynamic> raw, {int maxFrames = mobileMaxStageFrames}) {
     if (!isMobilePlatform || raw.length <= maxFrames) return raw;
-    final step = (raw.length / maxFrames).ceil().clamp(1, raw.length);
+    if (maxFrames <= 1) return [raw.first];
     final out = <dynamic>[];
-    for (var i = 0; i < raw.length && out.length < maxFrames; i += step) {
-      out.add(raw[i]);
+    for (var i = 0; i < maxFrames; i++) {
+      final idx = (i * (raw.length - 1) / (maxFrames - 1)).round().clamp(0, raw.length - 1);
+      final frame = raw[idx];
+      if (out.isEmpty || !identical(frame, out.last)) {
+        out.add(frame);
+      }
     }
     if (out.isEmpty) return raw.sublist(0, 1);
     return out;
@@ -95,7 +156,12 @@ class AsciiAnimator {
     return cropped;
   }
 
-  static AsciiAnimator fromRaw(List<dynamic> raw, {double cellSize = defaultCell, String colorMode = 'mono'}) {
+  static AsciiAnimator fromRaw(
+    List<dynamic> raw, {
+    double cellSize = defaultCell,
+    String colorMode = 'mono',
+    int frameIntervalMs = frameMs,
+  }) {
     final box = _computeCropBox(raw);
     final cropped = raw.map((f) => _cropFrame(f as List<dynamic>, box)).toList();
     final height = cropped[0].length;
@@ -108,20 +174,24 @@ class AsciiAnimator {
         return row;
       }).toList();
     }).toList();
-    return AsciiAnimator._(frames, width, height, cellSize, colorMode);
+    return AsciiAnimator._(frames, width, height, cellSize, colorMode, frameIntervalMs);
   }
 
   static Future<AsciiAnimator> loadAsset(
     String assetPath, {
     double cellSize = defaultCell,
+    AsciiMobileProfile mobileProfile = AsciiMobileProfile.desktop,
+    @Deprecated('Use mobileProfile: AsciiMobileProfile.stage')
     bool stageAnimation = false,
   }) async {
+    final profile = stageAnimation ? AsciiMobileProfile.stage : mobileProfile;
     final raw = await rootBundle.loadString(assetPath);
     var data = jsonDecode(raw) as List<dynamic>;
-    if (stageAnimation) {
-      data = decimateFramesForMobile(data);
+    if (profile != AsciiMobileProfile.desktop) {
+      data = decimateFramesForMobile(data, maxFrames: _maxFramesFor(profile));
     }
-    return fromRaw(data, cellSize: cellSize);
+    final interval = _intervalMsFor(profile);
+    return fromRaw(data, cellSize: cellSize, frameIntervalMs: interval);
   }
 
   Color? _colorForChar(String ch, int tick) {
@@ -178,21 +248,38 @@ class AsciiRepository {
 
   Future<void> loadAll() async {
     if (play != null) return;
-    play = await AsciiAnimator.loadAsset('assets/ascii/ascii-frames.json', stageAnimation: true);
-    idle = await AsciiAnimator.loadAsset('assets/ascii/ascii-frames sentado.json', stageAnimation: true);
-    off = await AsciiAnimator.loadAsset('assets/ascii/ascii-frames off.json', stageAnimation: true);
+    play = await AsciiAnimator.loadAsset(
+      'assets/ascii/ascii-frames.json',
+      mobileProfile: AsciiMobileProfile.stage,
+    );
+    idle = await AsciiAnimator.loadAsset(
+      'assets/ascii/ascii-frames sentado.json',
+      mobileProfile: AsciiMobileProfile.stage,
+    );
+    off = await AsciiAnimator.loadAsset(
+      'assets/ascii/ascii-frames off.json',
+      mobileProfile: AsciiMobileProfile.stage,
+    );
     mikuCaption = await AsciiAnimator.loadAsset(
       'assets/ascii/ascii-frames falando.json',
       cellSize: AsciiAnimator.mikuCell,
-      stageAnimation: true,
+      mobileProfile: AsciiMobileProfile.caption,
     );
     hoshinoCaption = await AsciiAnimator.loadAsset(
       'assets/ascii/ascii-frames hoshino falando.json',
       cellSize: AsciiAnimator.mikuCell,
-      stageAnimation: true,
+      mobileProfile: AsciiMobileProfile.caption,
     );
-    pickerMiku = await AsciiAnimator.loadAsset('assets/ascii/ascii-frames miku.json', cellSize: AsciiAnimator.pickerCell);
-    pickerHoshino = await AsciiAnimator.loadAsset('assets/ascii/ascii-frames hoshino.json', cellSize: AsciiAnimator.pickerCell);
+    pickerMiku = await AsciiAnimator.loadAsset(
+      'assets/ascii/ascii-frames miku.json',
+      cellSize: AsciiAnimator.pickerCell,
+      mobileProfile: AsciiMobileProfile.picker,
+    );
+    pickerHoshino = await AsciiAnimator.loadAsset(
+      'assets/ascii/ascii-frames hoshino.json',
+      cellSize: AsciiAnimator.pickerCell,
+      mobileProfile: AsciiMobileProfile.picker,
+    );
   }
 
   AsciiAnimator? forStage(String mode) {

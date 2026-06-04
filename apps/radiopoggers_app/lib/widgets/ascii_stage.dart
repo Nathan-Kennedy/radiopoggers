@@ -27,9 +27,23 @@ class _AsciiStageState extends State<AsciiStage> {
   @override
   void initState() {
     super.initState();
-    _timer = Timer.periodic(Duration(milliseconds: AsciiAnimator.animationIntervalMs), (_) {
+    _startTimer(widget.animator?.frameIntervalMs ?? AsciiAnimator.frameMs);
+  }
+
+  void _startTimer(int ms) {
+    _timer?.cancel();
+    _timer = Timer.periodic(Duration(milliseconds: ms), (_) {
       if (mounted) setState(() => _tick++);
     });
+  }
+
+  @override
+  void didUpdateWidget(covariant AsciiStage oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    if (widget.animator != oldWidget.animator) {
+      _tick = 0;
+      _startTimer(widget.animator?.frameIntervalMs ?? AsciiAnimator.frameMs);
+    }
   }
 
   @override
@@ -124,9 +138,22 @@ class _AsciiMiniState extends State<AsciiMini> {
   void initState() {
     super.initState();
     if (widget.animate) {
-      final ms = AsciiAnimator.isMobilePlatform
-          ? AsciiAnimator.animationIntervalMs
-          : AsciiAnimator.frameMs * 2;
+      final base = widget.animator?.frameIntervalMs ?? AsciiAnimator.frameMs;
+      final ms = AsciiAnimator.isMobilePlatform ? base : base * 2;
+      _timer = Timer.periodic(Duration(milliseconds: ms), (_) {
+        if (mounted) setState(() => _tick++);
+      });
+    }
+  }
+
+  @override
+  void didUpdateWidget(covariant AsciiMini oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    if (widget.animate &&
+        widget.animator?.frameIntervalMs != oldWidget.animator?.frameIntervalMs) {
+      _timer?.cancel();
+      final base = widget.animator?.frameIntervalMs ?? AsciiAnimator.frameMs;
+      final ms = AsciiAnimator.isMobilePlatform ? base : base * 2;
       _timer = Timer.periodic(Duration(milliseconds: ms), (_) {
         if (mounted) setState(() => _tick++);
       });
