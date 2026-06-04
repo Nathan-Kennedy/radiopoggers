@@ -11,8 +11,12 @@ import '../core/theme/app_colors.dart';
 enum AsciiMobileProfile {
   /// Sem redução (desktop / web).
   desktop,
-  /// Palco na aba Rádio (play / idle / off).
-  stage,
+  /// Tocando música (palco).
+  stagePlay,
+  /// Sentado / pausa (palco) — intervalo maior.
+  stageIdle,
+  /// Estação off-line (palco).
+  stageOff,
   /// Miku / Hoshino falando (deck + legenda).
   caption,
   /// Picker de narrador (frame fixo, mas reduz memória ao carregar).
@@ -44,14 +48,19 @@ class AsciiAnimator {
   static const mikuCell = 3.0;
   static const pickerCell = 4.0;
 
-  /// Palco: menos quadros; intervalo compensa para não acelerar o loop.
-  static const int mobileMaxStageFrames = 10;
-  static const int mobileStageFrameMs = 200;
+  static const int mobileMaxStagePlayFrames = 8;
+  static const int mobileStagePlayFrameMs = 220;
 
-  static const int mobileMaxCaptionFrames = 8;
-  static const int mobileCaptionFrameMs = 195;
+  static const int mobileMaxStageIdleFrames = 6;
+  static const int mobileStageIdleFrameMs = 300;
 
-  static const int mobileMaxPickerFrames = 8;
+  static const int mobileMaxStageOffFrames = 6;
+  static const int mobileStageOffFrameMs = 260;
+
+  static const int mobileMaxCaptionFrames = 6;
+  static const int mobileCaptionFrameMs = 210;
+
+  static const int mobileMaxPickerFrames = 6;
   static const int mobilePickerFrameMs = 200;
 
   static bool get isMobilePlatform =>
@@ -59,15 +68,16 @@ class AsciiAnimator {
       (defaultTargetPlatform == TargetPlatform.android ||
           defaultTargetPlatform == TargetPlatform.iOS);
 
-  /// Legado: palco na aba Rádio.
-  static int get animationIntervalMs => mobileStageFrameMs;
-
   static int _maxFramesFor(AsciiMobileProfile profile) {
     switch (profile) {
       case AsciiMobileProfile.desktop:
         return 999999;
-      case AsciiMobileProfile.stage:
-        return mobileMaxStageFrames;
+      case AsciiMobileProfile.stagePlay:
+        return mobileMaxStagePlayFrames;
+      case AsciiMobileProfile.stageIdle:
+        return mobileMaxStageIdleFrames;
+      case AsciiMobileProfile.stageOff:
+        return mobileMaxStageOffFrames;
       case AsciiMobileProfile.caption:
         return mobileMaxCaptionFrames;
       case AsciiMobileProfile.picker:
@@ -78,8 +88,12 @@ class AsciiAnimator {
   static int _intervalMsFor(AsciiMobileProfile profile) {
     if (!isMobilePlatform || profile == AsciiMobileProfile.desktop) return frameMs;
     switch (profile) {
-      case AsciiMobileProfile.stage:
-        return mobileStageFrameMs;
+      case AsciiMobileProfile.stagePlay:
+        return mobileStagePlayFrameMs;
+      case AsciiMobileProfile.stageIdle:
+        return mobileStageIdleFrameMs;
+      case AsciiMobileProfile.stageOff:
+        return mobileStageOffFrameMs;
       case AsciiMobileProfile.caption:
         return mobileCaptionFrameMs;
       case AsciiMobileProfile.picker:
@@ -90,7 +104,7 @@ class AsciiAnimator {
   }
 
   /// Amostra quadros uniformemente (início e fim preservados).
-  static List<dynamic> decimateFramesForMobile(List<dynamic> raw, {int maxFrames = mobileMaxStageFrames}) {
+  static List<dynamic> decimateFramesForMobile(List<dynamic> raw, {int maxFrames = mobileMaxStagePlayFrames}) {
     if (!isMobilePlatform || raw.length <= maxFrames) return raw;
     if (maxFrames <= 1) return [raw.first];
     final out = <dynamic>[];
@@ -181,10 +195,11 @@ class AsciiAnimator {
     String assetPath, {
     double cellSize = defaultCell,
     AsciiMobileProfile mobileProfile = AsciiMobileProfile.desktop,
-    @Deprecated('Use mobileProfile: AsciiMobileProfile.stage')
+    @Deprecated('Use mobileProfile: AsciiMobileProfile.stagePlay')
     bool stageAnimation = false,
   }) async {
-    final profile = stageAnimation ? AsciiMobileProfile.stage : mobileProfile;
+    var profile = mobileProfile;
+    if (stageAnimation) profile = AsciiMobileProfile.stagePlay;
     final raw = await rootBundle.loadString(assetPath);
     var data = jsonDecode(raw) as List<dynamic>;
     if (profile != AsciiMobileProfile.desktop) {
@@ -250,15 +265,15 @@ class AsciiRepository {
     if (play != null) return;
     play = await AsciiAnimator.loadAsset(
       'assets/ascii/ascii-frames.json',
-      mobileProfile: AsciiMobileProfile.stage,
+      mobileProfile: AsciiMobileProfile.stagePlay,
     );
     idle = await AsciiAnimator.loadAsset(
       'assets/ascii/ascii-frames sentado.json',
-      mobileProfile: AsciiMobileProfile.stage,
+      mobileProfile: AsciiMobileProfile.stageIdle,
     );
     off = await AsciiAnimator.loadAsset(
       'assets/ascii/ascii-frames off.json',
-      mobileProfile: AsciiMobileProfile.stage,
+      mobileProfile: AsciiMobileProfile.stageOff,
     );
     mikuCaption = await AsciiAnimator.loadAsset(
       'assets/ascii/ascii-frames falando.json',

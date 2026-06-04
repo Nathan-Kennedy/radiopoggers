@@ -1,6 +1,6 @@
 {
-  "tag_name": "v1.1.0+8",
-  "version": "1.1.0+8",
+  "tag_name": "v1.1.0+9",
+  "version": "1.1.0+9",
   "release_page_url": "",
-  "notes": "APK em dist/app-release/RadioPoggers-android.apk"
+  "notes": "ASCII mobile otimizado + player na notificacao Android"
 }

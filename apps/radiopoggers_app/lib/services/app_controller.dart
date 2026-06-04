@@ -24,17 +24,20 @@ import 'radiopoggers_api.dart';
 import 'settings_store.dart';
 import 'stream_duck_controller.dart';
 import 'audio_reactive_meter.dart';
+import 'radio_audio_bridge.dart';
+import 'radio_playback_callbacks.dart';
 import 'stream_player_service.dart';
 import 'voice_drop_processor.dart';
 
 class AppController extends ChangeNotifier {
   AppController() {
+    stream = StreamPlayerService(sharedPlayer: RadioAudioBridge.handler?.player);
     _init();
   }
 
   final SettingsStore settingsStore = SettingsStore();
   final AsciiRepository ascii = AsciiRepository();
-  final StreamPlayerService stream = StreamPlayerService();
+  late final StreamPlayerService stream;
   final OverlayAudioService overlay = OverlayAudioService();
   final AudioReactiveMeter audioMeter = AudioReactiveMeter();
   final AudioRecorder _recorder = AudioRecorder();
@@ -173,6 +176,7 @@ class AppController extends ChangeNotifier {
     await ascii.loadAll();
     _loadNarratorSamples();
     _bindOverlayEvents();
+    _attachBackgroundPlayback();
     await _checkApi();
     loading = false;
     notifyListeners();
@@ -180,6 +184,50 @@ class AppController extends ChangeNotifier {
       _startTimers();
       unawaited(loadSpotifyData());
     }
+  }
+
+  void _attachBackgroundPlayback() {
+    final handler = RadioAudioBridge.handler;
+    if (handler == null) return;
+    handler.attach(
+      RadioPlaybackCallbacks(
+        getSettings: () => settings,
+        requestPlay: playFromSystemControls,
+        requestPause: pauseFromSystemControls,
+        requestStop: pauseFromSystemControls,
+        getMetadata: () => RadioNowPlayingMetadata(
+          title: trackTitle,
+          artist: trackArtist,
+          artUrl: coverUrl,
+        ),
+        isPlaying: () => streamPlaying,
+      ),
+    );
+  }
+
+  /// Play/pause acionado pela notificação ou fones (não alterna se rádio bloqueada).
+  Future<void> playFromSystemControls() async {
+    if (streamPlaying) return;
+    if (!radioPlayAllowed) return;
+    await togglePlay();
+  }
+
+  Future<void> pauseFromSystemControls() async {
+    if (!streamPlaying) return;
+    await togglePlay();
+  }
+
+  void _syncBackgroundPlayback() {
+    final handler = RadioAudioBridge.handler;
+    if (handler == null) return;
+    handler.updateMetadata(
+      RadioNowPlayingMetadata(
+        title: trackTitle,
+        artist: trackArtist,
+        artUrl: coverUrl,
+      ),
+    );
+    handler.syncFromApp(playing: streamPlaying);
   }
 
   void _bindOverlayEvents() {
@@ -589,6 +637,7 @@ class AppController extends ChangeNotifier {
       streamPlayError = null;
       _recomputeConnectionLabel();
       _applyDefaultAsciiStage();
+      _syncBackgroundPlayback();
       notifyListeners();
     } catch (_) {
       nowPlayingReachable = false;
@@ -767,6 +816,7 @@ class AppController extends ChangeNotifier {
       }
     }
     _recomputeConnectionLabel();
+    _syncBackgroundPlayback();
     notifyListeners();
     _sendHeartbeat();
   }

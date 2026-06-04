@@ -1,15 +1,17 @@
 import 'package:media_kit/media_kit.dart';
 
 import '../models/app_settings.dart';
+import 'radio_audio_bridge.dart';
 import 'stream_duck_controller.dart';
 import 'stream_loudness.dart';
 
 class StreamPlayerService {
-  StreamPlayerService() {
+  StreamPlayerService({Player? sharedPlayer})
+      : player = sharedPlayer ?? Player() {
     duck.onMultiplierChanged = (_) => _applyEffectiveVolume();
   }
 
-  final Player player = Player();
+  final Player player;
   final StreamDuckController duck = StreamDuckController();
   bool _initialized = false;
   double _userVolume = 85;
@@ -76,6 +78,8 @@ class StreamPlayerService {
 
   void dispose() {
     duck.dispose();
-    player.dispose();
+    if (RadioAudioBridge.handler == null) {
+      player.dispose();
+    }
   }
 }
