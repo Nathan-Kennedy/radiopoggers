@@ -119,7 +119,9 @@ Sem keystore, só APK debug funciona em outros aparelhos.
 | Ambos | Mais → Verificar atualizações | Checagem manual |
 | Falha de rede (Android obrigatório) | — | Botão **Tentar de novo**; app não entra até atualizar ou a release sumir |
 
-**Importante:** o bloqueio no celular só dispara se existir uma **GitHub Release** `latest` com asset `RadioPoggers-android.apk` e tag mais nova que o APK instalado (ex.: app `1.1.0+4`, tag `v1.1.0+5`). Em debug (`flutter run`) o gate não bloqueia.
+**Importante:** o app tenta **GitHub Releases** (`latest`) e, se não achar, a **API do operador** (`GET /api/app/release` + APK em `dist/app-release/`). O manifesto `data/app-release.json` é gerado ao rodar `package-app-release.ps1`. Tag com build: `v1.1.0+8`. Em debug (`flutter run`) o gate não bloqueia.
+
+Se aparecer “já na versão mais recente” mas você publicou APK novo: quase sempre falta **release no GitHub** ou **`app-release.json` + APK** na máquina da API (não basta só `git push`).
 
 ## Inno Setup (opcional)
 

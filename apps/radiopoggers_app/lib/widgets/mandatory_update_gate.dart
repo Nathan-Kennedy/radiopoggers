@@ -13,12 +13,16 @@ class MandatoryUpdateGate extends StatefulWidget {
     super.key,
     required this.child,
     this.enabled = true,
+    this.apiBaseUrl,
   });
 
   final Widget child;
 
   /// Quando false, repassa direto para [child] (ex.: debug ou desktop).
   final bool enabled;
+
+  /// API do operador (fallback quando GitHub não tem release).
+  final String? apiBaseUrl;
 
   @override
   State<MandatoryUpdateGate> createState() => _MandatoryUpdateGateState();
@@ -46,16 +50,24 @@ class _MandatoryUpdateGateState extends State<MandatoryUpdateGate> {
       _error = null;
       _progress = 0;
     });
-    final info = await AppUpdateService.checkForUpdate();
+    final result = await AppUpdateService.checkForUpdate(apiBaseUrl: widget.apiBaseUrl);
     if (!mounted) return;
-    if (info == null) {
-      setState(() => _phase = _GatePhase.ready);
-      return;
+    switch (result.status) {
+      case AppUpdateStatus.upToDate:
+        setState(() => _phase = _GatePhase.ready);
+        return;
+      case AppUpdateStatus.checkFailed:
+        setState(() {
+          _phase = _GatePhase.checkFailed;
+          _error = result.message;
+        });
+        return;
+      case AppUpdateStatus.available:
+        setState(() {
+          _info = result.info;
+          _phase = _GatePhase.updateRequired;
+        });
     }
-    setState(() {
-      _info = info;
-      _phase = _GatePhase.updateRequired;
-    });
   }
 
   Future<void> _downloadAndInstall() async {
@@ -76,6 +88,7 @@ class _MandatoryUpdateGateState extends State<MandatoryUpdateGate> {
     try {
       final path = await AppUpdateService.downloadAndroidApk(
         url,
+        trustedApiBaseUrl: info.trustedApiBaseUrl,
         onProgress: (p) {
           if (mounted) setState(() => _progress = p);
         },
@@ -140,6 +153,40 @@ class _MandatoryUpdateGateState extends State<MandatoryUpdateGate> {
           showProgress: true,
           progress: 1,
         );
+      case _GatePhase.checkFailed:
+        return Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            const Icon(Icons.cloud_off_outlined, size: 56, color: AppColors.warn),
+            const SizedBox(height: 20),
+            Text(
+              'Não foi possível verificar atualização',
+              style: Theme.of(context).textTheme.headlineSmall?.copyWith(
+                    color: AppColors.text,
+                    fontWeight: FontWeight.w700,
+                  ),
+            ),
+            const SizedBox(height: 12),
+            Text(
+              _error ?? 'Verifique internet, GitHub Releases ou a API do operador.',
+              style: Theme.of(context).textTheme.bodyMedium?.copyWith(color: AppColors.muted),
+            ),
+            const Spacer(),
+            FilledButton(
+              onPressed: _runCheck,
+              style: FilledButton.styleFrom(
+                backgroundColor: AppColors.accent,
+                minimumSize: const Size.fromHeight(52),
+              ),
+              child: const Text('Tentar de novo'),
+            ),
+            const SizedBox(height: 12),
+            TextButton(
+              onPressed: () => setState(() => _phase = _GatePhase.ready),
+              child: const Text('Continuar mesmo assim'),
+            ),
+          ],
+        );
       case _GatePhase.updateRequired:
         final info = _info!;
         final hasApk = info.androidDownloadUrl != null;
@@ -197,7 +244,7 @@ class _MandatoryUpdateGateState extends State<MandatoryUpdateGate> {
   }
 }
 
-enum _GatePhase { checking, updateRequired, downloading, installing, ready }
+enum _GatePhase { checking, checkFailed, updateRequired, downloading, installing, ready }
 
 class _CenteredStatus extends StatelessWidget {
   const _CenteredStatus({

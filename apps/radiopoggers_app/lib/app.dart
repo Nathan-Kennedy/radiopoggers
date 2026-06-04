@@ -37,7 +37,7 @@ class _RadioPoggersAppState extends State<RadioPoggersApp> {
     _updateCheckScheduled = true;
     WidgetsBinding.instance.addPostFrameCallback((_) async {
       if (!mounted) return;
-      await AppUpdateService.promptIfUpdateAvailable(context);
+      await AppUpdateService.promptIfUpdateAvailable(context, apiBaseUrl: controller.settings.apiBaseUrl);
     });
   }
 
@@ -58,6 +58,7 @@ class _RadioPoggersAppState extends State<RadioPoggersApp> {
           ? const Scaffold(body: Center(child: CircularProgressIndicator(color: Color(0xFFE11D2E))))
           : MandatoryUpdateGate(
               enabled: mandatoryUpdateGateEnabled(),
+              apiBaseUrl: controller.settings.apiBaseUrl,
               child: controller.settings.setupComplete
                   ? AppShell(controller: controller)
                   : SetupScreen(controller: controller),

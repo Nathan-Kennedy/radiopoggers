@@ -148,6 +148,34 @@ PUBLIC_AZURACAST_BASE_URL = (
 )
 AZURACAST_API_KEY_FILE = DATA_DIR / "azuracast-api-key.txt"
 MAINTENANCE_FILE = DATA_DIR / "maintenance.json"
+APP_RELEASE_MANIFEST = DATA_DIR / "app-release.json"
+APP_RELEASE_APK_DEFAULT = PROJECT_ROOT / "dist" / "app-release" / "RadioPoggers-android.apk"
+
+
+def load_app_release_manifest() -> dict[str, Any] | None:
+    """Metadados da APK publicada pelo operador (data/app-release.json)."""
+    try:
+        if not APP_RELEASE_MANIFEST.is_file():
+            return None
+        raw = json.loads(APP_RELEASE_MANIFEST.read_text(encoding="utf-8"))
+        return raw if isinstance(raw, dict) else None
+    except (OSError, json.JSONDecodeError, TypeError, ValueError):
+        return None
+
+
+def resolve_app_release_apk_path(manifest: dict[str, Any] | None = None) -> Path | None:
+    manifest = manifest if manifest is not None else load_app_release_manifest()
+    if manifest:
+        custom = str(manifest.get("android_apk_path") or "").strip()
+        if custom:
+            candidate = Path(custom)
+            if not candidate.is_absolute():
+                candidate = PROJECT_ROOT / candidate
+            if candidate.is_file():
+                return candidate
+    if APP_RELEASE_APK_DEFAULT.is_file():
+        return APP_RELEASE_APK_DEFAULT
+    return None
 
 
 def load_maintenance_status() -> dict[str, Any]:
@@ -1169,6 +1197,7 @@ def serve_file_with_range(handler: BaseHTTPRequestHandler, path: Path) -> None:
         ".aac": "audio/aac",
         ".ogg": "audio/ogg",
         ".opus": "audio/opus",
+        ".apk": "application/vnd.android.package-archive",
     }.get(suffix, "application/octet-stream")
 
     range_header = handler.headers.get("Range", "")
@@ -4146,9 +4175,39 @@ class RadioPoggersHandler(BaseHTTPRequestHandler):
     def do_GET(self) -> None:
         path, query = parse_request_path(self.path)
 
+        if path == "/api/app/release":
+            manifest = load_app_release_manifest()
+            if not manifest:
+                json_response(self, 404, {"ok": False, "error": "app_release_not_configured"})
+                return
+            apk_path = resolve_app_release_apk_path(manifest)
+            tag = str(manifest.get("tag_name") or manifest.get("version") or "").strip()
+            version = str(manifest.get("version") or tag).strip()
+            if tag and not tag.lower().startswith("v"):
+                tag = f"v{tag}"
+            json_response(self, 200, {
+                "ok": True,
+                "tag_name": tag,
+                "version": version,
+                "release_page_url": str(manifest.get("release_page_url") or "").strip(),
+                "android_download_url": "/api/app/release/apk" if apk_path else None,
+                "apk_available": bool(apk_path),
+            })
+            return
+
+        if path == "/api/app/release/apk":
+            manifest = load_app_release_manifest()
+            apk_path = resolve_app_release_apk_path(manifest)
+            if not apk_path:
+                json_response(self, 404, {"ok": False, "error": "apk_not_found"})
+                return
+            serve_file_with_range(self, apk_path)
+            return
+
         if path == "/api/health":
             azuracast_key = resolve_azuracast_api_key()
             docker_skip = bool(shutil.which("docker"))
+            release_manifest = load_app_release_manifest()
             json_response(self, 200, {
                 "ok": True,
                 "station": STATION_SHORTCODE,
@@ -4169,6 +4228,11 @@ class RadioPoggersHandler(BaseHTTPRequestHandler):
                     "api_key_file": str(AZURACAST_API_KEY_FILE),
                 },
                 "maintenance": load_maintenance_status(),
+                "app_release": {
+                    "configured": bool(release_manifest),
+                    "tag_name": (release_manifest or {}).get("tag_name"),
+                    "apk_available": resolve_app_release_apk_path(release_manifest) is not None,
+                },
             })
             return
 

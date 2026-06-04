@@ -14,6 +14,20 @@ import 'package:url_launcher/url_launcher.dart';
 
 import '../core/app_release_config.dart';
 
+enum AppUpdateStatus { upToDate, available, checkFailed }
+
+class AppUpdateCheckResult {
+  const AppUpdateCheckResult({
+    required this.status,
+    this.info,
+    this.message,
+  });
+
+  final AppUpdateStatus status;
+  final AppUpdateInfo? info;
+  final String? message;
+}
+
 class AppUpdateInfo {
   const AppUpdateInfo({
     required this.version,
@@ -22,6 +36,7 @@ class AppUpdateInfo {
     required this.windowsDownloadUrl,
     required this.androidDownloadUrl,
     this.windowsSha256,
+    this.trustedApiBaseUrl,
   });
 
   final String version;
@@ -30,12 +45,31 @@ class AppUpdateInfo {
   final String? windowsDownloadUrl;
   final String? androidDownloadUrl;
   final String? windowsSha256;
+
+  /// Quando o APK vem da API do operador, downloads só desse host.
+  final String? trustedApiBaseUrl;
 }
 
 class AppUpdateService {
-  static bool _allowedHost(Uri uri) {
+  static bool _allowedGithubHost(Uri uri) {
     final h = uri.host.toLowerCase();
     return h == 'github.com' || h.endsWith('.githubusercontent.com') || h == 'api.github.com';
+  }
+
+  static bool _allowedDownloadUri(Uri uri, {String? trustedApiBaseUrl}) {
+    if (_allowedGithubHost(uri)) return true;
+    if (trustedApiBaseUrl == null || trustedApiBaseUrl.isEmpty) return false;
+    final base = Uri.tryParse(trustedApiBaseUrl);
+    if (base == null || base.host.isEmpty) return false;
+    return uri.host.toLowerCase() == base.host.toLowerCase() && uri.port == base.port;
+  }
+
+  static String resolveDownloadUrl(String url, {String? apiBaseUrl}) {
+    final trimmed = url.trim();
+    final uri = Uri.tryParse(trimmed);
+    if (uri != null && uri.hasScheme) return trimmed;
+    if (apiBaseUrl == null || apiBaseUrl.isEmpty) return trimmed;
+    return Uri.parse(apiBaseUrl).resolve(trimmed.startsWith('/') ? trimmed : '/$trimmed').toString();
   }
 
   /// `v1.2.3+4` → semver `1.2.3`, build `4`.
@@ -77,45 +111,133 @@ class AppUpdateService {
     return remote.build > localBuild;
   }
 
-  static Future<AppUpdateInfo?> checkForUpdate() async {
+  static Future<AppUpdateCheckResult> checkForUpdate({String? apiBaseUrl}) async {
+    final pkg = await PackageInfo.fromPlatform();
+    final localLabel = '${pkg.version}+${pkg.buildNumber}';
+
+    AppUpdateInfo? githubInfo;
+    String? githubError;
+
     try {
-      final pkg = await PackageInfo.fromPlatform();
-      final uri = Uri.parse('https://api.github.com/repos/${AppReleaseConfig.githubRepo}/releases/latest');
-      final res = await http.get(uri, headers: {'Accept': 'application/vnd.github+json'}).timeout(const Duration(seconds: 12));
-      if (res.statusCode != 200) return null;
+      githubInfo = await _fetchGithubUpdate(pkg);
+    } catch (e) {
+      githubError = e.toString();
+      if (kDebugMode) debugPrint('Update GitHub: $e');
+    }
 
-      final json = jsonDecode(res.body) as Map<String, dynamic>;
-      final tag = json['tag_name']?.toString() ?? '';
-      if (tag.isEmpty || !isUpdateRequired(tag, pkg)) return null;
+    if (githubInfo != null) {
+      return AppUpdateCheckResult(status: AppUpdateStatus.available, info: githubInfo);
+    }
 
-      final version = tag.startsWith('v') ? tag.substring(1) : tag;
-
-      String? winUrl;
-      String? apkUrl;
-      final assets = json['assets'] as List<dynamic>? ?? [];
-      for (final a in assets) {
-        if (a is! Map<String, dynamic>) continue;
-        final name = a['name']?.toString() ?? '';
-        final url = a['browser_download_url']?.toString();
-        if (url == null || !_allowedHost(Uri.parse(url))) continue;
-        if (name == AppReleaseConfig.windowsAssetName) winUrl = url;
-        if (name == AppReleaseConfig.androidAssetName) apkUrl = url;
+    final api = apiBaseUrl?.trim();
+    if (api != null && api.isNotEmpty) {
+      try {
+        final apiInfo = await _fetchApiUpdate(api, pkg);
+        if (apiInfo != null) {
+          return AppUpdateCheckResult(status: AppUpdateStatus.available, info: apiInfo);
+        }
+      } catch (e) {
+        if (kDebugMode) debugPrint('Update API: $e');
+        return AppUpdateCheckResult(
+          status: AppUpdateStatus.checkFailed,
+          message:
+              'Não foi possível verificar atualização na API ($api). Confira se o servidor está no ar e se data/app-release.json existe.',
+        );
       }
 
-      final sha = await _fetchWindowsSha256(json['html_url']?.toString() ?? '', assets);
-
-      return AppUpdateInfo(
-        version: version,
-        tagName: tag,
-        releasePageUrl: json['html_url']?.toString() ?? 'https://github.com/${AppReleaseConfig.githubRepo}/releases',
-        windowsDownloadUrl: winUrl,
-        androidDownloadUrl: apkUrl,
-        windowsSha256: sha,
+      return AppUpdateCheckResult(
+        status: AppUpdateStatus.upToDate,
+        message: 'Versão local $localLabel — mesma da API do operador.',
       );
-    } catch (e) {
-      if (kDebugMode) debugPrint('Update check: $e');
-      return null;
     }
+
+    if (githubError != null) {
+      return AppUpdateCheckResult(
+        status: AppUpdateStatus.checkFailed,
+        message:
+            'Release no GitHub (${AppReleaseConfig.githubRepo}) não encontrada. '
+            'Publique a release ou configure a API com data/app-release.json e o APK em dist/app-release/.',
+      );
+    }
+
+    return AppUpdateCheckResult(status: AppUpdateStatus.upToDate);
+  }
+
+  /// Compat: null = sem update ou falha silenciosa (evitar em UI nova).
+  static Future<AppUpdateInfo?> checkForUpdateLegacy({String? apiBaseUrl}) async {
+    final r = await checkForUpdate(apiBaseUrl: apiBaseUrl);
+    if (r.status == AppUpdateStatus.available) return r.info;
+    return null;
+  }
+
+  static Future<AppUpdateInfo?> _fetchGithubUpdate(PackageInfo pkg) async {
+    final uri = Uri.parse('https://api.github.com/repos/${AppReleaseConfig.githubRepo}/releases/latest');
+    final res = await http.get(uri, headers: {'Accept': 'application/vnd.github+json'}).timeout(const Duration(seconds: 12));
+    if (res.statusCode == 404) return null;
+    if (res.statusCode != 200) {
+      throw StateError('GitHub HTTP ${res.statusCode}');
+    }
+
+    final json = jsonDecode(res.body) as Map<String, dynamic>;
+    final tag = json['tag_name']?.toString() ?? '';
+    if (tag.isEmpty || !isUpdateRequired(tag, pkg)) return null;
+
+    final version = tag.startsWith('v') ? tag.substring(1) : tag;
+
+    String? winUrl;
+    String? apkUrl;
+    final assets = json['assets'] as List<dynamic>? ?? [];
+    for (final a in assets) {
+      if (a is! Map<String, dynamic>) continue;
+      final name = a['name']?.toString() ?? '';
+      final url = a['browser_download_url']?.toString();
+      if (url == null || !_allowedGithubHost(Uri.parse(url))) continue;
+      if (name == AppReleaseConfig.windowsAssetName) winUrl = url;
+      if (name == AppReleaseConfig.androidAssetName) apkUrl = url;
+    }
+
+    final sha = await _fetchWindowsSha256(json['html_url']?.toString() ?? '', assets);
+
+    return AppUpdateInfo(
+      version: version,
+      tagName: tag,
+      releasePageUrl: json['html_url']?.toString() ?? 'https://github.com/${AppReleaseConfig.githubRepo}/releases',
+      windowsDownloadUrl: winUrl,
+      androidDownloadUrl: apkUrl,
+      windowsSha256: sha,
+    );
+  }
+
+  static Future<AppUpdateInfo?> _fetchApiUpdate(String apiBaseUrl, PackageInfo pkg) async {
+    final base = apiBaseUrl.replaceAll(RegExp(r'/+$'), '');
+    final uri = Uri.parse('$base/api/app/release');
+    final res = await http.get(uri).timeout(const Duration(seconds: 12));
+    if (res.statusCode == 404) return null;
+    if (res.statusCode != 200) {
+      throw StateError('API HTTP ${res.statusCode}');
+    }
+
+    final json = jsonDecode(res.body) as Map<String, dynamic>;
+    if (json['ok'] != true) return null;
+
+    final tag = json['tag_name']?.toString() ?? '';
+    if (tag.isEmpty || !isUpdateRequired(tag, pkg)) return null;
+
+    final version = (json['version']?.toString() ?? tag).trim();
+    final displayVersion = version.startsWith('v') ? version.substring(1) : version;
+    final apkRaw = json['android_download_url']?.toString();
+    final apkUrl = apkRaw != null && apkRaw.isNotEmpty
+        ? resolveDownloadUrl(apkRaw, apiBaseUrl: base)
+        : null;
+
+    return AppUpdateInfo(
+      version: displayVersion,
+      tagName: tag.startsWith('v') ? tag : 'v$tag',
+      releasePageUrl: json['release_page_url']?.toString() ?? '$base/api/app/release',
+      windowsDownloadUrl: null,
+      androidDownloadUrl: apkUrl,
+      trustedApiBaseUrl: base,
+    );
   }
 
   static Future<String?> _fetchWindowsSha256(String releasePage, List<dynamic> assets) async {
@@ -140,9 +262,11 @@ class AppUpdateService {
     return null;
   }
 
-  static Future<void> promptIfUpdateAvailable(BuildContext context) async {
-    final info = await checkForUpdate();
-    if (info == null || !context.mounted) return;
+  static Future<void> promptIfUpdateAvailable(BuildContext context, {String? apiBaseUrl}) async {
+    final result = await checkForUpdate(apiBaseUrl: apiBaseUrl);
+    if (!context.mounted) return;
+    if (result.status != AppUpdateStatus.available || result.info == null) return;
+    final info = result.info!;
     await showDialog<void>(
       context: context,
       builder: (ctx) => AlertDialog(
@@ -175,14 +299,14 @@ class AppUpdateService {
   static Future<String> downloadAndroidApk(
     String url, {
     void Function(double progress)? onProgress,
+    String? trustedApiBaseUrl,
   }) async {
     final dir = await getTemporaryDirectory();
     final path = p.join(dir.path, AppReleaseConfig.androidAssetName);
-    await _download(url, path, onProgress: onProgress);
+    await _download(url, path, onProgress: onProgress, trustedApiBaseUrl: trustedApiBaseUrl);
     return path;
   }
 
-  /// Abre o instalador do sistema. Retorna mensagem de erro ou null se OK.
   static Future<String?> installAndroidApk(String path) async {
     if (!File(path).existsSync()) return 'Arquivo APK não encontrado.';
     try {
@@ -204,7 +328,7 @@ class AppUpdateService {
     }
     _snack(context, 'Baixando atualização…');
     try {
-      final path = await downloadAndroidApk(url);
+      final path = await downloadAndroidApk(url, trustedApiBaseUrl: info.trustedApiBaseUrl);
       final err = await installAndroidApk(path);
       if (err != null && context.mounted) {
         _snack(context, err);
@@ -278,9 +402,12 @@ start "" "${p.join(installDir, 'radiopoggers_app.exe').replaceAll('/', '\\')}"
     String url,
     String dest, {
     void Function(double progress)? onProgress,
+    String? trustedApiBaseUrl,
   }) async {
     final uri = Uri.parse(url);
-    if (!_allowedHost(uri)) throw StateError('URL não permitida');
+    if (!_allowedDownloadUri(uri, trustedApiBaseUrl: trustedApiBaseUrl)) {
+      throw StateError('URL de download não permitida');
+    }
     final client = http.Client();
     try {
       final request = http.Request('GET', uri);

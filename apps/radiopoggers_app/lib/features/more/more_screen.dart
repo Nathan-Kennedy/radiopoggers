@@ -38,12 +38,24 @@ class _MoreScreenState extends State<MoreScreen> {
   Future<void> _checkUpdate() async {
     setState(() => _checkingUpdate = true);
     try {
-      final info = await AppUpdateService.checkForUpdate();
+      final result = await AppUpdateService.checkForUpdate(apiBaseUrl: widget.controller.settings.apiBaseUrl);
       if (!mounted) return;
-      if (info == null) {
-        ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('Você já está na versão mais recente.')));
-        return;
+      switch (result.status) {
+        case AppUpdateStatus.checkFailed:
+          ScaffoldMessenger.of(context).showSnackBar(
+            SnackBar(content: Text(result.message ?? 'Falha ao verificar atualização.')),
+          );
+          return;
+        case AppUpdateStatus.upToDate:
+          ScaffoldMessenger.of(context).showSnackBar(
+            SnackBar(content: Text(result.message ?? 'Você já está na versão mais recente ($_versionLabel).')),
+          );
+          return;
+        case AppUpdateStatus.available:
+          break;
       }
+      final info = result.info!;
+      if (!mounted) return;
       await showDialog<void>(
         context: context,
         builder: (ctx) => AlertDialog(

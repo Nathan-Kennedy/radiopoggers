@@ -110,6 +110,24 @@ $sums = @(
 ) -join "`n"
 Set-Content -Path (Join-Path $outDir "SHA256SUMS.txt") -Value $sums -Encoding utf8
 
+# Manifesto para auto-update via API local (/api/app/release).
+$pubspecPath = Join-Path $appDir "pubspec.yaml"
+$tagName = "v0.0.0+0"
+if (Test-Path $pubspecPath) {
+  $pubspecRaw = Get-Content $pubspecPath -Raw
+  if ($pubspecRaw -match '(?m)^version:\s*([0-9.]+)\+([0-9]+)\s*$') {
+    $tagName = "v$($Matches[1])+$($Matches[2])"
+  }
+}
+$releaseManifestPath = Join-Path $root "data\app-release.json"
+@{
+  tag_name = $tagName
+  version = $tagName.TrimStart('v', 'V')
+  release_page_url = ""
+  notes = "APK em dist/app-release/RadioPoggers-android.apk"
+} | ConvertTo-Json | Set-Content -Path $releaseManifestPath -Encoding utf8
+Write-Host "[ok] Manifesto de update: data\app-release.json ($tagName)"
+
 Write-Host ""
 Write-Host "[ok] Release em: $outDir"
 Write-Host "  $zipName"

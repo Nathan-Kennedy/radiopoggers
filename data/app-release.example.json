@@ -1,0 +1,6 @@
+{
+  "tag_name": "v1.1.0+8",
+  "version": "1.1.0+8",
+  "release_page_url": "",
+  "notes": "Gerado por scripts/package-app-release.ps1 — copie para app-release.json ao publicar APK."
+}
