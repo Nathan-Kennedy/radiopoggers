@@ -38,18 +38,57 @@ class AppUpdateService {
     return h == 'github.com' || h.endsWith('.githubusercontent.com') || h == 'api.github.com';
   }
 
+  /// `v1.2.3+4` → semver `1.2.3`, build `4`.
+  static ({String semver, int build}) parseReleaseLabel(String label) {
+    var t = label.trim();
+    if (t.startsWith('v') || t.startsWith('V')) t = t.substring(1);
+    final plus = t.indexOf('+');
+    if (plus >= 0) {
+      return (
+        semver: t.substring(0, plus),
+        build: int.tryParse(t.substring(plus + 1)) ?? 0,
+      );
+    }
+    return (semver: t, build: 0);
+  }
+
+  static int _compareSemver(String a, String b) {
+    List<int> parse(String v) {
+      return v.split('.').map((e) => int.tryParse(e.replaceAll(RegExp(r'[^0-9]'), '')) ?? 0).toList();
+    }
+
+    final pa = parse(a);
+    final pb = parse(b);
+    for (var i = 0; i < 3; i++) {
+      final av = i < pa.length ? pa[i] : 0;
+      final bv = i < pb.length ? pb[i] : 0;
+      if (av > bv) return 1;
+      if (av < bv) return -1;
+    }
+    return 0;
+  }
+
+  static bool isUpdateRequired(String remoteTag, PackageInfo local) {
+    final remote = parseReleaseLabel(remoteTag);
+    final localBuild = int.tryParse(local.buildNumber) ?? 0;
+    final cmp = _compareSemver(remote.semver, local.version);
+    if (cmp > 0) return true;
+    if (cmp < 0) return false;
+    return remote.build > localBuild;
+  }
+
   static Future<AppUpdateInfo?> checkForUpdate() async {
     try {
       final pkg = await PackageInfo.fromPlatform();
-      final current = pkg.version;
       final uri = Uri.parse('https://api.github.com/repos/${AppReleaseConfig.githubRepo}/releases/latest');
       final res = await http.get(uri, headers: {'Accept': 'application/vnd.github+json'}).timeout(const Duration(seconds: 12));
       if (res.statusCode != 200) return null;
 
       final json = jsonDecode(res.body) as Map<String, dynamic>;
       final tag = json['tag_name']?.toString() ?? '';
+      if (tag.isEmpty || !isUpdateRequired(tag, pkg)) return null;
+
       final version = tag.startsWith('v') ? tag.substring(1) : tag;
-      if (version.isEmpty || !_isNewer(version, current)) return null;
 
       String? winUrl;
       String? apkUrl;
@@ -101,22 +140,6 @@ class AppUpdateService {
     return null;
   }
 
-  static bool _isNewer(String remote, String current) {
-    List<int> parse(String v) {
-      return v.split('.').map((e) => int.tryParse(e.replaceAll(RegExp(r'[^0-9]'), '')) ?? 0).toList();
-    }
-
-    final a = parse(remote);
-    final b = parse(current);
-    for (var i = 0; i < 3; i++) {
-      final av = i < a.length ? a[i] : 0;
-      final bv = i < b.length ? b[i] : 0;
-      if (av > bv) return true;
-      if (av < bv) return false;
-    }
-    return false;
-  }
-
   static Future<void> promptIfUpdateAvailable(BuildContext context) async {
     final info = await checkForUpdate();
     if (info == null || !context.mounted) return;
@@ -141,7 +164,7 @@ class AppUpdateService {
 
   static Future<void> installUpdate(BuildContext context, AppUpdateInfo info) async {
     if (Platform.isAndroid) {
-      await _installAndroid(context, info);
+      await _installAndroidWithUi(context, info);
     } else if (Platform.isWindows) {
       await _installWindows(context, info);
     } else {
@@ -149,7 +172,31 @@ class AppUpdateService {
     }
   }
 
-  static Future<void> _installAndroid(BuildContext context, AppUpdateInfo info) async {
+  static Future<String> downloadAndroidApk(
+    String url, {
+    void Function(double progress)? onProgress,
+  }) async {
+    final dir = await getTemporaryDirectory();
+    final path = p.join(dir.path, AppReleaseConfig.androidAssetName);
+    await _download(url, path, onProgress: onProgress);
+    return path;
+  }
+
+  /// Abre o instalador do sistema. Retorna mensagem de erro ou null se OK.
+  static Future<String?> installAndroidApk(String path) async {
+    if (!File(path).existsSync()) return 'Arquivo APK não encontrado.';
+    try {
+      final result = await OpenFilex.open(path);
+      if (result.type != ResultType.done) {
+        return result.message.isNotEmpty ? result.message : 'Não foi possível abrir o instalador.';
+      }
+      return null;
+    } catch (e) {
+      return e.toString();
+    }
+  }
+
+  static Future<void> _installAndroidWithUi(BuildContext context, AppUpdateInfo info) async {
     final url = info.androidDownloadUrl;
     if (url == null) {
       _snack(context, 'APK não encontrado na release.');
@@ -157,12 +204,10 @@ class AppUpdateService {
     }
     _snack(context, 'Baixando atualização…');
     try {
-      final dir = await getTemporaryDirectory();
-      final path = p.join(dir.path, AppReleaseConfig.androidAssetName);
-      await _download(url, path);
-      final result = await OpenFilex.open(path);
-      if (result.type != ResultType.done && context.mounted) {
-        _snack(context, 'Abra o APK manualmente: $path');
+      final path = await downloadAndroidApk(url);
+      final err = await installAndroidApk(path);
+      if (err != null && context.mounted) {
+        _snack(context, err);
       }
     } catch (e) {
       if (context.mounted) _snack(context, 'Falha no download: $e');
@@ -229,14 +274,32 @@ start "" "${p.join(installDir, 'radiopoggers_app.exe').replaceAll('/', '\\')}"
     }
   }
 
-  static Future<void> _download(String url, String dest) async {
+  static Future<void> _download(
+    String url,
+    String dest, {
+    void Function(double progress)? onProgress,
+  }) async {
     final uri = Uri.parse(url);
     if (!_allowedHost(uri)) throw StateError('URL não permitida');
     final client = http.Client();
     try {
-      final res = await client.get(uri).timeout(const Duration(minutes: 5));
-      if (res.statusCode != 200) throw StateError('HTTP ${res.statusCode}');
-      await File(dest).writeAsBytes(res.bodyBytes);
+      final request = http.Request('GET', uri);
+      final streamed = await client.send(request).timeout(const Duration(minutes: 8));
+      if (streamed.statusCode != 200) throw StateError('HTTP ${streamed.statusCode}');
+      final total = streamed.contentLength ?? 0;
+      var received = 0;
+      final file = File(dest);
+      final sink = file.openWrite();
+      await for (final chunk in streamed.stream) {
+        sink.add(chunk);
+        received += chunk.length;
+        if (total > 0 && onProgress != null) {
+          onProgress(received / total);
+        }
+      }
+      await sink.flush();
+      await sink.close();
+      onProgress?.call(1);
     } finally {
       client.close();
     }

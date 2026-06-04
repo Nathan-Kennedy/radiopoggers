@@ -5,6 +5,7 @@ import 'features/setup/setup_screen.dart';
 import 'features/shell/app_shell.dart';
 import 'services/app_controller.dart';
 import 'services/app_update_service.dart';
+import 'widgets/mandatory_update_gate.dart';
 
 class RadioPoggersApp extends StatefulWidget {
   const RadioPoggersApp({super.key});
@@ -31,6 +32,7 @@ class _RadioPoggersAppState extends State<RadioPoggersApp> {
   bool _updateCheckScheduled = false;
 
   void _scheduleUpdateCheck() {
+    if (mandatoryUpdateGateEnabled()) return;
     if (_updateCheckScheduled || controller.loading || !controller.settings.setupComplete) return;
     _updateCheckScheduled = true;
     WidgetsBinding.instance.addPostFrameCallback((_) async {
@@ -54,9 +56,12 @@ class _RadioPoggersAppState extends State<RadioPoggersApp> {
       theme: AppTheme.build(),
       home: controller.loading
           ? const Scaffold(body: Center(child: CircularProgressIndicator(color: Color(0xFFE11D2E))))
-          : controller.settings.setupComplete
-              ? AppShell(controller: controller)
-              : SetupScreen(controller: controller),
+          : MandatoryUpdateGate(
+              enabled: mandatoryUpdateGateEnabled(),
+              child: controller.settings.setupComplete
+                  ? AppShell(controller: controller)
+                  : SetupScreen(controller: controller),
+            ),
     );
   }
 }

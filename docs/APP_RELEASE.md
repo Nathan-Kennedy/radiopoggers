@@ -13,10 +13,10 @@ Como versionar, publicar e instalar updates do **RadioPoggers** via **GitHub Rel
 ### Automático (GitHub Actions)
 
 1. Atualize `version` no `pubspec.yaml`.
-2. Commit e tag:
+2. Commit e tag (use o **build** do `pubspec` na tag para o Android detectar APK novo com mesmo PATCH):
    ```powershell
-   git tag v1.1.0
-   git push origin v1.1.0
+   git tag v1.1.0+5
+   git push origin v1.1.0+5
    ```
 3. Workflow `.github/workflows/app-release.yml` gera:
    - `RadioPoggers-Windows-x64.zip`
@@ -111,12 +111,15 @@ Sem keystore, só APK debug funciona em outros aparelhos.
 
 ## Política de update no app
 
-| Momento | Comportamento |
-| --- | --- |
-| Abertura | Verifica release latest (silencioso se já na versão) |
-| Nova versão | Dialog: Instalar agora / Depois |
-| Mais → Verificar atualizações | Força checagem |
-| Falha de rede | Snackbar; link para Releases no navegador |
+| Plataforma | Momento | Comportamento |
+| --- | --- | --- |
+| **Android (APK release)** | Abertura | Tela bloqueante: **atualização obrigatória** se a tag `latest` no GitHub for mais nova (semver ou `+build`) |
+| Android | Instalação | Baixa `RadioPoggers-android.apk`, abre instalador do sistema (`FileProvider` + permissão instalar apps desconhecidos) |
+| **Windows** | Após setup | Dialog opcional: Instalar agora / Depois |
+| Ambos | Mais → Verificar atualizações | Checagem manual |
+| Falha de rede (Android obrigatório) | — | Botão **Tentar de novo**; app não entra até atualizar ou a release sumir |
+
+**Importante:** o bloqueio no celular só dispara se existir uma **GitHub Release** `latest` com asset `RadioPoggers-android.apk` e tag mais nova que o APK instalado (ex.: app `1.1.0+4`, tag `v1.1.0+5`). Em debug (`flutter run`) o gate não bloqueia.
 
 ## Inno Setup (opcional)
 
