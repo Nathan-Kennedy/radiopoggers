@@ -1,6 +1,7 @@
 import 'dart:convert';
 import 'dart:math' as math;
 
+import 'package:flutter/foundation.dart' show TargetPlatform, defaultTargetPlatform, kIsWeb;
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -20,6 +21,28 @@ class AsciiAnimator {
   static const defaultCell = 6.0;
   static const mikuCell = 3.0;
   static const pickerCell = 4.0;
+
+  /// Celular: menos quadros e intervalo maior (aba Rádio).
+  static const int mobileMaxStageFrames = 14;
+  static const int mobileStageFrameMs = 160;
+
+  static bool get isMobilePlatform =>
+      !kIsWeb &&
+      (defaultTargetPlatform == TargetPlatform.android ||
+          defaultTargetPlatform == TargetPlatform.iOS);
+
+  static int get animationIntervalMs => isMobilePlatform ? mobileStageFrameMs : frameMs;
+
+  static List<dynamic> decimateFramesForMobile(List<dynamic> raw, {int maxFrames = mobileMaxStageFrames}) {
+    if (!isMobilePlatform || raw.length <= maxFrames) return raw;
+    final step = (raw.length / maxFrames).ceil().clamp(1, raw.length);
+    final out = <dynamic>[];
+    for (var i = 0; i < raw.length && out.length < maxFrames; i += step) {
+      out.add(raw[i]);
+    }
+    if (out.isEmpty) return raw.sublist(0, 1);
+    return out;
+  }
 
   static const _lum = <String, double>{
     ' ': 0,
@@ -88,9 +111,16 @@ class AsciiAnimator {
     return AsciiAnimator._(frames, width, height, cellSize, colorMode);
   }
 
-  static Future<AsciiAnimator> loadAsset(String assetPath, {double cellSize = defaultCell}) async {
+  static Future<AsciiAnimator> loadAsset(
+    String assetPath, {
+    double cellSize = defaultCell,
+    bool stageAnimation = false,
+  }) async {
     final raw = await rootBundle.loadString(assetPath);
-    final data = jsonDecode(raw) as List<dynamic>;
+    var data = jsonDecode(raw) as List<dynamic>;
+    if (stageAnimation) {
+      data = decimateFramesForMobile(data);
+    }
     return fromRaw(data, cellSize: cellSize);
   }
 
@@ -148,11 +178,19 @@ class AsciiRepository {
 
   Future<void> loadAll() async {
     if (play != null) return;
-    play = await AsciiAnimator.loadAsset('assets/ascii/ascii-frames.json');
-    idle = await AsciiAnimator.loadAsset('assets/ascii/ascii-frames sentado.json');
-    off = await AsciiAnimator.loadAsset('assets/ascii/ascii-frames off.json');
-    mikuCaption = await AsciiAnimator.loadAsset('assets/ascii/ascii-frames falando.json', cellSize: AsciiAnimator.mikuCell);
-    hoshinoCaption = await AsciiAnimator.loadAsset('assets/ascii/ascii-frames hoshino falando.json', cellSize: AsciiAnimator.mikuCell);
+    play = await AsciiAnimator.loadAsset('assets/ascii/ascii-frames.json', stageAnimation: true);
+    idle = await AsciiAnimator.loadAsset('assets/ascii/ascii-frames sentado.json', stageAnimation: true);
+    off = await AsciiAnimator.loadAsset('assets/ascii/ascii-frames off.json', stageAnimation: true);
+    mikuCaption = await AsciiAnimator.loadAsset(
+      'assets/ascii/ascii-frames falando.json',
+      cellSize: AsciiAnimator.mikuCell,
+      stageAnimation: true,
+    );
+    hoshinoCaption = await AsciiAnimator.loadAsset(
+      'assets/ascii/ascii-frames hoshino falando.json',
+      cellSize: AsciiAnimator.mikuCell,
+      stageAnimation: true,
+    );
     pickerMiku = await AsciiAnimator.loadAsset('assets/ascii/ascii-frames miku.json', cellSize: AsciiAnimator.pickerCell);
     pickerHoshino = await AsciiAnimator.loadAsset('assets/ascii/ascii-frames hoshino.json', cellSize: AsciiAnimator.pickerCell);
   }

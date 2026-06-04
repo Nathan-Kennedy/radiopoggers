@@ -1,9 +1,9 @@
 {
   "application_id": "1511939007788093531",
   "api_base_url": "http://127.0.0.1:8765",
-  "azuracast_public_url": "http://SEU_IP_RADMIN",
-  "player_url": "https://SEU_IP_RADMIN:5443/frontend/",
-  "stream_url": "http://SEU_IP_RADMIN/listen/radio-no-grale/radio.mp3",
+  "azuracast_public_url": "http://SEU_IP_VPN",
+  "player_url": "https://SEU_IP_VPN:5443/frontend/",
+  "stream_url": "http://SEU_IP_VPN/listen/radio-no-grale/radio.mp3",
   "stream_url_local": "http://127.0.0.1/listen/radio-no-grale/radio.mp3",
   "discord_stream_mode": "hls",
   "stream_hls_url_local": "http://127.0.0.1/hls/radio-no-grale/live.m3u8",

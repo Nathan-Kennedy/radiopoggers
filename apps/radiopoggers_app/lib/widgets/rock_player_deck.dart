@@ -5,6 +5,7 @@ import '../core/theme/app_colors.dart';
 import '../core/theme/app_decorations.dart';
 import '../services/app_controller.dart';
 import 'listener_count_badge.dart';
+import 'narrator_live_caption.dart';
 import 'ncs_visualizer.dart';
 import 'spinning_vinyl.dart';
 
@@ -26,6 +27,13 @@ class RockPlayerDeck extends StatelessWidget {
     final progress = c.durationSec > 0 ? (c.elapsedSec / c.durationSec).clamp(0.0, 1.0) : 0.0;
     final live = c.streamPlaying && c.connectionBadgeOnline;
     final wide = MediaQuery.sizeOf(context).width >= 520;
+    final narratorAscii = c.asciiStageMode == 'hoshino'
+        ? c.ascii.forStage('hoshino')
+        : c.asciiStageMode == 'miku'
+            ? c.ascii.forStage('miku')
+            : null;
+    final showNarratorCaption = narratorAscii != null ||
+        (c.narratorCaption != null && c.narratorCaption!.trim().isNotEmpty);
 
     return Container(
       decoration: AppDecorations.broadcastHero(),
@@ -94,6 +102,12 @@ class RockPlayerDeck extends StatelessWidget {
             overflow: TextOverflow.ellipsis,
           ),
           const SizedBox(height: 16),
+          if (showNarratorCaption)
+            NarratorLiveCaption(
+              animator: narratorAscii,
+              badge: c.narratorBadge ?? 'MIKU · NO AR',
+              caption: c.narratorCaption,
+            ),
           NcsVisualizer(
             active: live,
             meter: c.audioMeter,

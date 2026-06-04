@@ -27,7 +27,7 @@ class _AsciiStageState extends State<AsciiStage> {
   @override
   void initState() {
     super.initState();
-    _timer = Timer.periodic(const Duration(milliseconds: AsciiAnimator.frameMs), (_) {
+    _timer = Timer.periodic(Duration(milliseconds: AsciiAnimator.animationIntervalMs), (_) {
       if (mounted) setState(() => _tick++);
     });
   }
@@ -52,9 +52,11 @@ class _AsciiStageState extends State<AsciiStage> {
       child: Column(
         children: [
           if (animator != null)
-            CustomPaint(
-              size: size,
-              painter: _AsciiPainter(animator, _tick),
+            RepaintBoundary(
+              child: CustomPaint(
+                size: size,
+                painter: _AsciiPainter(animator, _tick),
+              ),
             ),
           if (widget.caption != null && widget.caption!.isNotEmpty) ...[
             const SizedBox(height: 8),
@@ -122,7 +124,10 @@ class _AsciiMiniState extends State<AsciiMini> {
   void initState() {
     super.initState();
     if (widget.animate) {
-      _timer = Timer.periodic(const Duration(milliseconds: AsciiAnimator.frameMs * 2), (_) {
+      final ms = AsciiAnimator.isMobilePlatform
+          ? AsciiAnimator.animationIntervalMs
+          : AsciiAnimator.frameMs * 2;
+      _timer = Timer.periodic(Duration(milliseconds: ms), (_) {
         if (mounted) setState(() => _tick++);
       });
     }

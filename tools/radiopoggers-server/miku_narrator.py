@@ -19,7 +19,11 @@ from datetime import datetime, timedelta, timezone
 from typing import Any
 from zoneinfo import ZoneInfo
 
-from pt_katakana import portuguese_to_voicevox_katakana, prepare_proper_noun_for_speech
+from pt_katakana import (
+    integer_to_spoken_pt,
+    portuguese_to_voicevox_katakana,
+    prepare_proper_noun_for_speech,
+)
 from urllib.error import URLError
 from urllib.parse import quote
 from urllib.request import Request, urlopen
@@ -637,11 +641,21 @@ def greeting_for_hour(hour: int) -> str:
 def format_clock_pt(moment: datetime) -> str:
     hour = moment.hour
     minute = moment.minute
+    if hour == 1:
+        head = "uma hora"
+    else:
+        head = f"{integer_to_spoken_pt(hour)} horas"
     if minute == 0:
-        return f"{hour} horas"
+        return head
     if minute == 30:
-        return f"{hour} horas e meia"
-    return f"{hour} horas e {minute} minutos"
+        return f"{head} e meia"
+    if minute == 1:
+        return f"{head} e um minuto"
+    return f"{head} e {integer_to_spoken_pt(minute)} minutos"
+
+
+def format_temp_spoken_pt(temp: int) -> str:
+    return integer_to_spoken_pt(int(temp))
 
 
 def weekday_pt(moment: datetime) -> str:
@@ -891,7 +905,9 @@ def build_weather_compare(primary: str, cities: dict[str, dict[str, Any]]) -> st
         data = cities.get(name, {})
         if not data.get("ok"):
             continue
-        snippets.append(f"em {name} {data['temp']} graus e {data['weather']}")
+        snippets.append(
+            f"em {name} {format_temp_spoken_pt(int(data['temp']))} graus e {data['weather']}"
+        )
         if len(snippets) >= 3:
             break
     return "; ".join(snippets)
@@ -949,7 +965,7 @@ def is_ariguemes_scorching(cities: dict[str, dict[str, Any]]) -> bool:
 def build_hot_beer_funny_line(temp: int) -> str:
     template = random.choice(_HOT_BEER_FUNNY_LINES)
     return template.format(
-        temp=temp,
+        temp=format_temp_spoken_pt(temp),
         station=STATION_NAME,
     )
 
@@ -984,7 +1000,8 @@ def build_weather_funny_commentary(primary: str, cities: dict[str, dict[str, Any
     if primary != hottest_name and hottest_temp - primary_temp >= 3:
         variants.append(
             f"Em {primary} esta {pleasant_weather_label(primary_temp, primary_weather, regional_avg)} com "
-            f"{primary_temp} graus, enquanto isso em {hottest_name}, com {hottest_temp} graus, "
+            f"{format_temp_spoken_pt(primary_temp)} graus, enquanto isso em {hottest_name}, com "
+            f"{format_temp_spoken_pt(hottest_temp)} graus, "
             f"{hot_weather_punch(hottest_temp, regional_avg)}!"
         )
 
@@ -992,8 +1009,9 @@ def build_weather_funny_commentary(primary: str, cities: dict[str, dict[str, Any
         cool_data = valid.get(coolest_name, {})
         if coolest_name != primary and primary_temp - coolest_temp >= 3:
             variants.append(
-                f"Em {primary} com {primary_temp} graus {hot_weather_punch(primary_temp, regional_avg)}! "
-                f"Ja em {coolest_name}, so {coolest_temp} graus, la ta "
+                f"Em {primary} com {format_temp_spoken_pt(primary_temp)} graus "
+                f"{hot_weather_punch(primary_temp, regional_avg)}! "
+                f"Ja em {coolest_name}, so {format_temp_spoken_pt(coolest_temp)} graus, la ta "
                 f"{pleasant_weather_label(coolest_temp, str(cool_data.get('weather', '')), regional_avg)}!"
             )
 
@@ -1006,13 +1024,15 @@ def build_weather_funny_commentary(primary: str, cities: dict[str, dict[str, Any
             rain_data = valid[rain_city]
             sun_data = valid[sun_city]
             variants.append(
-                f"Em {sun_city} ta {sun_data['weather']} com {sun_data['temp']} graus, "
-                f"mas la em {rain_city} {random.choice(_RAIN_PUNCH)} com {rain_data['temp']} graus!"
+                f"Em {sun_city} ta {sun_data['weather']} com {format_temp_spoken_pt(int(sun_data['temp']))} graus, "
+                f"mas la em {rain_city} {random.choice(_RAIN_PUNCH)} com "
+                f"{format_temp_spoken_pt(int(rain_data['temp']))} graus!"
             )
 
     if hottest_temp - coolest_temp >= 6:
         variants.append(
-            f"De {coolest_name} com {coolest_temp} graus ate {hottest_name} com {hottest_temp} graus — "
+            f"De {coolest_name} com {format_temp_spoken_pt(coolest_temp)} graus ate {hottest_name} com "
+            f"{format_temp_spoken_pt(hottest_temp)} graus — "
             f"{random.choice(_WEATHER_TWIST_PUNCH)}!"
         )
 
@@ -1022,8 +1042,9 @@ def build_weather_funny_commentary(primary: str, cities: dict[str, dict[str, Any
             other_name = random.choice(others)
             other_data = valid[other_name]
             variants.append(
-                f"Em {primary}: {primary_temp} graus e {primary_weather}. "
-                f"Em {other_name} sao {other_data['temp']} graus — {random.choice(_WEATHER_TWIST_PUNCH)}!"
+                f"Em {primary}: {format_temp_spoken_pt(primary_temp)} graus e {primary_weather}. "
+                f"Em {other_name} sao {format_temp_spoken_pt(int(other_data['temp']))} graus — "
+                f"{random.choice(_WEATHER_TWIST_PUNCH)}!"
             )
 
     return random.choice(variants) if variants else ""
@@ -1077,7 +1098,7 @@ def build_mid_info_narration_text(
         "title": safe_title,
         "artist": safe_artist,
         "genre": genre_label,
-        "temp": str(station_temp),
+        "temp": format_temp_spoken_pt(station_temp),
         "weather": station_weather,
         "weather_compare": weather_compare,
         "weather_funny": weather_funny,
@@ -1101,7 +1122,7 @@ def build_mid_info_narration_text(
         if is_ariguemes_scorching(cities) and ariquemes_data:
             ariquemes_temp = int(ariquemes_data["temp"])
             context["city"] = "Ariquemes"
-            context["temp"] = str(ariquemes_temp)
+            context["temp"] = format_temp_spoken_pt(ariquemes_temp)
             context["weather"] = str(ariquemes_data.get("weather") or context["weather"])
             beer_line = build_hot_beer_funny_line(ariquemes_temp)
             if not context["weather_funny"] or random.random() < 0.65:

@@ -2,13 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:package_info_plus/package_info_plus.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-import '../../core/app_release_config.dart';
 import '../../core/theme/app_colors.dart';
 import '../../core/theme/app_decorations.dart';
 import '../../models/app_settings.dart';
 import '../../services/app_controller.dart';
 import '../../services/app_update_service.dart';
-import '../../utils/radmin_preset_helper.dart';
+import '../../utils/vpn_preset_helper.dart';
+import '../../widgets/legal_usage_dialog.dart';
 import '../../widgets/screen_glow_header.dart';
 import '../setup/setup_screen.dart';
 
@@ -89,11 +89,6 @@ class _MoreScreenState extends State<MoreScreen> {
                 const SizedBox(height: 8),
                 Text('RADIO NO GRALE', style: Theme.of(context).textTheme.titleLarge),
                 Text('Versão $_versionLabel', style: const TextStyle(color: AppColors.muted, fontSize: 12)),
-                const SizedBox(height: 8),
-                Text(
-                  'Updates: github.com/${AppReleaseConfig.githubRepo}',
-                  style: const TextStyle(fontSize: 11, color: AppColors.muted),
-                ),
               ],
             ),
           ),
@@ -119,9 +114,9 @@ class _MoreScreenState extends State<MoreScreen> {
           }),
           const Divider(),
           ListTile(
-            title: const Text('Usar preset Radmin (amigos na VPN)'),
-            subtitle: const Text('Informe o IP do operador · API :8765'),
-            onTap: () => applyRadminPreset(context, c),
+            title: const Text('Rede privada (VPN)'),
+            subtitle: const Text('ZeroTier, Tailscale… · IP do operador'),
+            onTap: () => applyVpnPreset(context, c),
           ),
           ListTile(
             title: const Text('Configuração de rede'),
@@ -140,19 +135,18 @@ class _MoreScreenState extends State<MoreScreen> {
             onTap: () => launchUrl(Uri.parse(c.settings.azuracastBaseUrl), mode: LaunchMode.externalApplication),
           ),
           ListTile(
+            leading: const Icon(Icons.gavel_outlined),
             title: const Text('Áudio e uso legal'),
-            onTap: () => launchUrl(
-              Uri.parse('https://github.com/${AppReleaseConfig.githubRepo}/blob/main/docs/LEGAL_AUDIO.md'),
-              mode: LaunchMode.externalApplication,
-            ),
+            subtitle: const Text('Uso privado entre amigos · direitos de áudio'),
+            onTap: () => showLegalUsageDialog(context),
           ),
           ListTile(
             title: const Text('Preset Localhost'),
             onTap: () => c.applySettings(AppSettings.localhost.copyWith(setupComplete: true)),
           ),
           ListTile(
-            title: const Text('Preset Radmin'),
-            onTap: () => applyRadminPreset(context, c),
+            title: const Text('Aplicar preset VPN de novo'),
+            onTap: () => applyVpnPreset(context, c),
           ),
         ],
       ),

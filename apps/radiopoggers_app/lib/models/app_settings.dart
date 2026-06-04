@@ -35,11 +35,14 @@ class AppSettings {
     setupComplete: false,
   );
 
-  /// Preset Radmin: só preenchido se build com [AppNetworkDefaults.radminHost].
-  static AppSettings get radminPreset => AppNetworkDefaults.compiledRadminSettings();
+  /// Preset VPN: só preenchido se build com [AppNetworkDefaults.vpnHost].
+  static AppSettings get vpnPreset => AppNetworkDefaults.compiledVpnSettings();
 
-  /// Monta URLs a partir do IP/host informado pelo operador (não vai no GitHub).
-  static AppSettings forRadminHost(String host, {bool setupComplete = false}) {
+  @Deprecated('Use vpnPreset')
+  static AppSettings get radminPreset => vpnPreset;
+
+  /// Monta URLs a partir do IP/host do operador na VPN (não vai no GitHub).
+  static AppSettings forVpnHost(String host, {bool setupComplete = false}) {
     final h = _normalizeHost(host);
     return AppSettings(
       apiBaseUrl: 'http://$h:8765',
@@ -53,6 +56,10 @@ class AppSettings {
       setupComplete: setupComplete,
     );
   }
+
+  @Deprecated('Use forVpnHost')
+  static AppSettings forRadminHost(String host, {bool setupComplete = false}) =>
+      forVpnHost(host, setupComplete: setupComplete);
 
   static String normalizeHost(String raw) => _normalizeHost(raw);
 

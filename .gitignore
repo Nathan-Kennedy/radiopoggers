@@ -9,6 +9,7 @@ data/spotify-api-credentials.txt
 data/discord-bot-config.json
 data/dev-ssl/
 data/dev-access-hosts.txt
+data/operator-vpn-host.txt
 data/*.pfx
 data/*.key
 data/*.pem

@@ -141,7 +141,7 @@ class AppController extends ChangeNotifier {
   Timer? _asciiHoldTimer;
   bool _overlayWasNarrator = false;
 
-  static const int _narratorAsciiHoldMs = 380;
+  static const int _narratorAsciiHoldMs = 700;
   static const int _narratorDuckTailMs = 0;
   /// Ignora evento "completed" fantasma do media_kit no início da Miku.
   static const int _narratorOverlayEarlyCompletedGuardMs = 450;
@@ -300,7 +300,9 @@ class AppController extends ChangeNotifier {
     asciiStageMode = asciiMode;
     if (badge != null) narratorBadge = badge;
     if (caption != null && caption.isNotEmpty) narratorCaption = caption;
-    final asciiMs = holdMs ?? (duckTailMs + (narrator ? 280 : 250));
+    final dropMs = _overlayDropDurationMs > 0 ? _overlayDropDurationMs : 6000;
+    final asciiMs = holdMs ??
+        (narrator ? dropMs + _narratorAsciiHoldMs : duckTailMs + 250);
     _extendAsciiHold(asciiMs);
     _scheduleAsciiHoldRelease();
     notifyListeners();
@@ -1652,6 +1654,8 @@ class AppController extends ChangeNotifier {
       await stopShelfPreview(resumeRadio: streamPlaying);
       await overlay.stop();
       await stream.duckForNarratorOverlay();
+      _overlayDropDurationMs = 8000;
+      _overlayPlayStartedAt = DateTime.now();
       _beginVoiceVisual(
         asciiMode: 'miku',
         duckTailMs: _narratorDuckTailMs,
@@ -1659,8 +1663,6 @@ class AppController extends ChangeNotifier {
         badge: 'MIKU · AMOSTRA',
         caption: caption,
       );
-      _overlayDropDurationMs = 8000;
-      _overlayPlayStartedAt = DateTime.now();
       _scheduleOverlayMaxPlayTimer(narrator: true);
       await overlay.playAssetRelative(file, volume: OverlayAudioService.narratorSampleVolume);
     } catch (e) {

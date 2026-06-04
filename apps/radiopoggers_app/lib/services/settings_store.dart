@@ -32,7 +32,7 @@ class SettingsStore {
       await prefs.setInt(_keyPresetVersion, _presetVersion);
     }
     if (!prefs.containsKey(_keyApi)) {
-      return AppNetworkDefaults.compiledRadminSettings(setupComplete: false);
+      return AppNetworkDefaults.compiledVpnSettings(setupComplete: false);
     }
     final fallback = AppSettings.localhost;
     return AppSettings(

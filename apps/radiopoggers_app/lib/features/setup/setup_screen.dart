@@ -5,7 +5,7 @@ import '../../core/theme/app_decorations.dart';
 import '../../core/app_network_defaults.dart';
 import '../../models/app_settings.dart';
 import '../../services/app_controller.dart';
-import '../../utils/radmin_preset_helper.dart';
+import '../../utils/vpn_preset_helper.dart';
 
 class SetupScreen extends StatefulWidget {
   const SetupScreen({super.key, required this.controller});
@@ -26,7 +26,7 @@ class _SetupScreenState extends State<SetupScreen> {
     super.initState();
     final preset = widget.controller.settings.setupComplete
         ? widget.controller.settings
-        : AppNetworkDefaults.compiledRadminSettings();
+        : AppNetworkDefaults.compiledVpnSettings();
     _api = TextEditingController(text: preset.apiBaseUrl);
     _azura = TextEditingController(text: preset.azuracastBaseUrl);
     _stream = TextEditingController(text: preset.streamUrl);
@@ -88,7 +88,7 @@ class _SetupScreenState extends State<SetupScreen> {
           ),
           const SizedBox(height: 8),
           const Text(
-            'Preset Radmin: informe o IP do operador na VPN (não fica embutido no app público).',
+            'Rede privada (ZeroTier, Tailscale…): informe o IP do PC do operador na VPN.',
             style: TextStyle(color: AppColors.muted),
           ),
           const SizedBox(height: 20),
@@ -96,13 +96,13 @@ class _SetupScreenState extends State<SetupScreen> {
             spacing: 10,
             children: [
               FilledButton(
-                onPressed: () => applyRadminPreset(context, widget.controller).then((ok) {
+                onPressed: () => applyVpnPreset(context, widget.controller).then((ok) {
                   if (ok && mounted) {
                     final s = widget.controller.settings;
                     _applyPreset(s);
                   }
                 }),
-                child: const Text('Radmin (recomendado)'),
+                child: const Text('Rede privada (VPN)'),
               ),
               OutlinedButton(onPressed: () => _applyPreset(AppSettings.localhost), child: const Text('Localhost')),
             ],

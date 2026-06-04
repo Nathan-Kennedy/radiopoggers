@@ -1,0 +1,6 @@
+# IP do PC do operador na VPN (ZeroTier Managed IP).
+# Copie para operator-vpn-host.txt (gitignored).
+# Usado ao rodar: .\scripts\package-app-release.ps1
+#
+# Exemplo:
+# 10.6.219.56

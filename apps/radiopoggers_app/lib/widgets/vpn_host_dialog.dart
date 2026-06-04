@@ -2,29 +2,30 @@ import 'package:flutter/material.dart';
 
 import '../models/app_settings.dart';
 
-/// Pede o IP/host Radmin quando o app publicado não traz IP embutido.
-Future<String?> showRadminHostDialog(BuildContext context) async {
+/// Pede o IP/host do PC do operador na VPN (ZeroTier, Tailscale, etc.).
+Future<String?> showVpnHostDialog(BuildContext context) async {
   final ctrl = TextEditingController();
   final result = await showDialog<String>(
     context: context,
     builder: (ctx) => AlertDialog(
-      title: const Text('IP da rede Radmin'),
+      title: const Text('IP na rede privada (VPN)'),
       content: Column(
         mainAxisSize: MainAxisSize.min,
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           const Text(
-            'O operador da rádio deve informar o IP dele na VPN. '
-            'Esse valor não vem embutido no app baixado da internet.',
+            'O operador da rádio informa o IP do PC dele na VPN '
+            '(ZeroTier, Tailscale ou similar). Esse valor não vem embutido no app público.',
           ),
           const SizedBox(height: 12),
           TextField(
             controller: ctrl,
             decoration: const InputDecoration(
               labelText: 'Host / IP',
-              hintText: 'ex.: 192.168.0.10',
+              hintText: 'ex.: 10.147.20.12',
             ),
             autofocus: true,
+            keyboardType: TextInputType.url,
             onSubmitted: (v) {
               final h = AppSettings.normalizeHost(v);
               if (h.isNotEmpty) Navigator.pop(ctx, h);

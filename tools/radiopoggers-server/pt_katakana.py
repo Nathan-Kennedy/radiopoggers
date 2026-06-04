@@ -11,6 +11,45 @@ import re
 import unicodedata
 
 _WORD_RE = re.compile(r"[A-Za-zÀ-ÿ0-9]+(?:['-][A-Za-zÀ-ÿ0-9]+)*", re.UNICODE)
+_DIGITS_RE = re.compile(r"\b\d+\b")
+
+# Contagem em PT-BR (antes do katakana — evita leitura japonesa de algarismos).
+_UNITS_PT = (
+    "zero",
+    "um",
+    "dois",
+    "tres",
+    "quatro",
+    "cinco",
+    "seis",
+    "sete",
+    "oito",
+    "nove",
+)
+_TEENS_PT = (
+    "dez",
+    "onze",
+    "doze",
+    "treze",
+    "catorze",
+    "quinze",
+    "dezesseis",
+    "dezessete",
+    "dezoito",
+    "dezenove",
+)
+_TENS_PT = (
+    "",
+    "",
+    "vinte",
+    "trinta",
+    "quarenta",
+    "cinquenta",
+    "sessenta",
+    "setenta",
+    "oitenta",
+    "noventa",
+)
 
 # Palavras fixas dos templates + funcao gramatical.
 _LEXICON: dict[str, str] = {
@@ -192,8 +231,29 @@ _LEXICON: dict[str, str] = {
     "clima": "クリマ",
     "horario": "オラリオ",
     "horas": "オラス",
+    "hora": "オラ",
+    "uma": "ウマ",
     "meia": "メイア",
+    "minuto": "ミヌート",
+    "minutos": "ミヌートス",
     "graus": "グラウス",
+    "grau": "グラウ",
+    "menos": "メノス",
+    "catorze": "カトルゼ",
+    "quinze": "キンゼ",
+    "dezesseis": "デゼセイス",
+    "dezessete": "デゼセテ",
+    "dezoito": "デゾイト",
+    "dezenove": "デゼノーヴェ",
+    "vinte": "ヴィンチ",
+    "trinta": "トリンタ",
+    "quarenta": "クアレンタ",
+    "cinquenta": "キンクエンタ",
+    "sessenta": "セセンタ",
+    "setenta": "セテンタ",
+    "oitenta": "オイテンタ",
+    "noventa": "ノヴェンタ",
+    "cem": "セン",
     "previsao": "プレビサン",
     "meteorologa": "メテオロジガ",
     "servico": "セルヴィソ",
@@ -437,6 +497,34 @@ _SPOKEN_SIMPLIFY_PATTERNS: tuple[tuple[str, str], ...] = (
 )
 
 
+def integer_to_spoken_pt(value: int) -> str:
+    """Ex.: 32 -> 'trinta e dois' (PT-BR) para TTS em katakana."""
+    number = int(value)
+    if number < 0:
+        return f"menos {integer_to_spoken_pt(-number)}"
+    if number < 10:
+        return _UNITS_PT[number]
+    if number < 20:
+        return _TEENS_PT[number - 10]
+    if number < 100:
+        tens, ones = divmod(number, 10)
+        if ones == 0:
+            return _TENS_PT[tens]
+        return f"{_TENS_PT[tens]} e {_UNITS_PT[ones]}"
+    if number == 100:
+        return "cem"
+    return str(number)
+
+
+def expand_numbers_for_speech(text: str) -> str:
+    """Substitui algarismos isolados por palavras em portugues."""
+
+    def _replace(match: re.Match[str]) -> str:
+        return integer_to_spoken_pt(int(match.group(0)))
+
+    return _DIGITS_RE.sub(_replace, str(text or ""))
+
+
 def _ascii_key(word: str) -> str:
     lowered = word.lower()
     normalized = unicodedata.normalize("NFKD", lowered)
@@ -492,7 +580,9 @@ def _transliterate_unknown(word: str) -> str:
     if not key:
         return word
     if key.isdigit():
-        return word
+        spoken = integer_to_spoken_pt(int(key))
+        pieces = [portuguese_word_to_katakana(part) for part in spoken.split() if part]
+        return "".join(pieces)
 
     prepared = _mark_nasal_vowels(key)
     index = 0
@@ -662,6 +752,7 @@ def _normalize_punctuation(chunk: str) -> str:
 
 
 def portuguese_to_voicevox_katakana(text: str) -> str:
+    text = expand_numbers_for_speech(text)
     text = simplify_spoken_portuguese(text)
     text = insert_clarity_pauses(text)
     parts: list[str] = []

@@ -5137,6 +5137,18 @@
       if (caption) {
         startMikuCaptionSync(caption, audioBuffer, token, ctx, narrator, captionPlaybackRate);
       }
+      else {
+        stopMikuCaptionSync({ restoreMessage: false, immediate: true });
+        state.hoshino.activeCaptionNarrator = narrator === "hoshino" ? "hoshino" : "miku";
+        const shell = mountMikuCaptionShell(state.hoshino.activeCaptionNarrator);
+        const nodes = getMikuCaptionElements();
+        startMikuCaptionAscii(nodes?.ascii || shell?.querySelector(".miku-caption-ascii"));
+        state.voiceDrop.mikuCaption.active = true;
+        state.voiceDrop.mikuCaption.playbackToken = token;
+        if (nodes?.shell) {
+          nodes.shell.classList.add("is-complete", "is-holding");
+        }
+      }
     }
 
     attachVoiceSourceWithDucking(outputSource);

@@ -1,0 +1,5 @@
+# Network ID ZeroTier (16 caracteres) — Join no PC/celular.
+# Link de convite: https://joinzt.com/addnetwork?nwid=SEU_ID&v=1
+#
+# Exemplo:
+# 8d1c312afa4fb9e8
