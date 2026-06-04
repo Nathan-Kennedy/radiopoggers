@@ -10,6 +10,23 @@ $outDir = Join-Path $root "dist\app-release"
 $stageDir = Join-Path $outDir "windows-stage"
 
 & (Join-Path $root "scripts\sync-app-assets.ps1")
+& (Join-Path $root "scripts\generate-app-icons.ps1")
+
+$vpnHostFile = Join-Path $root "data\operator-vpn-host.txt"
+$vpnHost = ""
+if (Test-Path $vpnHostFile) {
+  $vpnHost = (Get-Content $vpnHostFile -Raw).Trim().Split("#")[0].Trim()
+  $vpnHost = $vpnHost -replace "http://", "" -replace "https://", ""
+  if ($vpnHost.Contains("/")) { $vpnHost = $vpnHost.Split("/")[0] }
+}
+$flutterVpnArgs = @()
+if ($vpnHost) {
+  $flutterVpnArgs = @("--dart-define=RADIOPOGGERS_VPN_HOST=$vpnHost")
+  Write-Host "[ok] Build app com IP VPN embutido: $vpnHost (data\operator-vpn-host.txt)"
+}
+else {
+  Write-Host "[aviso] data\operator-vpn-host.txt ausente - app publico pedira IP na primeira abertura."
+}
 
 if (-not $SkipBuild) {
   if (-not (Get-Command flutter -ErrorAction SilentlyContinue)) {
@@ -21,9 +38,8 @@ if (-not $SkipBuild) {
     if (-not (Test-Path (Join-Path $appDir "windows"))) {
       flutter create . --platforms=windows,android
     }
-    # Release publica: sem IP Radmin no binario (use --dart-define=RADIOPOGGERS_RADMIN_HOST=... so na sua maquina).
-    flutter build windows --release
-    flutter build apk --release
+    flutter build windows --release @flutterVpnArgs
+    flutter build apk --release @flutterVpnArgs
   }
   finally {
     Pop-Location
@@ -99,4 +115,9 @@ Write-Host "[ok] Release em: $outDir"
 Write-Host "  $zipName"
 Write-Host "  RadioPoggers-android.apk"
 Write-Host "  SHA256SUMS.txt"
-Write-Host "  (sem .pdb; IP Radmin nao embutido salvo dart-define privado)"
+if ($vpnHost) {
+  Write-Host "  (IP VPN $vpnHost no exe/apk - so distribua para o grupo de confianca)"
+}
+else {
+  Write-Host "  (sem .pdb; sem IP VPN no binario)"
+}

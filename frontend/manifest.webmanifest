@@ -10,19 +10,18 @@
   "orientation": "portrait-primary",
   "icons": [
     {
-      "src": "assets/icons/icon.svg",
+      "src": "assets/icons/icon.png",
       "sizes": "512x512",
-      "type": "image/svg+xml",
+      "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "assets/icons/maskable.svg",
+      "src": "assets/icons/maskable.png",
       "sizes": "512x512",
-      "type": "image/svg+xml",
+      "type": "image/png",
       "purpose": "maskable"
     }
   ],
   "categories": ["music", "entertainment"],
   "lang": "pt-BR"
 }
-

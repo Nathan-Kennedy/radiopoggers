@@ -26,10 +26,21 @@ Como versionar, publicar e instalar updates do **RadioPoggers** via **GitHub Rel
 
 ### Manual (sua máquina)
 
+**Primeira vez (sem Android SDK):**
+
+```powershell
+cd "C:\Projetos Dev\RadioPoggers"
+.\scripts\install-android-sdk.ps1   # JDK 17 + SDK (cmdline-tools)
+```
+
+Depois feche e reabra o terminal (ou garanta `java` no PATH) e empacote:
+
 ```powershell
 cd "C:\Projetos Dev\RadioPoggers"
 .\scripts\package-app-release.ps1
 ```
+
+Icone do app (APK + exe): `frontend/assets/icons/icon.png`. O empacote roda `generate-app-icons.ps1` automaticamente; para regerar sozinho: `.\scripts\generate-app-icons.ps1`.
 
 Artefatos em `dist/app-release/`. Envie para GitHub Releases na mão.
 
@@ -52,13 +63,13 @@ Substitua pelo repositório real onde as Releases ficam públicas.
 | `data/gemini-api-key.txt`, `discord-bot-token.txt`, etc. | Chaves de API |
 | `data/dev-ssl/`, `frontend/config.js` com IP real | Rede e certificados |
 | Arquivos `.pdb` | Expõem caminhos do seu PC |
-| IP Radmin fixo no código | Qualquer um extrai do exe |
+| IP da VPN fixo no código | Qualquer um extrai do exe |
 
 ### O que o app público faz hoje
 
-- **Sem IP embutido** — amigos informam o IP na primeira configuração (dialog Radmin).
+- **Sem IP embutido** — amigos informam o IP na primeira configuração (dialog VPN).
 - Build **só seu** com IP opcional:  
-  `flutter build windows --release --dart-define=RADIOPOGGERS_RADMIN_HOST=SEU.IP`
+  `flutter build windows --release --dart-define=RADIOPOGGERS_VPN_HOST=SEU.IP`
 - `scripts/package-app-release.ps1` exclui `.pdb` e falha se achar padrões de chave em arquivos de texto no pacote.
 
 ### Repositório Git
@@ -70,7 +81,7 @@ Raiz tem [`.gitignore`](../.gitignore) para `data/*-key.txt`, `discord-bot-confi
 
 1. `git status` — nada de `data/*-key.txt` ou `config.js` staged  
 2. Rodar `.\scripts\package-app-release.ps1`  
-3. Testar app do zip em PC limpo (pedir IP Radmin)  
+3. Testar app do zip em PC limpo (pedir IP na VPN)  
 4. Publicar tag `v*` só depois disso
 
 ## Checksums
