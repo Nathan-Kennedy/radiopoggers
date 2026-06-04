@@ -1,0 +1,14 @@
+# Exemplo opcional.
+# Salve como /var/azuracast/docker-compose.override.yml apenas se precisar customizar recursos.
+# Nao copie sem entender: o AzuraCast funciona sem este arquivo.
+
+services:
+  web:
+    restart: unless-stopped
+  stations:
+    restart: unless-stopped
+  mariadb:
+    restart: unless-stopped
+  redis:
+    restart: unless-stopped
+

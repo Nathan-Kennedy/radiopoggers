@@ -1,0 +1,14 @@
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+build/
+android/.gradle/
+android/local.properties
+android/key.properties
+*.iml
+.idea/
+*.apk
+*.exe
+windows/flutter/ephemeral/

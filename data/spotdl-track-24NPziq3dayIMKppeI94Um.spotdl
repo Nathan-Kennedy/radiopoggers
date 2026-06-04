@@ -1,0 +1,40 @@
+[
+    {
+        "name": "Last Night",
+        "artists": [
+            "Keyshia Cole",
+            "Diddy"
+        ],
+        "artist": "Keyshia Cole",
+        "genres": [
+            "",
+            ""
+        ],
+        "disc_number": 1,
+        "disc_count": 1,
+        "album_name": "Just Like You",
+        "album_artist": "Keyshia Cole",
+        "duration": 255,
+        "year": 2007,
+        "date": "2007-01-01",
+        "track_number": 2,
+        "tracks_count": 16,
+        "song_id": "24NPziq3dayIMKppeI94Um",
+        "explicit": false,
+        "publisher": "Geffen",
+        "url": "https://open.spotify.com/track/24NPziq3dayIMKppeI94Um",
+        "isrc": "",
+        "cover_url": "https://i.scdn.co/image/ab67616d0000b273e19f1991b09adf644703fb89",
+        "copyright_text": "",
+        "download_url": "https://music.youtube.com/watch?v=VwHEFlSqQPY",
+        "lyrics": null,
+        "popularity": 10,
+        "album_id": "3rTikJLDugcmBvhAnsy1WD",
+        "list_name": null,
+        "list_url": null,
+        "list_position": null,
+        "list_length": null,
+        "artist_id": "1vfezMIyCr4XUdYRaKIKi3",
+        "album_type": "album"
+    }
+]

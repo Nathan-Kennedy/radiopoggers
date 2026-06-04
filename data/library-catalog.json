@@ -1,0 +1,4374 @@
+{
+  "revision": 1,
+  "generated_at": "2026-06-04T05:45:59Z",
+  "summary": {
+    "tracks": 239,
+    "artists": 65,
+    "albums": 105
+  },
+  "tracks": [
+    {
+      "id": "2tS8YJJOiTxo4JdVidzs1t",
+      "spotify_id": "2tS8YJJOiTxo4JdVidzs1t",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/2tS8YJJOiTxo4JdVidzs1t",
+      "title": "Acid Rain",
+      "artists": [
+        "ANGRA"
+      ],
+      "album": "Rebirth",
+      "duration_ms": 367000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273a3bff4706c634bebfec93301",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO4zuVE2\\ANGRA - Acid Rain.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO4zuVE2"
+      ]
+    },
+    {
+      "id": "40ErEtkETfTCPN6LEk7AIU",
+      "spotify_id": "40ErEtkETfTCPN6LEk7AIU",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/40ErEtkETfTCPN6LEk7AIU",
+      "title": "Angels And Demons",
+      "artists": [
+        "ANGRA"
+      ],
+      "album": "Temple Of Shadows",
+      "duration_ms": 250000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273deae82e5c6e6a2751fe0616a",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO4zuVE2\\ANGRA - Angels And Demons.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO4zuVE2"
+      ]
+    },
+    {
+      "id": "2nAZibb7kaMAb1bAsB3KFs",
+      "spotify_id": "2nAZibb7kaMAb1bAsB3KFs",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/2nAZibb7kaMAb1bAsB3KFs",
+      "title": "Angels Cry",
+      "artists": [
+        "ANGRA"
+      ],
+      "album": "Angels Cry",
+      "duration_ms": 408000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2730e9534d753e0b1f87b744b59",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO4zuVE2\\ANGRA - Angels Cry.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO4zuVE2"
+      ]
+    },
+    {
+      "id": "7oexOELhhTy1pUwRTYJj1h",
+      "spotify_id": "7oexOELhhTy1pUwRTYJj1h",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/7oexOELhhTy1pUwRTYJj1h",
+      "title": "Arising Thunder",
+      "artists": [
+        "ANGRA"
+      ],
+      "album": "Aqua",
+      "duration_ms": 292000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273754c01c5ff22497825204d5a",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO4zuVE2\\ANGRA - Arising Thunder.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO4zuVE2"
+      ]
+    },
+    {
+      "id": "3Dhyx2m7SxoEiU674hm8w1",
+      "spotify_id": "3Dhyx2m7SxoEiU674hm8w1",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/3Dhyx2m7SxoEiU674hm8w1",
+      "title": "Black Widow's Web",
+      "artists": [
+        "ANGRA"
+      ],
+      "album": "Ømni",
+      "duration_ms": 349000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2732bfed69a479d8bff2e5ae862",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO4zuVE2\\ANGRA - Black Widow's Web.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO4zuVE2"
+      ]
+    },
+    {
+      "id": "1SfdoZPbs0ObLEwwR7KcjF",
+      "spotify_id": "1SfdoZPbs0ObLEwwR7KcjF",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/1SfdoZPbs0ObLEwwR7KcjF",
+      "title": "Bleeding Heart",
+      "artists": [
+        "ANGRA"
+      ],
+      "album": "Hunters and Prey",
+      "duration_ms": 244000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2730b19a1a60fd43a330f8123d6",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO4zuVE2\\ANGRA - Bleeding Heart.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO4zuVE2"
+      ]
+    },
+    {
+      "id": "1O7tqCXAuryV5P70wRMAD7",
+      "spotify_id": "1O7tqCXAuryV5P70wRMAD7",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/1O7tqCXAuryV5P70wRMAD7",
+      "title": "Caca E Cacador - Hunters And Prey Portuguese Version",
+      "artists": [
+        "ANGRA"
+      ],
+      "album": "Hunters and Prey",
+      "duration_ms": 388000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2730b19a1a60fd43a330f8123d6",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO4zuVE2\\ANGRA - Caca E Cacador - Hunters And Prey Portuguese Version.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO4zuVE2"
+      ]
+    },
+    {
+      "id": "2BLBJ9JeK4lkdst0kguPnq",
+      "spotify_id": "2BLBJ9JeK4lkdst0kguPnq",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/2BLBJ9JeK4lkdst0kguPnq",
+      "title": "Carolina Iv",
+      "artists": [
+        "ANGRA"
+      ],
+      "album": "Holy Land",
+      "duration_ms": 635000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273e9bc7e274139886a645e1dde",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO4zuVE2\\ANGRA - Carolina Iv.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO4zuVE2"
+      ]
+    },
+    {
+      "id": "6aOZrQetoTW7XnFBjsnyXF",
+      "spotify_id": "6aOZrQetoTW7XnFBjsnyXF",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/6aOZrQetoTW7XnFBjsnyXF",
+      "title": "Carry On",
+      "artists": [
+        "ANGRA"
+      ],
+      "album": "Angels Cry",
+      "duration_ms": 305000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2730e9534d753e0b1f87b744b59",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO4zuVE2\\ANGRA - Carry On.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO4zuVE2"
+      ]
+    },
+    {
+      "id": "3AsY9yRcWc6m6cwIiGJbfe",
+      "spotify_id": "3AsY9yRcWc6m6cwIiGJbfe",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/3AsY9yRcWc6m6cwIiGJbfe",
+      "title": "Crossing",
+      "artists": [
+        "ANGRA"
+      ],
+      "album": "Holy Land",
+      "duration_ms": 115000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273e9bc7e274139886a645e1dde",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO4zuVE2\\ANGRA - Crossing.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO4zuVE2"
+      ]
+    },
+    {
+      "id": "4QXNWHqW6BqaFGRFR4jX9q",
+      "spotify_id": "4QXNWHqW6BqaFGRFR4jX9q",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/4QXNWHqW6BqaFGRFR4jX9q",
+      "title": "Cycles Of Pain",
+      "artists": [
+        "ANGRA"
+      ],
+      "album": "Cycles Of Pain",
+      "duration_ms": 313000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2733138a0e8a617c4f174b04e9c",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO4zuVE2\\ANGRA - Cycles Of Pain.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO4zuVE2"
+      ]
+    },
+    {
+      "id": "5L4cqsBkPTVQbsepUSEg1s",
+      "spotify_id": "5L4cqsBkPTVQbsepUSEg1s",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/5L4cqsBkPTVQbsepUSEg1s",
+      "title": "Dead Man On Display",
+      "artists": [
+        "ANGRA"
+      ],
+      "album": "Cycles Of Pain",
+      "duration_ms": 366000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2733138a0e8a617c4f174b04e9c",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO4zuVE2\\ANGRA - Dead Man On Display.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO4zuVE2"
+      ]
+    },
+    {
+      "id": "3ioXBF7Ge6meYUPGBKI0U2",
+      "spotify_id": "3ioXBF7Ge6meYUPGBKI0U2",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/3ioXBF7Ge6meYUPGBKI0U2",
+      "title": "Ego Painted Grey",
+      "artists": [
+        "ANGRA"
+      ],
+      "album": "Aurora Consurgens",
+      "duration_ms": 338000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273013d454dc6e38ddbec4332d7",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO4zuVE2\\ANGRA - Ego Painted Grey.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO4zuVE2"
+      ]
+    },
+    {
+      "id": "0KO8YhClkHgG4VPKXsvcWs",
+      "spotify_id": "0KO8YhClkHgG4VPKXsvcWs",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/0KO8YhClkHgG4VPKXsvcWs",
+      "title": "Gentle Change",
+      "artists": [
+        "ANGRA"
+      ],
+      "album": "Fireworks",
+      "duration_ms": 335000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2732b54ed853b5997c47ca63248",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO4zuVE2\\ANGRA - Gentle Change.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO4zuVE2"
+      ]
+    },
+    {
+      "id": "7zaRMwIjR8IRhag7477mFl",
+      "spotify_id": "7zaRMwIjR8IRhag7477mFl",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/7zaRMwIjR8IRhag7477mFl",
+      "title": "Heroes Of Sand",
+      "artists": [
+        "ANGRA"
+      ],
+      "album": "Rebirth",
+      "duration_ms": 279000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273a3bff4706c634bebfec93301",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO4zuVE2\\ANGRA - Heroes Of Sand.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO4zuVE2"
+      ]
+    },
+    {
+      "id": "4ZQ7zn9HYjM3d9ePySSOCi",
+      "spotify_id": "4ZQ7zn9HYjM3d9ePySSOCi",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/4ZQ7zn9HYjM3d9ePySSOCi",
+      "title": "Holy Land",
+      "artists": [
+        "ANGRA"
+      ],
+      "album": "Holy Land",
+      "duration_ms": 386000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273e9bc7e274139886a645e1dde",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO4zuVE2\\ANGRA - Holy Land.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO4zuVE2"
+      ]
+    },
+    {
+      "id": "0gjTMdOgwPcTvDpcCMjK5o",
+      "spotify_id": "0gjTMdOgwPcTvDpcCMjK5o",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/0gjTMdOgwPcTvDpcCMjK5o",
+      "title": "Late Redemption",
+      "artists": [
+        "ANGRA"
+      ],
+      "album": "Temple Of Shadows",
+      "duration_ms": 295000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273deae82e5c6e6a2751fe0616a",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO4zuVE2\\ANGRA - Late Redemption.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO4zuVE2"
+      ]
+    },
+    {
+      "id": "1NpupPhvb9kTNOvqUxpC9s",
+      "spotify_id": "1NpupPhvb9kTNOvqUxpC9s",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/1NpupPhvb9kTNOvqUxpC9s",
+      "title": "Lease Of Life",
+      "artists": [
+        "ANGRA"
+      ],
+      "album": "Aqua",
+      "duration_ms": 273000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273754c01c5ff22497825204d5a",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO4zuVE2\\ANGRA - Lease Of Life.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO4zuVE2"
+      ]
+    },
+    {
+      "id": "7eNO0C1CQrBvaJUhwigHpF",
+      "spotify_id": "7eNO0C1CQrBvaJUhwigHpF",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/7eNO0C1CQrBvaJUhwigHpF",
+      "title": "Light of Transcendence",
+      "artists": [
+        "ANGRA"
+      ],
+      "album": "Ømni",
+      "duration_ms": 276000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2732bfed69a479d8bff2e5ae862",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO4zuVE2\\ANGRA - Light of Transcendence.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO4zuVE2"
+      ]
+    },
+    {
+      "id": "56CISV8Eg0CwTyN0xaRnDH",
+      "spotify_id": "56CISV8Eg0CwTyN0xaRnDH",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/56CISV8Eg0CwTyN0xaRnDH",
+      "title": "Lisbon",
+      "artists": [
+        "ANGRA"
+      ],
+      "album": "Fireworks",
+      "duration_ms": 313000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2732b54ed853b5997c47ca63248",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO4zuVE2\\ANGRA - Lisbon.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO4zuVE2"
+      ]
+    },
+    {
+      "id": "1YWT5fsXK0d6QQoQmwSUdH",
+      "spotify_id": "1YWT5fsXK0d6QQoQmwSUdH",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/1YWT5fsXK0d6QQoQmwSUdH",
+      "title": "Live And Learn",
+      "artists": [
+        "ANGRA"
+      ],
+      "album": "Hunters and Prey",
+      "duration_ms": 252000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2730b19a1a60fd43a330f8123d6",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO4zuVE2\\ANGRA - Live And Learn.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO4zuVE2"
+      ]
+    },
+    {
+      "id": "18Oi23S91ddyxImEWIHNYL",
+      "spotify_id": "18Oi23S91ddyxImEWIHNYL",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/18Oi23S91ddyxImEWIHNYL",
+      "title": "Make Believe",
+      "artists": [
+        "ANGRA"
+      ],
+      "album": "Holy Land",
+      "duration_ms": 353000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273e9bc7e274139886a645e1dde",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO4zuVE2\\ANGRA - Make Believe.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO4zuVE2"
+      ]
+    },
+    {
+      "id": "4z1GkwJNmmLbmwH3KD0lmN",
+      "spotify_id": "4z1GkwJNmmLbmwH3KD0lmN",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/4z1GkwJNmmLbmwH3KD0lmN",
+      "title": "Metal Icarus",
+      "artists": [
+        "ANGRA"
+      ],
+      "album": "Fireworks",
+      "duration_ms": 383000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2732b54ed853b5997c47ca63248",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO4zuVE2\\ANGRA - Metal Icarus.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO4zuVE2"
+      ]
+    },
+    {
+      "id": "1hXRd9dIkP0lvQdHYQBf85",
+      "spotify_id": "1hXRd9dIkP0lvQdHYQBf85",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/1hXRd9dIkP0lvQdHYQBf85",
+      "title": "Millennium Sun",
+      "artists": [
+        "ANGRA"
+      ],
+      "album": "Rebirth",
+      "duration_ms": 311000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273a3bff4706c634bebfec93301",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO4zuVE2\\ANGRA - Millennium Sun.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO4zuVE2"
+      ]
+    },
+    {
+      "id": "14QCbc1OMCivLnTXdu7kff",
+      "spotify_id": "14QCbc1OMCivLnTXdu7kff",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/14QCbc1OMCivLnTXdu7kff",
+      "title": "Nothing To Say",
+      "artists": [
+        "ANGRA"
+      ],
+      "album": "Holy Land",
+      "duration_ms": 382000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273e9bc7e274139886a645e1dde",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO4zuVE2\\ANGRA - Nothing To Say.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO4zuVE2"
+      ]
+    },
+    {
+      "id": "5LS60Wzgi402hmYSoiNuBK",
+      "spotify_id": "5LS60Wzgi402hmYSoiNuBK",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/5LS60Wzgi402hmYSoiNuBK",
+      "title": "Nova Era",
+      "artists": [
+        "ANGRA"
+      ],
+      "album": "Rebirth",
+      "duration_ms": 292000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273a3bff4706c634bebfec93301",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO4zuVE2\\ANGRA - Nova Era.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO4zuVE2"
+      ]
+    },
+    {
+      "id": "3Ns3qvRimceTM5i4ZpF5Ri",
+      "spotify_id": "3Ns3qvRimceTM5i4ZpF5Ri",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/3Ns3qvRimceTM5i4ZpF5Ri",
+      "title": "Reaching Horizons",
+      "artists": [
+        "ANGRA"
+      ],
+      "album": "Freedom Call",
+      "duration_ms": 308000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273772cca0b2bf7767e6419cbbf",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO4zuVE2\\ANGRA - Reaching Horizons.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO4zuVE2"
+      ]
+    },
+    {
+      "id": "1das0WEGlru6mxVx9wAuve",
+      "spotify_id": "1das0WEGlru6mxVx9wAuve",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/1das0WEGlru6mxVx9wAuve",
+      "title": "Rebirth",
+      "artists": [
+        "ANGRA"
+      ],
+      "album": "Rebirth",
+      "duration_ms": 317000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273a3bff4706c634bebfec93301",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO4zuVE2\\ANGRA - Rebirth.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO4zuVE2"
+      ]
+    },
+    {
+      "id": "2jPySu6NwisJyf8fMV5Kiz",
+      "spotify_id": "2jPySu6NwisJyf8fMV5Kiz",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/2jPySu6NwisJyf8fMV5Kiz",
+      "title": "Running Alone",
+      "artists": [
+        "ANGRA"
+      ],
+      "album": "Rebirth",
+      "duration_ms": 434000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273a3bff4706c634bebfec93301",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO4zuVE2\\ANGRA - Running Alone.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO4zuVE2"
+      ]
+    },
+    {
+      "id": "47Q4yxaMxoJ0VdvUiRU96K",
+      "spotify_id": "47Q4yxaMxoJ0VdvUiRU96K",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/47Q4yxaMxoJ0VdvUiRU96K",
+      "title": "Salvation:Suicide",
+      "artists": [
+        "ANGRA"
+      ],
+      "album": "Aurora Consurgens",
+      "duration_ms": 261000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273013d454dc6e38ddbec4332d7",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO4zuVE2\\ANGRA - Salvation-Suicide.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO4zuVE2"
+      ]
+    },
+    {
+      "id": "2t85MJrNDxmSfCAUS65tdZ",
+      "spotify_id": "2t85MJrNDxmSfCAUS65tdZ",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/2t85MJrNDxmSfCAUS65tdZ",
+      "title": "Silence And Distance",
+      "artists": [
+        "ANGRA"
+      ],
+      "album": "Holy Land",
+      "duration_ms": 333000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273e9bc7e274139886a645e1dde",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO4zuVE2\\ANGRA - Silence And Distance.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO4zuVE2"
+      ]
+    },
+    {
+      "id": "3KWxRJ8JZuCQzEjHftcJ3P",
+      "spotify_id": "3KWxRJ8JZuCQzEjHftcJ3P",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/3KWxRJ8JZuCQzEjHftcJ3P",
+      "title": "Silent Call",
+      "artists": [
+        "ANGRA"
+      ],
+      "album": "Secret Garden",
+      "duration_ms": 228000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b27339c7984e3da3664f6b1e6f6a",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO4zuVE2\\ANGRA - Silent Call.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO4zuVE2"
+      ]
+    },
+    {
+      "id": "4unrP2in61OG6vE08roUI3",
+      "spotify_id": "4unrP2in61OG6vE08roUI3",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/4unrP2in61OG6vE08roUI3",
+      "title": "Speed",
+      "artists": [
+        "ANGRA"
+      ],
+      "album": "Fireworks",
+      "duration_ms": 357000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2732b54ed853b5997c47ca63248",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO4zuVE2\\ANGRA - Speed.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO4zuVE2"
+      ]
+    },
+    {
+      "id": "4vpxG3E6LdXfskPmgB1Jvv",
+      "spotify_id": "4vpxG3E6LdXfskPmgB1Jvv",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/4vpxG3E6LdXfskPmgB1Jvv",
+      "title": "Spread Your Fire",
+      "artists": [
+        "ANGRA"
+      ],
+      "album": "Temple Of Shadows",
+      "duration_ms": 265000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273deae82e5c6e6a2751fe0616a",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO4zuVE2\\ANGRA - Spread Your Fire.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO4zuVE2"
+      ]
+    },
+    {
+      "id": "4T4Xf8fBY6mQQ5af4u4Uua",
+      "spotify_id": "4T4Xf8fBY6mQQ5af4u4Uua",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/4T4Xf8fBY6mQQ5af4u4Uua",
+      "title": "Stand Away",
+      "artists": [
+        "ANGRA"
+      ],
+      "album": "Angels Cry",
+      "duration_ms": 297000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2730e9534d753e0b1f87b744b59",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO4zuVE2\\ANGRA - Stand Away.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO4zuVE2"
+      ]
+    },
+    {
+      "id": "54l0hEh7eencGKXXkXBiWH",
+      "spotify_id": "54l0hEh7eencGKXXkXBiWH",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/54l0hEh7eencGKXXkXBiWH",
+      "title": "The Course Of Nature",
+      "artists": [
+        "ANGRA"
+      ],
+      "album": "Aurora Consurgens",
+      "duration_ms": 270000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273013d454dc6e38ddbec4332d7",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO4zuVE2\\ANGRA - The Course Of Nature.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO4zuVE2"
+      ]
+    },
+    {
+      "id": "02cG5xHALLspO8UJBQd3cQ",
+      "spotify_id": "02cG5xHALLspO8UJBQd3cQ",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/02cG5xHALLspO8UJBQd3cQ",
+      "title": "The Temple Of Hate",
+      "artists": [
+        "ANGRA"
+      ],
+      "album": "Temple Of Shadows",
+      "duration_ms": 313000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273deae82e5c6e6a2751fe0616a",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO4zuVE2\\ANGRA - The Temple Of Hate.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO4zuVE2"
+      ]
+    },
+    {
+      "id": "0MeuJtdGydsDm3XFpz2IWQ",
+      "spotify_id": "0MeuJtdGydsDm3XFpz2IWQ",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/0MeuJtdGydsDm3XFpz2IWQ",
+      "title": "The Voice Commanding You",
+      "artists": [
+        "ANGRA"
+      ],
+      "album": "Aurora Consurgens",
+      "duration_ms": 327000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273013d454dc6e38ddbec4332d7",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO4zuVE2\\ANGRA - The Voice Commanding You.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO4zuVE2"
+      ]
+    },
+    {
+      "id": "5XDlSzqOSXRjdx3YiWmXd7",
+      "spotify_id": "5XDlSzqOSXRjdx3YiWmXd7",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/5XDlSzqOSXRjdx3YiWmXd7",
+      "title": "Tide Of Changes - Part II",
+      "artists": [
+        "ANGRA"
+      ],
+      "album": "Cycles Of Pain",
+      "duration_ms": 337000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2733138a0e8a617c4f174b04e9c",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO4zuVE2\\ANGRA - Tide Of Changes - Part II.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO4zuVE2"
+      ]
+    },
+    {
+      "id": "6ELUuLYBKt0wvEmrjWE5Nr",
+      "spotify_id": "6ELUuLYBKt0wvEmrjWE5Nr",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/6ELUuLYBKt0wvEmrjWE5Nr",
+      "title": "Time",
+      "artists": [
+        "ANGRA"
+      ],
+      "album": "Angels Cry",
+      "duration_ms": 357000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2730e9534d753e0b1f87b744b59",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO4zuVE2\\ANGRA - Time.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO4zuVE2"
+      ]
+    },
+    {
+      "id": "2XJcB0MDzNB7UYdinv7oSf",
+      "spotify_id": "2XJcB0MDzNB7UYdinv7oSf",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/2XJcB0MDzNB7UYdinv7oSf",
+      "title": "Travelers of Time",
+      "artists": [
+        "ANGRA"
+      ],
+      "album": "Ømni",
+      "duration_ms": 267000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2732bfed69a479d8bff2e5ae862",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO4zuVE2\\ANGRA - Travelers of Time.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO4zuVE2"
+      ]
+    },
+    {
+      "id": "4vWS866i74DEbbRxfwxOEV",
+      "spotify_id": "4vWS866i74DEbbRxfwxOEV",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/4vWS866i74DEbbRxfwxOEV",
+      "title": "Unfinished Allegro",
+      "artists": [
+        "ANGRA"
+      ],
+      "album": "Angels Cry",
+      "duration_ms": 73000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2730e9534d753e0b1f87b744b59",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO4zuVE2\\ANGRA - Unfinished Allegro.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO4zuVE2"
+      ]
+    },
+    {
+      "id": "52oiJWl4oDiwJu1avyAtOQ",
+      "spotify_id": "52oiJWl4oDiwJu1avyAtOQ",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/52oiJWl4oDiwJu1avyAtOQ",
+      "title": "Vida Seca",
+      "artists": [
+        "ANGRA"
+      ],
+      "album": "Cycles Of Pain",
+      "duration_ms": 311000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2733138a0e8a617c4f174b04e9c",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO4zuVE2\\ANGRA - Vida Seca.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO4zuVE2"
+      ]
+    },
+    {
+      "id": "7mcfhVGJubjRnhpVI2N3yE",
+      "spotify_id": "7mcfhVGJubjRnhpVI2N3yE",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/7mcfhVGJubjRnhpVI2N3yE",
+      "title": "Waiting Silence",
+      "artists": [
+        "ANGRA"
+      ],
+      "album": "Temple Of Shadows",
+      "duration_ms": 295000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273deae82e5c6e6a2751fe0616a",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO4zuVE2\\ANGRA - Waiting Silence.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO4zuVE2"
+      ]
+    },
+    {
+      "id": "7vnhgCKVOBV2fkj3JtW89M",
+      "spotify_id": "7vnhgCKVOBV2fkj3JtW89M",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/7vnhgCKVOBV2fkj3JtW89M",
+      "title": "Wings Of Reality",
+      "artists": [
+        "ANGRA"
+      ],
+      "album": "Fireworks",
+      "duration_ms": 354000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2732b54ed853b5997c47ca63248",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO4zuVE2\\ANGRA - Wings Of Reality.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO4zuVE2"
+      ]
+    },
+    {
+      "id": "6NRkOleVZ9a7X606GdQWYc",
+      "spotify_id": "6NRkOleVZ9a7X606GdQWYc",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/6NRkOleVZ9a7X606GdQWYc",
+      "title": "Wishing Well",
+      "artists": [
+        "ANGRA"
+      ],
+      "album": "Temple Of Shadows",
+      "duration_ms": 239000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273deae82e5c6e6a2751fe0616a",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO4zuVE2\\ANGRA - Wishing Well.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO4zuVE2"
+      ]
+    },
+    {
+      "id": "14ILPmvz8SimpiISsCB58J",
+      "spotify_id": "14ILPmvz8SimpiISsCB58J",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/14ILPmvz8SimpiISsCB58J",
+      "title": "Wuthering Heights",
+      "artists": [
+        "ANGRA"
+      ],
+      "album": "Angels Cry",
+      "duration_ms": 279000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2730e9534d753e0b1f87b744b59",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO4zuVE2\\ANGRA - Wuthering Heights.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO4zuVE2"
+      ]
+    },
+    {
+      "id": "0TwBtDAWpkpM3srywFVOV5",
+      "spotify_id": "0TwBtDAWpkpM3srywFVOV5",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/0TwBtDAWpkpM3srywFVOV5",
+      "title": "Crazy In Love (feat. JAY-Z)",
+      "artists": [
+        "Beyoncé",
+        "JAŸ-Z"
+      ],
+      "album": "Dangerously In Love",
+      "duration_ms": 235000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273a9fd4a0405945cd51e8de130",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1E8JuTpPiqjZ12\\Beyoncé, JAŸ-Z - Crazy In Love (feat. JAY-Z).mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1E8JuTpPiqjZ12"
+      ]
+    },
+    {
+      "id": "3oDFtOhcN08qeDPAK6MEQG",
+      "spotify_id": "3oDFtOhcN08qeDPAK6MEQG",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/3oDFtOhcN08qeDPAK6MEQG",
+      "title": "Boom Boom Pow",
+      "artists": [
+        "Black Eyed Peas"
+      ],
+      "album": "THE E.N.D. (THE ENERGY NEVER DIES) [Deluxe Version]",
+      "duration_ms": 251000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2730bd44f5ff9ecc99f7770acc5",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1E8JuTpPiqjZ12\\Black Eyed Peas - Boom Boom Pow.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1E8JuTpPiqjZ12"
+      ]
+    },
+    {
+      "id": "4kLLWz7srcuLKA7Et40PQR",
+      "spotify_id": "4kLLWz7srcuLKA7Et40PQR",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/4kLLWz7srcuLKA7Et40PQR",
+      "title": "I Gotta Feeling",
+      "artists": [
+        "Black Eyed Peas"
+      ],
+      "album": "THE E.N.D. (THE ENERGY NEVER DIES) [Deluxe Version]",
+      "duration_ms": 289000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2730bd44f5ff9ecc99f7770acc5",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1E8JuTpPiqjZ12\\Black Eyed Peas - I Gotta Feeling.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1E8JuTpPiqjZ12"
+      ]
+    },
+    {
+      "id": "3JA9Jsuxr4xgHXEawAdCp4",
+      "spotify_id": "3JA9Jsuxr4xgHXEawAdCp4",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/3JA9Jsuxr4xgHXEawAdCp4",
+      "title": "Just Can’t Get Enough",
+      "artists": [
+        "Black Eyed Peas"
+      ],
+      "album": "The Beginning",
+      "duration_ms": 219000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2739efc623f9c64c8efb583b186",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1E8JuTpPiqjZ12\\Black Eyed Peas - Just Can’t Get Enough.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1E8JuTpPiqjZ12"
+      ]
+    },
+    {
+      "id": "3F9ByoUqu31xU0I3G5xfVg",
+      "spotify_id": "3F9ByoUqu31xU0I3G5xfVg",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/3F9ByoUqu31xU0I3G5xfVg",
+      "title": "Meet Me Halfway",
+      "artists": [
+        "Black Eyed Peas"
+      ],
+      "album": "THE E.N.D. (THE ENERGY NEVER DIES) [Deluxe Version]",
+      "duration_ms": 284000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2730bd44f5ff9ecc99f7770acc5",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1E8JuTpPiqjZ12\\Black Eyed Peas - Meet Me Halfway.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1E8JuTpPiqjZ12"
+      ]
+    },
+    {
+      "id": "20jYtEun4dUdYZ9foaOC48",
+      "spotify_id": "20jYtEun4dUdYZ9foaOC48",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/20jYtEun4dUdYZ9foaOC48",
+      "title": "My Humps",
+      "artists": [
+        "Black Eyed Peas"
+      ],
+      "album": "Monkey Business",
+      "duration_ms": 326000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273c6710b4a52539506c30e5354",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1E8JuTpPiqjZ12\\Black Eyed Peas - My Humps.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1E8JuTpPiqjZ12"
+      ]
+    },
+    {
+      "id": "2ygMBIctKIAfbEBcT9065L",
+      "spotify_id": "2ygMBIctKIAfbEBcT9065L",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/2ygMBIctKIAfbEBcT9065L",
+      "title": "Pump It",
+      "artists": [
+        "Black Eyed Peas"
+      ],
+      "album": "Monkey Business",
+      "duration_ms": 213000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273c6710b4a52539506c30e5354",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1E8JuTpPiqjZ12\\Black Eyed Peas - Pump It.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1E8JuTpPiqjZ12"
+      ]
+    },
+    {
+      "id": "2WQ09wqQBIOor7Q0VpIDBK",
+      "spotify_id": "2WQ09wqQBIOor7Q0VpIDBK",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/2WQ09wqQBIOor7Q0VpIDBK",
+      "title": "Rock That Body",
+      "artists": [
+        "Black Eyed Peas"
+      ],
+      "album": "THE E.N.D. (THE ENERGY NEVER DIES) [Deluxe Version]",
+      "duration_ms": 268000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2730bd44f5ff9ecc99f7770acc5",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1E8JuTpPiqjZ12\\Black Eyed Peas - Rock That Body.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1E8JuTpPiqjZ12"
+      ]
+    },
+    {
+      "id": "0KxU9wjCedUxSGdjuFdBDu",
+      "spotify_id": "0KxU9wjCedUxSGdjuFdBDu",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/0KxU9wjCedUxSGdjuFdBDu",
+      "title": "Shut Up",
+      "artists": [
+        "Black Eyed Peas"
+      ],
+      "album": "Elephunk",
+      "duration_ms": 296000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2735db09bde92cc685403d7068f",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1E8JuTpPiqjZ12\\Black Eyed Peas - Shut Up.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1E8JuTpPiqjZ12"
+      ]
+    },
+    {
+      "id": "7vWFaMq63AwkFDhS2OAg5u",
+      "spotify_id": "7vWFaMq63AwkFDhS2OAg5u",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/7vWFaMq63AwkFDhS2OAg5u",
+      "title": "The Time (Dirty Bit)",
+      "artists": [
+        "Black Eyed Peas"
+      ],
+      "album": "The Beginning (Deluxe)",
+      "duration_ms": 307000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2734cb6f9960e9b5bce7e1babc0",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1E8JuTpPiqjZ12\\Black Eyed Peas - The Time (Dirty Bit).mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1E8JuTpPiqjZ12"
+      ]
+    },
+    {
+      "id": "0xmjwnQ3FNE6HuWCt2nHdZ",
+      "spotify_id": "0xmjwnQ3FNE6HuWCt2nHdZ",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/0xmjwnQ3FNE6HuWCt2nHdZ",
+      "title": "Where Is The Love?",
+      "artists": [
+        "Black Eyed Peas"
+      ],
+      "album": "Elephunk",
+      "duration_ms": 272000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2735db09bde92cc685403d7068f",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1E8JuTpPiqjZ12\\Black Eyed Peas - Where Is The Love.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1E8JuTpPiqjZ12"
+      ]
+    },
+    {
+      "id": "0DiWol3AO6WpXZgp0goxAV",
+      "spotify_id": "0DiWol3AO6WpXZgp0goxAV",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/0DiWol3AO6WpXZgp0goxAV",
+      "title": "One More Time",
+      "artists": [
+        "Daft Punk"
+      ],
+      "album": "Discovery",
+      "duration_ms": 320000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2731e81bff9807a9e629fce5ade",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1E8JuTpPiqjZ12\\Daft Punk - One More Time.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1E8JuTpPiqjZ12"
+      ]
+    },
+    {
+      "id": "5r5cp9IpziiIsR6b93vcnQ",
+      "spotify_id": "5r5cp9IpziiIsR6b93vcnQ",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/5r5cp9IpziiIsR6b93vcnQ",
+      "title": "Walking On A Dream",
+      "artists": [
+        "Empire Of The Sun"
+      ],
+      "album": "Walking On A Dream (10th Anniversary Edition)",
+      "duration_ms": 198000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273f3aa0e6ca22a382007f61e4d",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1E8JuTpPiqjZ12\\Empire Of The Sun - Walking On A Dream.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1E8JuTpPiqjZ12"
+      ]
+    },
+    {
+      "id": "7pzD7EudQxP4EhT5UeQjc7",
+      "spotify_id": "7pzD7EudQxP4EhT5UeQjc7",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/7pzD7EudQxP4EhT5UeQjc7",
+      "title": "Medley Muído de Vaquejada - Desce do Cavalo / Balada do Vaqueiro / Monta Logo Vai / Calma / Senta No Fazendeiro / Deixa Ela Montar Na Minha Garupa / Botadão Do GW",
+      "artists": [
+        "Felipe Amorim",
+        "Xand Avião",
+        "Zé Vaqueiro",
+        "Talita Mel",
+        "Mc Lekão"
+      ],
+      "album": "Medley Muído de Vaquejada - Desce do Cavalo / Balada do Vaqueiro / Monta Logo Vai / Calma / Senta No Fazendeiro / Deixa Ela Montar Na Minha Garupa / Botadão Do GW",
+      "duration_ms": 362000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2735e29c72bf33bd9ed8b1f819a",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO3nODok\\Felipe Amorim, Xand Avião, Zé Vaqueiro, Talita Mel, Mc Lekão - Medley Muído de Vaquejada - Desce do Cavalo Balada do Vaqueiro Monta Logo Vai Calma Senta No Fazendeiro Deixa Ela Montar Na Minha Garupa Botadão Do GW.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO3nODok"
+      ]
+    },
+    {
+      "id": "4KTtYhxFtFL7mBwnjkKfLm",
+      "spotify_id": "4KTtYhxFtFL7mBwnjkKfLm",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/4KTtYhxFtFL7mBwnjkKfLm",
+      "title": "Glamorous",
+      "artists": [
+        "Fergie",
+        "Ludacris"
+      ],
+      "album": "The Dutchess",
+      "duration_ms": 246000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2730283b8c1365d34315f5807bf",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1E8JuTpPiqjZ12\\Fergie, Ludacris - Glamorous.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1E8JuTpPiqjZ12"
+      ]
+    },
+    {
+      "id": "3GpbwCm3YxiWDvy29Uo3vP",
+      "spotify_id": "3GpbwCm3YxiWDvy29Uo3vP",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/3GpbwCm3YxiWDvy29Uo3vP",
+      "title": "Right Round",
+      "artists": [
+        "Flo Rida",
+        "Kesha"
+      ],
+      "album": "R.O.O.T.S. (Route of Overcoming the Struggle)",
+      "duration_ms": 204000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b27318aa5d7e6d484b832cd5d03f",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1E8JuTpPiqjZ12\\Flo Rida, Kesha - Right Round.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1E8JuTpPiqjZ12"
+      ]
+    },
+    {
+      "id": "6o1l9I0faXJN2iqulHrdCQ",
+      "spotify_id": "6o1l9I0faXJN2iqulHrdCQ",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/6o1l9I0faXJN2iqulHrdCQ",
+      "title": "Crazy",
+      "artists": [
+        "Gnarls Barkley",
+        "CeeLo Green",
+        "Danger Mouse"
+      ],
+      "album": "St. Elsewhere",
+      "duration_ms": 182000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273ab051a2c680f39c0d9827706",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1E8JuTpPiqjZ12\\Gnarls Barkley, CeeLo Green, Danger Mouse - Crazy.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1E8JuTpPiqjZ12"
+      ]
+    },
+    {
+      "id": "0eqH0ALoDQevq59YcQ53KE",
+      "spotify_id": "0eqH0ALoDQevq59YcQ53KE",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/0eqH0ALoDQevq59YcQ53KE",
+      "title": "Hollaback Girl",
+      "artists": [
+        "Gwen Stefani"
+      ],
+      "album": "Love. Angel. Music. Baby.",
+      "duration_ms": 199000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273f049fc9322f0c93646cdcc77",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1E8JuTpPiqjZ12\\Gwen Stefani - Hollaback Girl.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1E8JuTpPiqjZ12"
+      ]
+    },
+    {
+      "id": "66ZcOcouenzZEnzTJvoFmH",
+      "spotify_id": "66ZcOcouenzZEnzTJvoFmH",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/66ZcOcouenzZEnzTJvoFmH",
+      "title": "The Sweet Escape",
+      "artists": [
+        "Gwen Stefani",
+        "Akon"
+      ],
+      "album": "The Sweet Escape",
+      "duration_ms": 246000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2738dd53da15b55d402dfc3a20e",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1E8JuTpPiqjZ12\\Gwen Stefani, Akon - The Sweet Escape.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1E8JuTpPiqjZ12"
+      ]
+    },
+    {
+      "id": "2U8NXPTXZWG2O0ye2sYRiH",
+      "spotify_id": "2U8NXPTXZWG2O0ye2sYRiH",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/2U8NXPTXZWG2O0ye2sYRiH",
+      "title": "I Love It (feat. Charli XCX)",
+      "artists": [
+        "Icona Pop",
+        "Charli xcx"
+      ],
+      "album": "THIS IS... ICONA POP",
+      "duration_ms": 157000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b27351b4a23b47059a9aef703df6",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1E8JuTpPiqjZ12\\Icona Pop, Charli xcx - I Love It (feat. Charli XCX).mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1E8JuTpPiqjZ12"
+      ]
+    },
+    {
+      "id": "2igwFfvr1OAGX9SKDCPBwO",
+      "spotify_id": "2igwFfvr1OAGX9SKDCPBwO",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/2igwFfvr1OAGX9SKDCPBwO",
+      "title": "Empire State Of Mind",
+      "artists": [
+        "JAŸ-Z",
+        "Alicia Keys"
+      ],
+      "album": "The Blueprint 3",
+      "duration_ms": 276000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273fec1b815bb3c50a64a90fd10",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1E8JuTpPiqjZ12\\JAŸ-Z, Alicia Keys - Empire State Of Mind.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1E8JuTpPiqjZ12"
+      ]
+    },
+    {
+      "id": "5sNESr6pQfIhL3krM8CtZn",
+      "spotify_id": "5sNESr6pQfIhL3krM8CtZn",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/5sNESr6pQfIhL3krM8CtZn",
+      "title": "Numb Encore",
+      "artists": [
+        "JAŸ-Z",
+        "Linkin Park"
+      ],
+      "album": "Numb / Encore: MTV Ultimate Mash-Ups Presents Collision Course",
+      "duration_ms": 205000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2737282412ad025c14f7039f516",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Managed\\JAY-Z\\This Is Linkin Park\\16 - Numb _ Encore.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO47cwRq"
+      ]
+    },
+    {
+      "id": "1AWQoqb9bSvzTjaLralEkT",
+      "spotify_id": "1AWQoqb9bSvzTjaLralEkT",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/1AWQoqb9bSvzTjaLralEkT",
+      "title": "Rock Your Body",
+      "artists": [
+        "Justin Timberlake"
+      ],
+      "album": "Justified",
+      "duration_ms": 267000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273346a5742374ab4cf9ed32dee",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1E8JuTpPiqjZ12\\Justin Timberlake - Rock Your Body.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1E8JuTpPiqjZ12"
+      ]
+    },
+    {
+      "id": "1ulXmqjktxSdrdT1bzc69H",
+      "spotify_id": "1ulXmqjktxSdrdT1bzc69H",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/1ulXmqjktxSdrdT1bzc69H",
+      "title": "Hot N Cold",
+      "artists": [
+        "Katy Perry"
+      ],
+      "album": "One Of The Boys",
+      "duration_ms": 220000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b27331cc26681b0164332fa26634",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1E8JuTpPiqjZ12\\Katy Perry - Hot N Cold.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1E8JuTpPiqjZ12"
+      ]
+    },
+    {
+      "id": "25ZttbpeUKDOm3aghD2oBJ",
+      "spotify_id": "25ZttbpeUKDOm3aghD2oBJ",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/25ZttbpeUKDOm3aghD2oBJ",
+      "title": "I Kissed A Girl",
+      "artists": [
+        "Katy Perry"
+      ],
+      "album": "One Of The Boys",
+      "duration_ms": 179000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b27331cc26681b0164332fa26634",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1E8JuTpPiqjZ12\\Katy Perry - I Kissed A Girl.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1E8JuTpPiqjZ12"
+      ]
+    },
+    {
+      "id": "0HPD5WQqrq7wPWR7P7Dw1i",
+      "spotify_id": "0HPD5WQqrq7wPWR7P7Dw1i",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/0HPD5WQqrq7wPWR7P7Dw1i",
+      "title": "TiK ToK",
+      "artists": [
+        "Kesha"
+      ],
+      "album": "Animal (Expanded Edition)",
+      "duration_ms": 199000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b27397c7b770b28ffeed164f4d0e",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1E8JuTpPiqjZ12\\Kesha - TiK ToK.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1E8JuTpPiqjZ12"
+      ]
+    },
+    {
+      "id": "24NPziq3dayIMKppeI94Um",
+      "spotify_id": "24NPziq3dayIMKppeI94Um",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/24NPziq3dayIMKppeI94Um",
+      "title": "Last Night",
+      "artists": [
+        "Keyshia Cole",
+        "Diddy"
+      ],
+      "album": "Just Like You",
+      "duration_ms": 255000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273e19f1991b09adf644703fb89",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\track-24NPziq3dayIMKppeI94Um\\Keyshia Cole, Diddy - Last Night.mp3",
+      "status": "ready",
+      "sources": [
+        "track-24NPziq3dayIMKppeI94Um"
+      ]
+    },
+    {
+      "id": "02XnQdf7sipaKBBHixz3Zp",
+      "spotify_id": "02XnQdf7sipaKBBHixz3Zp",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/02XnQdf7sipaKBBHixz3Zp",
+      "title": "Paparazzi",
+      "artists": [
+        "Lady Gaga"
+      ],
+      "album": "The Fame",
+      "duration_ms": 208000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273e691217483df8798445c82e2",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1E8JuTpPiqjZ12\\Lady Gaga - Paparazzi.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1E8JuTpPiqjZ12"
+      ]
+    },
+    {
+      "id": "1QV6tiMFM6fSOKOGLMHYYg",
+      "spotify_id": "1QV6tiMFM6fSOKOGLMHYYg",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/1QV6tiMFM6fSOKOGLMHYYg",
+      "title": "Poker Face",
+      "artists": [
+        "Lady Gaga"
+      ],
+      "album": "The Fame",
+      "duration_ms": 237000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273e691217483df8798445c82e2",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1E8JuTpPiqjZ12\\Lady Gaga - Poker Face.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1E8JuTpPiqjZ12"
+      ]
+    },
+    {
+      "id": "1dzQoRqT5ucxXVaAhTcT0J",
+      "spotify_id": "1dzQoRqT5ucxXVaAhTcT0J",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/1dzQoRqT5ucxXVaAhTcT0J",
+      "title": "Just Dance",
+      "artists": [
+        "Lady Gaga",
+        "Colby O'Donis"
+      ],
+      "album": "The Fame",
+      "duration_ms": 241000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273e691217483df8798445c82e2",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1E8JuTpPiqjZ12\\Lady Gaga, Colby O'Donis - Just Dance.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1E8JuTpPiqjZ12"
+      ]
+    },
+    {
+      "id": "5rAxhWcgFng3s570sGO2F8",
+      "spotify_id": "5rAxhWcgFng3s570sGO2F8",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/5rAxhWcgFng3s570sGO2F8",
+      "title": "A Place for My Head",
+      "artists": [
+        "Linkin Park"
+      ],
+      "album": "Hybrid Theory (Bonus Edition)",
+      "duration_ms": 184000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273e2f039481babe23658fc719a",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Managed\\Linkin Park\\This Is Linkin Park\\17 - A Place for My Head.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO47cwRq"
+      ]
+    },
+    {
+      "id": "3FQCJI2t5LTbsRPfYVBSVB",
+      "spotify_id": "3FQCJI2t5LTbsRPfYVBSVB",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/3FQCJI2t5LTbsRPfYVBSVB",
+      "title": "Battle Symphony",
+      "artists": [
+        "Linkin Park"
+      ],
+      "album": "One More Light",
+      "duration_ms": 216000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273145e1cf12538f5666511237d",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO47cwRq\\Linkin Park - Battle Symphony.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO47cwRq"
+      ]
+    },
+    {
+      "id": "0UFDKFqW2oGspYeYqo9wjA",
+      "spotify_id": "0UFDKFqW2oGspYeYqo9wjA",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/0UFDKFqW2oGspYeYqo9wjA",
+      "title": "Bleed It Out",
+      "artists": [
+        "Linkin Park"
+      ],
+      "album": "Minutes to Midnight",
+      "duration_ms": 164000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2736e996745f2c7b8036abef213",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Managed\\Linkin Park\\This Is Linkin Park\\07 - Bleed It Out.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO47cwRq"
+      ]
+    },
+    {
+      "id": "3dxiWIBVJRlqh9xk144rf4",
+      "spotify_id": "3dxiWIBVJRlqh9xk144rf4",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/3dxiWIBVJRlqh9xk144rf4",
+      "title": "Breaking the Habit",
+      "artists": [
+        "Linkin Park"
+      ],
+      "album": "Meteora (Bonus Edition)",
+      "duration_ms": 196000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2738b5b6fa1326d996181e71dd7",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Managed\\Linkin Park\\This Is Linkin Park\\14 - Breaking the Habit.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO47cwRq"
+      ]
+    },
+    {
+      "id": "7oVEtyuv9NBmnytsCIsY5I",
+      "spotify_id": "7oVEtyuv9NBmnytsCIsY5I",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/7oVEtyuv9NBmnytsCIsY5I",
+      "title": "BURN IT DOWN",
+      "artists": [
+        "Linkin Park"
+      ],
+      "album": "LIVING THINGS",
+      "duration_ms": 230000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273987fb4c5ec8790e9f637a4a4",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Managed\\Linkin Park\\This Is Linkin Park\\08 - BURN IT DOWN.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO47cwRq"
+      ]
+    },
+    {
+      "id": "1r1fPuhj9H4VdXr7OK6FL5",
+      "spotify_id": "1r1fPuhj9H4VdXr7OK6FL5",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/1r1fPuhj9H4VdXr7OK6FL5",
+      "title": "CASTLE OF GLASS",
+      "artists": [
+        "Linkin Park"
+      ],
+      "album": "LIVING THINGS",
+      "duration_ms": 205000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273987fb4c5ec8790e9f637a4a4",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Managed\\Linkin Park\\This Is Linkin Park\\15 - CASTLE OF GLASS.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO47cwRq"
+      ]
+    },
+    {
+      "id": "57BrRMwf9LrcmuOsyGilwr",
+      "spotify_id": "57BrRMwf9LrcmuOsyGilwr",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/57BrRMwf9LrcmuOsyGilwr",
+      "title": "Crawling",
+      "artists": [
+        "Linkin Park"
+      ],
+      "album": "Hybrid Theory (Bonus Edition)",
+      "duration_ms": 208000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273e2f039481babe23658fc719a",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Managed\\Linkin Park\\This Is Linkin Park\\09 - Crawling.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO47cwRq"
+      ]
+    },
+    {
+      "id": "5mFZipkX1HZ4Idz5LOWpzq",
+      "spotify_id": "5mFZipkX1HZ4Idz5LOWpzq",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/5mFZipkX1HZ4Idz5LOWpzq",
+      "title": "Cut the Bridge",
+      "artists": [
+        "Linkin Park"
+      ],
+      "album": "From Zero",
+      "duration_ms": 228000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2738be9eeb8f19696ef2fd3b6b4",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Managed\\Linkin Park\\This Is Linkin Park\\28 - Cut the Bridge.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO47cwRq"
+      ]
+    },
+    {
+      "id": "4Yf5bqU3NK4kNOypcrLYwU",
+      "spotify_id": "4Yf5bqU3NK4kNOypcrLYwU",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/4Yf5bqU3NK4kNOypcrLYwU",
+      "title": "Faint",
+      "artists": [
+        "Linkin Park"
+      ],
+      "album": "Meteora",
+      "duration_ms": 162000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2735f1f51d14e8bea89484ecd1b",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Managed\\Linkin Park\\This Is Linkin Park\\06 - Faint.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO47cwRq"
+      ]
+    },
+    {
+      "id": "2ipYQ6pcabz1NovVrr9LKH",
+      "spotify_id": "2ipYQ6pcabz1NovVrr9LKH",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/2ipYQ6pcabz1NovVrr9LKH",
+      "title": "Fighting Myself",
+      "artists": [
+        "Linkin Park"
+      ],
+      "album": "Meteora 20th Anniversary Edition",
+      "duration_ms": 201000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273fb25458af0290a7f31ee73b5",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Managed\\Linkin Park\\This Is Linkin Park\\27 - Fighting Myself.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO47cwRq"
+      ]
+    },
+    {
+      "id": "3aYBjxTMvrEOP0A0UXg9ER",
+      "spotify_id": "3aYBjxTMvrEOP0A0UXg9ER",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/3aYBjxTMvrEOP0A0UXg9ER",
+      "title": "Final Masquerade",
+      "artists": [
+        "Linkin Park"
+      ],
+      "album": "The Hunting Party",
+      "duration_ms": 217000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2735721adac031512b903f10d03",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO47cwRq\\Linkin Park - Final Masquerade.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO47cwRq"
+      ]
+    },
+    {
+      "id": "697M5JB8FDIyRXEXgl1pBZ",
+      "spotify_id": "697M5JB8FDIyRXEXgl1pBZ",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/697M5JB8FDIyRXEXgl1pBZ",
+      "title": "From the Inside",
+      "artists": [
+        "Linkin Park"
+      ],
+      "album": "Meteora (Bonus Edition)",
+      "duration_ms": 175000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2738b5b6fa1326d996181e71dd7",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Managed\\Linkin Park\\This Is Linkin Park\\22 - From the Inside.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO47cwRq"
+      ]
+    },
+    {
+      "id": "1fLlRApgzxWweF1JTf8yM5",
+      "spotify_id": "1fLlRApgzxWweF1JTf8yM5",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/1fLlRApgzxWweF1JTf8yM5",
+      "title": "Given Up",
+      "artists": [
+        "Linkin Park"
+      ],
+      "album": "Minutes to Midnight",
+      "duration_ms": 189000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2736e996745f2c7b8036abef213",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Managed\\Linkin Park\\This Is Linkin Park\\11 - Given Up.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO47cwRq"
+      ]
+    },
+    {
+      "id": "2HBBM75Xv3o2Mqdyh1NcM0",
+      "spotify_id": "2HBBM75Xv3o2Mqdyh1NcM0",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/2HBBM75Xv3o2Mqdyh1NcM0",
+      "title": "Heavy Is the Crown",
+      "artists": [
+        "Linkin Park"
+      ],
+      "album": "From Zero",
+      "duration_ms": 167000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2738be9eeb8f19696ef2fd3b6b4",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Managed\\Linkin Park\\This Is Linkin Park\\12 - Heavy Is the Crown.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO47cwRq"
+      ]
+    },
+    {
+      "id": "00KfIFi2TpAaQGPbRbFbKJ",
+      "spotify_id": "00KfIFi2TpAaQGPbRbFbKJ",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/00KfIFi2TpAaQGPbRbFbKJ",
+      "title": "IN MY REMAINS",
+      "artists": [
+        "Linkin Park"
+      ],
+      "album": "LIVING THINGS",
+      "duration_ms": 200000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273987fb4c5ec8790e9f637a4a4",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO47cwRq\\Linkin Park - IN MY REMAINS.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO47cwRq"
+      ]
+    },
+    {
+      "id": "60a0Rd6pjrkxjPbaKzXjfq",
+      "spotify_id": "60a0Rd6pjrkxjPbaKzXjfq",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/60a0Rd6pjrkxjPbaKzXjfq",
+      "title": "In the End",
+      "artists": [
+        "Linkin Park"
+      ],
+      "album": "Hybrid Theory (Bonus Edition)",
+      "duration_ms": 216000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273e2f039481babe23658fc719a",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Managed\\Linkin Park\\This Is Linkin Park\\01 - In the End.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO47cwRq"
+      ]
+    },
+    {
+      "id": "69ZEgPX0hxWXJIqkTlYz41",
+      "spotify_id": "69ZEgPX0hxWXJIqkTlYz41",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/69ZEgPX0hxWXJIqkTlYz41",
+      "title": "Iridescent",
+      "artists": [
+        "Linkin Park"
+      ],
+      "album": "A Thousand Suns",
+      "duration_ms": 296000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b27359211e56a493ac4509457bab",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO47cwRq\\Linkin Park - Iridescent.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO47cwRq"
+      ]
+    },
+    {
+      "id": "0sp00HSXkQyqTa6QqM0O8V",
+      "spotify_id": "0sp00HSXkQyqTa6QqM0O8V",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/0sp00HSXkQyqTa6QqM0O8V",
+      "title": "Leave Out All The Rest",
+      "artists": [
+        "Linkin Park"
+      ],
+      "album": "Minutes to Midnight",
+      "duration_ms": 209000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2736e996745f2c7b8036abef213",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Managed\\Linkin Park\\This Is Linkin Park\\20 - Leave Out All The Rest.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO47cwRq"
+      ]
+    },
+    {
+      "id": "3GZt2N9dSfNCL6ArCFDpOc",
+      "spotify_id": "3GZt2N9dSfNCL6ArCFDpOc",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/3GZt2N9dSfNCL6ArCFDpOc",
+      "title": "Let You Fade",
+      "artists": [
+        "Linkin Park"
+      ],
+      "album": "From Zero (Deluxe Edition)",
+      "duration_ms": 208000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b27385091942613ffa9be596af76",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO47cwRq\\Linkin Park - Let You Fade.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO47cwRq"
+      ]
+    },
+    {
+      "id": "373gDROnujxNTFa1FojYIl",
+      "spotify_id": "373gDROnujxNTFa1FojYIl",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/373gDROnujxNTFa1FojYIl",
+      "title": "Lost",
+      "artists": [
+        "Linkin Park"
+      ],
+      "album": "Lost",
+      "duration_ms": 199000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273f785391ef6dafe95684e8451",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO47cwRq\\Linkin Park - Lost.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO47cwRq"
+      ]
+    },
+    {
+      "id": "2oNYsdCasRRlz1shXFAz7D",
+      "spotify_id": "2oNYsdCasRRlz1shXFAz7D",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/2oNYsdCasRRlz1shXFAz7D",
+      "title": "LOST IN THE ECHO",
+      "artists": [
+        "Linkin Park"
+      ],
+      "album": "LIVING THINGS",
+      "duration_ms": 205000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273987fb4c5ec8790e9f637a4a4",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Managed\\Linkin Park\\This Is Linkin Park\\26 - LOST IN THE ECHO.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO47cwRq"
+      ]
+    },
+    {
+      "id": "4qVR3CF8FuFvHN4L6vXlB1",
+      "spotify_id": "4qVR3CF8FuFvHN4L6vXlB1",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/4qVR3CF8FuFvHN4L6vXlB1",
+      "title": "Lying from You",
+      "artists": [
+        "Linkin Park"
+      ],
+      "album": "Meteora (Bonus Edition)",
+      "duration_ms": 175000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2738b5b6fa1326d996181e71dd7",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Managed\\Linkin Park\\This Is Linkin Park\\18 - Lying from You.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO47cwRq"
+      ]
+    },
+    {
+      "id": "50jyxHSIHAz7N5jIzODvs4",
+      "spotify_id": "50jyxHSIHAz7N5jIzODvs4",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/50jyxHSIHAz7N5jIzODvs4",
+      "title": "More the Victim",
+      "artists": [
+        "Linkin Park"
+      ],
+      "album": "Meteora 20th Anniversary Edition",
+      "duration_ms": 161000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273fb25458af0290a7f31ee73b5",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO47cwRq\\Linkin Park - More the Victim.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO47cwRq"
+      ]
+    },
+    {
+      "id": "6Wx88Mv6b9ofjKMKkdwOJd",
+      "spotify_id": "6Wx88Mv6b9ofjKMKkdwOJd",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/6Wx88Mv6b9ofjKMKkdwOJd",
+      "title": "New Divide",
+      "artists": [
+        "Linkin Park"
+      ],
+      "album": "Transformers: Revenge Of The Fallen The Album",
+      "duration_ms": 268000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273148cd93cd936ee29cb4db587",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Managed\\Linkin Park\\This Is Linkin Park\\29 - New Divide.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO47cwRq"
+      ]
+    },
+    {
+      "id": "4CWhc9FaMMfBTt4ANjfbOf",
+      "spotify_id": "4CWhc9FaMMfBTt4ANjfbOf",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/4CWhc9FaMMfBTt4ANjfbOf",
+      "title": "No More Sorrow",
+      "artists": [
+        "Linkin Park"
+      ],
+      "album": "Minutes to Midnight",
+      "duration_ms": 221000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2736e996745f2c7b8036abef213",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Managed\\Linkin Park\\This Is Linkin Park\\30 - No More Sorrow.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO47cwRq"
+      ]
+    },
+    {
+      "id": "2nLtzopw4rPReszdYBJU6h",
+      "spotify_id": "2nLtzopw4rPReszdYBJU6h",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/2nLtzopw4rPReszdYBJU6h",
+      "title": "Numb",
+      "artists": [
+        "Linkin Park"
+      ],
+      "album": "Meteora",
+      "duration_ms": 187000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2735f1f51d14e8bea89484ecd1b",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Managed\\Linkin Park\\This Is Linkin Park\\02 - Numb.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO47cwRq"
+      ]
+    },
+    {
+      "id": "3xXBsjrbG1xQIm1xv1cKOt",
+      "spotify_id": "3xXBsjrbG1xQIm1xv1cKOt",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/3xXBsjrbG1xQIm1xv1cKOt",
+      "title": "One More Light",
+      "artists": [
+        "Linkin Park"
+      ],
+      "album": "One More Light",
+      "duration_ms": 255000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273145e1cf12538f5666511237d",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Managed\\Linkin Park\\This Is Linkin Park\\21 - One More Light.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO47cwRq"
+      ]
+    },
+    {
+      "id": "3K4HG9evC7dg3N0R9cYqk4",
+      "spotify_id": "3K4HG9evC7dg3N0R9cYqk4",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/3K4HG9evC7dg3N0R9cYqk4",
+      "title": "One Step Closer",
+      "artists": [
+        "Linkin Park"
+      ],
+      "album": "Hybrid Theory (Bonus Edition)",
+      "duration_ms": 157000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273e2f039481babe23658fc719a",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Managed\\Linkin Park\\This Is Linkin Park\\05 - One Step Closer.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO47cwRq"
+      ]
+    },
+    {
+      "id": "3k4gjmYNJugQRlh2aounZ9",
+      "spotify_id": "3k4gjmYNJugQRlh2aounZ9",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/3k4gjmYNJugQRlh2aounZ9",
+      "title": "Over Each Other",
+      "artists": [
+        "Linkin Park"
+      ],
+      "album": "From Zero",
+      "duration_ms": 170000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2738be9eeb8f19696ef2fd3b6b4",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO47cwRq\\Linkin Park - Over Each Other.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO47cwRq"
+      ]
+    },
+    {
+      "id": "1Vej0qeQ3ioKwpI6FUbRv1",
+      "spotify_id": "1Vej0qeQ3ioKwpI6FUbRv1",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/1Vej0qeQ3ioKwpI6FUbRv1",
+      "title": "Papercut",
+      "artists": [
+        "Linkin Park"
+      ],
+      "album": "Hybrid Theory (Bonus Edition)",
+      "duration_ms": 184000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273e2f039481babe23658fc719a",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Managed\\Linkin Park\\This Is Linkin Park\\13 - Papercut.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO47cwRq"
+      ]
+    },
+    {
+      "id": "1dYw8HTRJnFpeEeMtXj99a",
+      "spotify_id": "1dYw8HTRJnFpeEeMtXj99a",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/1dYw8HTRJnFpeEeMtXj99a",
+      "title": "ROADS UNTRAVELED",
+      "artists": [
+        "Linkin Park"
+      ],
+      "album": "LIVING THINGS",
+      "duration_ms": 229000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273987fb4c5ec8790e9f637a4a4",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO47cwRq\\Linkin Park - ROADS UNTRAVELED.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO47cwRq"
+      ]
+    },
+    {
+      "id": "6xtQ23d8GEXgcxyUKPtwc5",
+      "spotify_id": "6xtQ23d8GEXgcxyUKPtwc5",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/6xtQ23d8GEXgcxyUKPtwc5",
+      "title": "Runaway",
+      "artists": [
+        "Linkin Park"
+      ],
+      "album": "Hybrid Theory (Bonus Edition)",
+      "duration_ms": 183000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273e2f039481babe23658fc719a",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Managed\\Linkin Park\\This Is Linkin Park\\23 - Runaway.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO47cwRq"
+      ]
+    },
+    {
+      "id": "0OYcEfskah1egYHjYRvbg1",
+      "spotify_id": "0OYcEfskah1egYHjYRvbg1",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/0OYcEfskah1egYHjYRvbg1",
+      "title": "Shadow of the Day",
+      "artists": [
+        "Linkin Park"
+      ],
+      "album": "Minutes to Midnight",
+      "duration_ms": 289000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2736e996745f2c7b8036abef213",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO47cwRq\\Linkin Park - Shadow of the Day.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO47cwRq"
+      ]
+    },
+    {
+      "id": "3fjmSxt0PskST13CSdBUFx",
+      "spotify_id": "3fjmSxt0PskST13CSdBUFx",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/3fjmSxt0PskST13CSdBUFx",
+      "title": "Somewhere I Belong",
+      "artists": [
+        "Linkin Park"
+      ],
+      "album": "Meteora (Bonus Edition)",
+      "duration_ms": 213000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2738b5b6fa1326d996181e71dd7",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Managed\\Linkin Park\\This Is Linkin Park\\10 - Somewhere I Belong.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO47cwRq"
+      ]
+    },
+    {
+      "id": "0J1IJsMbKWb5g2sJArTkGF",
+      "spotify_id": "0J1IJsMbKWb5g2sJArTkGF",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/0J1IJsMbKWb5g2sJArTkGF",
+      "title": "Stained",
+      "artists": [
+        "Linkin Park"
+      ],
+      "album": "From Zero",
+      "duration_ms": 185000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2738be9eeb8f19696ef2fd3b6b4",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO47cwRq\\Linkin Park - Stained.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO47cwRq"
+      ]
+    },
+    {
+      "id": "5bvgRxco3jgSZ3SP8rueDA",
+      "spotify_id": "5bvgRxco3jgSZ3SP8rueDA",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/5bvgRxco3jgSZ3SP8rueDA",
+      "title": "The Catalyst",
+      "artists": [
+        "Linkin Park"
+      ],
+      "album": "A Thousand Suns",
+      "duration_ms": 339000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b27359211e56a493ac4509457bab",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO47cwRq\\Linkin Park - The Catalyst.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO47cwRq"
+      ]
+    },
+    {
+      "id": "1EDPVGbyPKJPeGqATwXZvN",
+      "spotify_id": "1EDPVGbyPKJPeGqATwXZvN",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/1EDPVGbyPKJPeGqATwXZvN",
+      "title": "The Emptiness Machine",
+      "artists": [
+        "Linkin Park"
+      ],
+      "album": "From Zero",
+      "duration_ms": 190000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2738be9eeb8f19696ef2fd3b6b4",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Managed\\Linkin Park\\This Is Linkin Park\\04 - The Emptiness Machine.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO47cwRq"
+      ]
+    },
+    {
+      "id": "6i5qhmmF9UNUBRyrPSGn4m",
+      "spotify_id": "6i5qhmmF9UNUBRyrPSGn4m",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/6i5qhmmF9UNUBRyrPSGn4m",
+      "title": "Two Faced",
+      "artists": [
+        "Linkin Park"
+      ],
+      "album": "From Zero",
+      "duration_ms": 183000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2738be9eeb8f19696ef2fd3b6b4",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Managed\\Linkin Park\\This Is Linkin Park\\24 - Two Faced.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO47cwRq"
+      ]
+    },
+    {
+      "id": "6r2JE3s7XVnGfwiWCymyWf",
+      "spotify_id": "6r2JE3s7XVnGfwiWCymyWf",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/6r2JE3s7XVnGfwiWCymyWf",
+      "title": "Unshatter",
+      "artists": [
+        "Linkin Park"
+      ],
+      "album": "From Zero (Deluxe Edition)",
+      "duration_ms": 196000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b27385091942613ffa9be596af76",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO47cwRq\\Linkin Park - Unshatter.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO47cwRq"
+      ]
+    },
+    {
+      "id": "2SwdMXPvGdciXamSjfoNH9",
+      "spotify_id": "2SwdMXPvGdciXamSjfoNH9",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/2SwdMXPvGdciXamSjfoNH9",
+      "title": "Up From the Bottom",
+      "artists": [
+        "Linkin Park"
+      ],
+      "album": "From Zero (Deluxe Edition)",
+      "duration_ms": 183000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b27385091942613ffa9be596af76",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Managed\\Linkin Park\\This Is Linkin Park\\19 - Up From the Bottom.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO47cwRq"
+      ]
+    },
+    {
+      "id": "5JHNg1hxZFT7TDEphhM4wj",
+      "spotify_id": "5JHNg1hxZFT7TDEphhM4wj",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/5JHNg1hxZFT7TDEphhM4wj",
+      "title": "Waiting for the End",
+      "artists": [
+        "Linkin Park"
+      ],
+      "album": "A Thousand Suns",
+      "duration_ms": 231000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b27359211e56a493ac4509457bab",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Managed\\Linkin Park\\This Is Linkin Park\\25 - Waiting for the End.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO47cwRq"
+      ]
+    },
+    {
+      "id": "18lR4BzEs7e3qzc0KVkTpU",
+      "spotify_id": "18lR4BzEs7e3qzc0KVkTpU",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/18lR4BzEs7e3qzc0KVkTpU",
+      "title": "What I've Done",
+      "artists": [
+        "Linkin Park"
+      ],
+      "album": "Minutes to Midnight",
+      "duration_ms": 205000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2736e996745f2c7b8036abef213",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Managed\\Linkin Park\\This Is Linkin Park\\03 - What I've Done.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO47cwRq"
+      ]
+    },
+    {
+      "id": "104buTcnP2AsxqB7U1FIZ4",
+      "spotify_id": "104buTcnP2AsxqB7U1FIZ4",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/104buTcnP2AsxqB7U1FIZ4",
+      "title": "Heavy (feat. Kiiara)",
+      "artists": [
+        "Linkin Park",
+        "Kiiara"
+      ],
+      "album": "One More Light",
+      "duration_ms": 169000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273145e1cf12538f5666511237d",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO47cwRq\\Linkin Park, Kiiara - Heavy (feat. Kiiara).mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO47cwRq"
+      ]
+    },
+    {
+      "id": "4650WGL6InVqP7YN5POqIz",
+      "spotify_id": "4650WGL6InVqP7YN5POqIz",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/4650WGL6InVqP7YN5POqIz",
+      "title": "Party Rock Anthem",
+      "artists": [
+        "LMFAO",
+        "Lauren Bennett",
+        "GoonRock"
+      ],
+      "album": "Sorry For Party Rocking",
+      "duration_ms": 262000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b27373cbe62524627a0fdfc06a8a",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1E8JuTpPiqjZ12\\LMFAO, Lauren Bennett, GoonRock - Party Rock Anthem.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1E8JuTpPiqjZ12"
+      ]
+    },
+    {
+      "id": "4eMZmxNNIXtEPmBcIp8W6C",
+      "spotify_id": "4eMZmxNNIXtEPmBcIp8W6C",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/4eMZmxNNIXtEPmBcIp8W6C",
+      "title": "Cabeça Voando - Ao Vivo",
+      "artists": [
+        "Manim Vaqueiro",
+        "Zé Vaqueiro"
+      ],
+      "album": "Resenha Do Manim (Ao Vivo)",
+      "duration_ms": 189000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273b0b7971905e03d07e80bb9ec",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO3nODok\\Manim Vaqueiro, Zé Vaqueiro - Cabeça Voando - Ao Vivo.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO3nODok"
+      ]
+    },
+    {
+      "id": "6ECp64rv50XVz93WvxXMGF",
+      "spotify_id": "6ECp64rv50XVz93WvxXMGF",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/6ECp64rv50XVz93WvxXMGF",
+      "title": "This Love",
+      "artists": [
+        "Maroon 5"
+      ],
+      "album": "Songs About Jane: 10th Anniversary Edition",
+      "duration_ms": 206000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b27392f2d790c6a97b195f66d51e",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1E8JuTpPiqjZ12\\Maroon 5 - This Love.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1E8JuTpPiqjZ12"
+      ]
+    },
+    {
+      "id": "6Lrzxd7ST5oQ6FYKXKH7Ia",
+      "spotify_id": "6Lrzxd7ST5oQ6FYKXKH7Ia",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/6Lrzxd7ST5oQ6FYKXKH7Ia",
+      "title": "Vagabundo",
+      "artists": [
+        "Matheus & Kauan",
+        "Zé Vaqueiro"
+      ],
+      "album": "Vagabundo",
+      "duration_ms": 165000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2736945d82b02f6b0c4eaf1eef2",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO3nODok\\Matheus & Kauan, Zé Vaqueiro - Vagabundo.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO3nODok"
+      ]
+    },
+    {
+      "id": "05WwSaiYhcaDS3OWSK1OFh",
+      "spotify_id": "05WwSaiYhcaDS3OWSK1OFh",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/05WwSaiYhcaDS3OWSK1OFh",
+      "title": "Se Você Se Entregar",
+      "artists": [
+        "Mikael Santos",
+        "Zé Vaqueiro"
+      ],
+      "album": "Se Você Se Entregar",
+      "duration_ms": 157000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273ec43bcaad4ac83dfd7951ee6",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO3nODok\\Mikael Santos, Zé Vaqueiro - Se Você Se Entregar.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO3nODok"
+      ]
+    },
+    {
+      "id": "495O1Affo7AurEPQcvcr18",
+      "spotify_id": "495O1Affo7AurEPQcvcr18",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/495O1Affo7AurEPQcvcr18",
+      "title": "Cooler Than Me - Single Mix",
+      "artists": [
+        "Mike Posner",
+        "Gigamesh"
+      ],
+      "album": "31 Minutes to Takeoff",
+      "duration_ms": 213000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273f25e817928edb73d38a27630",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1E8JuTpPiqjZ12\\Mike Posner, Gigamesh - Cooler Than Me - Single Mix.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1E8JuTpPiqjZ12"
+      ]
+    },
+    {
+      "id": "1uigwk5hNV84zRd5YQQRTk",
+      "spotify_id": "1uigwk5hNV84zRd5YQQRTk",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/1uigwk5hNV84zRd5YQQRTk",
+      "title": "Pocketful of Sunshine",
+      "artists": [
+        "Natasha Bedingfield"
+      ],
+      "album": "Pocketful Of Sunshine",
+      "duration_ms": 202000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273861f87fea3ad0f7b23453780",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1E8JuTpPiqjZ12\\Natasha Bedingfield - Pocketful of Sunshine.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1E8JuTpPiqjZ12"
+      ]
+    },
+    {
+      "id": "3U5JVgI2x4rDyHGObzJfNf",
+      "spotify_id": "3U5JVgI2x4rDyHGObzJfNf",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/3U5JVgI2x4rDyHGObzJfNf",
+      "title": "Unwritten",
+      "artists": [
+        "Natasha Bedingfield"
+      ],
+      "album": "Unwritten",
+      "duration_ms": 259000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273b337e1ca6629a53c66a3b0d4",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1E8JuTpPiqjZ12\\Natasha Bedingfield - Unwritten.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1E8JuTpPiqjZ12"
+      ]
+    },
+    {
+      "id": "7kxl6qwmXzEPu4nOL9FXLE",
+      "spotify_id": "7kxl6qwmXzEPu4nOL9FXLE",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/7kxl6qwmXzEPu4nOL9FXLE",
+      "title": "Acordo e Lembro - Ao Vivo Em Fortaleza",
+      "artists": [
+        "NATTAN",
+        "Zé Vaqueiro"
+      ],
+      "album": "Paredão do Nattan (Ao Vivo Em Fortaleza)",
+      "duration_ms": 220000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2735cf8f3597d53a7b88aaf7c08",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO3nODok\\NATTAN, Zé Vaqueiro - Acordo e Lembro - Ao Vivo Em Fortaleza.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO3nODok"
+      ]
+    },
+    {
+      "id": "1eJkYhVgo49gndzoCVAwaR",
+      "spotify_id": "1eJkYhVgo49gndzoCVAwaR",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/1eJkYhVgo49gndzoCVAwaR",
+      "title": "Aproveita Que Eu Tô Brigado - Ao Vivo",
+      "artists": [
+        "NATTAN",
+        "Zé Vaqueiro"
+      ],
+      "album": "Aproveita Que Eu Tô Brigado (Ao Vivo)",
+      "duration_ms": 156000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273d53f514696d38a297e195eda",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO3nODok\\NATTAN, Zé Vaqueiro - Aproveita Que Eu Tô Brigado - Ao Vivo.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO3nODok"
+      ]
+    },
+    {
+      "id": "2aGw77pZqli064JiPuXYRi",
+      "spotify_id": "2aGw77pZqli064JiPuXYRi",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/2aGw77pZqli064JiPuXYRi",
+      "title": "I'm Like A Bird",
+      "artists": [
+        "Nelly Furtado"
+      ],
+      "album": "Whoa, Nelly! (Expanded Edition)",
+      "duration_ms": 243000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273709087714422d592d6591f41",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1E8JuTpPiqjZ12\\Nelly Furtado - I'm Like A Bird.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1E8JuTpPiqjZ12"
+      ]
+    },
+    {
+      "id": "4wH4dJgrsxONID6KS2tDQM",
+      "spotify_id": "4wH4dJgrsxONID6KS2tDQM",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/4wH4dJgrsxONID6KS2tDQM",
+      "title": "Maneater",
+      "artists": [
+        "Nelly Furtado"
+      ],
+      "album": "Loose",
+      "duration_ms": 258000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273a6f439c8957170652f9410e2",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1E8JuTpPiqjZ12\\Nelly Furtado - Maneater.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1E8JuTpPiqjZ12"
+      ]
+    },
+    {
+      "id": "2aI21FnmY7TJVKeMaoQZ0t",
+      "spotify_id": "2aI21FnmY7TJVKeMaoQZ0t",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/2aI21FnmY7TJVKeMaoQZ0t",
+      "title": "Say It Right",
+      "artists": [
+        "Nelly Furtado"
+      ],
+      "album": "Loose",
+      "duration_ms": 223000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273a6f439c8957170652f9410e2",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1E8JuTpPiqjZ12\\Nelly Furtado - Say It Right.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1E8JuTpPiqjZ12"
+      ]
+    },
+    {
+      "id": "2gam98EZKrF9XuOkU13ApN",
+      "spotify_id": "2gam98EZKrF9XuOkU13ApN",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/2gam98EZKrF9XuOkU13ApN",
+      "title": "Promiscuous",
+      "artists": [
+        "Nelly Furtado",
+        "Timbaland"
+      ],
+      "album": "Loose",
+      "duration_ms": 242000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273a6f439c8957170652f9410e2",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1E8JuTpPiqjZ12\\Nelly Furtado, Timbaland - Promiscuous.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1E8JuTpPiqjZ12"
+      ]
+    },
+    {
+      "id": "2PpruBYCo4H7WOBJ7Q2EwM",
+      "spotify_id": "2PpruBYCo4H7WOBJ7Q2EwM",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/2PpruBYCo4H7WOBJ7Q2EwM",
+      "title": "Hey Ya!",
+      "artists": [
+        "Outkast"
+      ],
+      "album": "Speakerboxxx/The Love Below",
+      "duration_ms": 235000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2736e88eb6508fd94cd1b745ce2",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1E8JuTpPiqjZ12\\Outkast - Hey Ya!.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1E8JuTpPiqjZ12"
+      ]
+    },
+    {
+      "id": "6Rb0ptOEjBjPPQUlQtQGbL",
+      "spotify_id": "6Rb0ptOEjBjPPQUlQtQGbL",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/6Rb0ptOEjBjPPQUlQtQGbL",
+      "title": "Hotel Room Service",
+      "artists": [
+        "Pitbull"
+      ],
+      "album": "Pitbull Starring In Rebelution",
+      "duration_ms": 237000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b27317db13c5730433ca2f0088e0",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1E8JuTpPiqjZ12\\Pitbull - Hotel Room Service.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1E8JuTpPiqjZ12"
+      ]
+    },
+    {
+      "id": "4QNpBfC0zvjKqPJcyqBy9W",
+      "spotify_id": "4QNpBfC0zvjKqPJcyqBy9W",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/4QNpBfC0zvjKqPJcyqBy9W",
+      "title": "Give Me Everything (feat. Nayer)",
+      "artists": [
+        "Pitbull",
+        "AFROJACK",
+        "Ne-Yo",
+        "Nayer"
+      ],
+      "album": "Planet Pit (Deluxe Version)",
+      "duration_ms": 252000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2731dc7483a9fcfce54822a2f19",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1E8JuTpPiqjZ12\\Pitbull, AFROJACK, Ne-Yo, Nayer - Give Me Everything (feat. Nayer).mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1E8JuTpPiqjZ12"
+      ]
+    },
+    {
+      "id": "0VLdJcQUsqHBBwqPp4CIKJ",
+      "spotify_id": "0VLdJcQUsqHBBwqPp4CIKJ",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/0VLdJcQUsqHBBwqPp4CIKJ",
+      "title": "Aeroplane",
+      "artists": [
+        "Red Hot Chili Peppers"
+      ],
+      "album": "One Hot Minute (Deluxe Edition)",
+      "duration_ms": 285000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2737f3dcf99224570b053294ccf",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO0nT692\\Red Hot Chili Peppers - Aeroplane.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO0nT692"
+      ]
+    },
+    {
+      "id": "0aGQHMr7bc23Y9Ts84ffop",
+      "spotify_id": "0aGQHMr7bc23Y9Ts84ffop",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/0aGQHMr7bc23Y9Ts84ffop",
+      "title": "Around the World",
+      "artists": [
+        "Red Hot Chili Peppers"
+      ],
+      "album": "Californication (Deluxe Edition)",
+      "duration_ms": 238000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b27394d08ab63e57b0cae74e8595",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO0nT692\\Red Hot Chili Peppers - Around the World.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO0nT692"
+      ]
+    },
+    {
+      "id": "3a94TbZOxhkI9xuNwYL53b",
+      "spotify_id": "3a94TbZOxhkI9xuNwYL53b",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/3a94TbZOxhkI9xuNwYL53b",
+      "title": "Black Summer",
+      "artists": [
+        "Red Hot Chili Peppers"
+      ],
+      "album": "Black Summer",
+      "duration_ms": 232000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273a7fcb8675f086b4ef0b84fdc",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO0nT692\\Red Hot Chili Peppers - Black Summer.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO0nT692"
+      ]
+    },
+    {
+      "id": "4ddA4oHvhrGx196qF5ZyQe",
+      "spotify_id": "4ddA4oHvhrGx196qF5ZyQe",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/4ddA4oHvhrGx196qF5ZyQe",
+      "title": "Blood Sugar Sex Magik",
+      "artists": [
+        "Red Hot Chili Peppers"
+      ],
+      "album": "Blood Sugar Sex Magik (Deluxe Edition)",
+      "duration_ms": 271000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273153d79816d853f2694b2cc70",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO0nT692\\Red Hot Chili Peppers - Blood Sugar Sex Magik.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO0nT692"
+      ]
+    },
+    {
+      "id": "0cG9ocYqYOIVtgiWTmTe3g",
+      "spotify_id": "0cG9ocYqYOIVtgiWTmTe3g",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/0cG9ocYqYOIVtgiWTmTe3g",
+      "title": "Breaking the Girl - 2014 Remaster",
+      "artists": [
+        "Red Hot Chili Peppers"
+      ],
+      "album": "Blood Sugar Sex Magik (Deluxe Edition)",
+      "duration_ms": 295000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273153d79816d853f2694b2cc70",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO0nT692\\Red Hot Chili Peppers - Breaking the Girl - 2014 Remaster.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO0nT692"
+      ]
+    },
+    {
+      "id": "1f2V8U1BiWaC9aJWmpOARe",
+      "spotify_id": "1f2V8U1BiWaC9aJWmpOARe",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/1f2V8U1BiWaC9aJWmpOARe",
+      "title": "By the Way",
+      "artists": [
+        "Red Hot Chili Peppers"
+      ],
+      "album": "By the Way (Deluxe Edition)",
+      "duration_ms": 216000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273de1af2785a83cc660155a0c4",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO0nT692\\Red Hot Chili Peppers - By the Way.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO0nT692"
+      ]
+    },
+    {
+      "id": "48UPSzbZjgc449aqz8bxox",
+      "spotify_id": "48UPSzbZjgc449aqz8bxox",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/48UPSzbZjgc449aqz8bxox",
+      "title": "Californication - 2014 Remaster",
+      "artists": [
+        "Red Hot Chili Peppers"
+      ],
+      "album": "Californication (Deluxe Edition)",
+      "duration_ms": 329000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b27394d08ab63e57b0cae74e8595",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO0nT692\\Red Hot Chili Peppers - Californication - 2014 Remaster.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO0nT692"
+      ]
+    },
+    {
+      "id": "3ZOEytgrvLwQaqXreDs2Jx",
+      "spotify_id": "3ZOEytgrvLwQaqXreDs2Jx",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/3ZOEytgrvLwQaqXreDs2Jx",
+      "title": "Can't Stop",
+      "artists": [
+        "Red Hot Chili Peppers"
+      ],
+      "album": "By the Way (Deluxe Edition)",
+      "duration_ms": 269000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273de1af2785a83cc660155a0c4",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO0nT692\\Red Hot Chili Peppers - Can't Stop.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO0nT692"
+      ]
+    },
+    {
+      "id": "10Nmj3JCNoMeBQ87uw5j8k",
+      "spotify_id": "10Nmj3JCNoMeBQ87uw5j8k",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/10Nmj3JCNoMeBQ87uw5j8k",
+      "title": "Dani California",
+      "artists": [
+        "Red Hot Chili Peppers"
+      ],
+      "album": "Stadium Arcadium",
+      "duration_ms": 282000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b27309fd83d32aee93dceba78517",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO0nT692\\Red Hot Chili Peppers - Dani California.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO0nT692"
+      ]
+    },
+    {
+      "id": "2oaK4JLVnmRGIO9ytBE1bt",
+      "spotify_id": "2oaK4JLVnmRGIO9ytBE1bt",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/2oaK4JLVnmRGIO9ytBE1bt",
+      "title": "Dark Necessities",
+      "artists": [
+        "Red Hot Chili Peppers"
+      ],
+      "album": "The Getaway",
+      "duration_ms": 302000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b27358406b3f1ac3ceaff7a64fef",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO0nT692\\Red Hot Chili Peppers - Dark Necessities.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO0nT692"
+      ]
+    },
+    {
+      "id": "1iFIZUVDBCCkWe705FLXto",
+      "spotify_id": "1iFIZUVDBCCkWe705FLXto",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/1iFIZUVDBCCkWe705FLXto",
+      "title": "Dosed",
+      "artists": [
+        "Red Hot Chili Peppers"
+      ],
+      "album": "By the Way (Deluxe Edition)",
+      "duration_ms": 311000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273de1af2785a83cc660155a0c4",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO0nT692\\Red Hot Chili Peppers - Dosed.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO0nT692"
+      ]
+    },
+    {
+      "id": "3DmOWG8OD9eR12180fmJqf",
+      "spotify_id": "3DmOWG8OD9eR12180fmJqf",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/3DmOWG8OD9eR12180fmJqf",
+      "title": "Easily",
+      "artists": [
+        "Red Hot Chili Peppers"
+      ],
+      "album": "Californication",
+      "duration_ms": 231000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273a9249ebb15ca7a5b75f16a90",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO0nT692\\Red Hot Chili Peppers - Easily.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO0nT692"
+      ]
+    },
+    {
+      "id": "0G1BEi8ByngMCJqcPnDACw",
+      "spotify_id": "0G1BEi8ByngMCJqcPnDACw",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/0G1BEi8ByngMCJqcPnDACw",
+      "title": "Eddie",
+      "artists": [
+        "Red Hot Chili Peppers"
+      ],
+      "album": "Return of the Dream Canteen",
+      "duration_ms": 341000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2732e5ac4556c1da606025d16ef",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO0nT692\\Red Hot Chili Peppers - Eddie.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO0nT692"
+      ]
+    },
+    {
+      "id": "6vLwOFz5BYeEJPyvgUea2D",
+      "spotify_id": "6vLwOFz5BYeEJPyvgUea2D",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/6vLwOFz5BYeEJPyvgUea2D",
+      "title": "Factory of Faith",
+      "artists": [
+        "Red Hot Chili Peppers"
+      ],
+      "album": "I'm with You",
+      "duration_ms": 259000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b27396136a2ab5696812e9b26723",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO0nT692\\Red Hot Chili Peppers - Factory of Faith.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO0nT692"
+      ]
+    },
+    {
+      "id": "37sSud1ZrTpwXPGJP0dbXI",
+      "spotify_id": "37sSud1ZrTpwXPGJP0dbXI",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/37sSud1ZrTpwXPGJP0dbXI",
+      "title": "Fortune Faded - 2014 Remaster",
+      "artists": [
+        "Red Hot Chili Peppers"
+      ],
+      "album": "Greatest Hits",
+      "duration_ms": 201000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2735590b4ee88187cb06a5b102d",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO0nT692\\Red Hot Chili Peppers - Fortune Faded - 2014 Remaster.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO0nT692"
+      ]
+    },
+    {
+      "id": "0uppYCG86ajpV2hSR3dJJ0",
+      "spotify_id": "0uppYCG86ajpV2hSR3dJJ0",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/0uppYCG86ajpV2hSR3dJJ0",
+      "title": "Give It Away - 2014 Remaster",
+      "artists": [
+        "Red Hot Chili Peppers"
+      ],
+      "album": "Blood Sugar Sex Magik (Deluxe Edition)",
+      "duration_ms": 282000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273153d79816d853f2694b2cc70",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO0nT692\\Red Hot Chili Peppers - Give It Away - 2014 Remaster.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO0nT692"
+      ]
+    },
+    {
+      "id": "5m578MgxuEC956dulprCe8",
+      "spotify_id": "5m578MgxuEC956dulprCe8",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/5m578MgxuEC956dulprCe8",
+      "title": "Go Robot",
+      "artists": [
+        "Red Hot Chili Peppers"
+      ],
+      "album": "The Getaway",
+      "duration_ms": 263000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b27358406b3f1ac3ceaff7a64fef",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO0nT692\\Red Hot Chili Peppers - Go Robot.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO0nT692"
+      ]
+    },
+    {
+      "id": "2XTkpF9T2PKvcLgamGJGx1",
+      "spotify_id": "2XTkpF9T2PKvcLgamGJGx1",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/2XTkpF9T2PKvcLgamGJGx1",
+      "title": "Goodbye Angels",
+      "artists": [
+        "Red Hot Chili Peppers"
+      ],
+      "album": "The Getaway",
+      "duration_ms": 268000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b27358406b3f1ac3ceaff7a64fef",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO0nT692\\Red Hot Chili Peppers - Goodbye Angels.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO0nT692"
+      ]
+    },
+    {
+      "id": "37kTASujIfZZ27NV7PfIrf",
+      "spotify_id": "37kTASujIfZZ27NV7PfIrf",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/37kTASujIfZZ27NV7PfIrf",
+      "title": "Hard to Concentrate",
+      "artists": [
+        "Red Hot Chili Peppers"
+      ],
+      "album": "Stadium Arcadium",
+      "duration_ms": 241000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b27309fd83d32aee93dceba78517",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO0nT692\\Red Hot Chili Peppers - Hard to Concentrate.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO0nT692"
+      ]
+    },
+    {
+      "id": "0zckHMfaB6vT5o23ZVBLHJ",
+      "spotify_id": "0zckHMfaB6vT5o23ZVBLHJ",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/0zckHMfaB6vT5o23ZVBLHJ",
+      "title": "Here Ever After",
+      "artists": [
+        "Red Hot Chili Peppers"
+      ],
+      "album": "Unlimited Love",
+      "duration_ms": 230000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273000db23d185de8c78efabd92",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO0nT692\\Red Hot Chili Peppers - Here Ever After.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO0nT692"
+      ]
+    },
+    {
+      "id": "5arVt2Wg0zbiWwAOZef2Nl",
+      "spotify_id": "5arVt2Wg0zbiWwAOZef2Nl",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/5arVt2Wg0zbiWwAOZef2Nl",
+      "title": "Higher Ground",
+      "artists": [
+        "Red Hot Chili Peppers"
+      ],
+      "album": "Mother's Milk",
+      "duration_ms": 202000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b27379ac84696fa8624e97684d27",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO0nT692\\Red Hot Chili Peppers - Higher Ground.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO0nT692"
+      ]
+    },
+    {
+      "id": "3oP2vxUR2bjFCrU9YolGnM",
+      "spotify_id": "3oP2vxUR2bjFCrU9YolGnM",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/3oP2vxUR2bjFCrU9YolGnM",
+      "title": "I Could Die for You",
+      "artists": [
+        "Red Hot Chili Peppers"
+      ],
+      "album": "By the Way (Deluxe Edition)",
+      "duration_ms": 192000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273de1af2785a83cc660155a0c4",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO0nT692\\Red Hot Chili Peppers - I Could Die for You.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO0nT692"
+      ]
+    },
+    {
+      "id": "0NSbiBKXoODbsPwjSivfBr",
+      "spotify_id": "0NSbiBKXoODbsPwjSivfBr",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/0NSbiBKXoODbsPwjSivfBr",
+      "title": "I Could Have Lied",
+      "artists": [
+        "Red Hot Chili Peppers"
+      ],
+      "album": "Blood Sugar Sex Magik (Deluxe Edition)",
+      "duration_ms": 244000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273153d79816d853f2694b2cc70",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO0nT692\\Red Hot Chili Peppers - I Could Have Lied.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO0nT692"
+      ]
+    },
+    {
+      "id": "4RU7rnJBOXCzWmsLDqUaFC",
+      "spotify_id": "4RU7rnJBOXCzWmsLDqUaFC",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/4RU7rnJBOXCzWmsLDqUaFC",
+      "title": "Look Around",
+      "artists": [
+        "Red Hot Chili Peppers"
+      ],
+      "album": "I'm with You",
+      "duration_ms": 208000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b27396136a2ab5696812e9b26723",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO0nT692\\Red Hot Chili Peppers - Look Around.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO0nT692"
+      ]
+    },
+    {
+      "id": "16Bf9uR4PI2dCoXDIjs0cP",
+      "spotify_id": "16Bf9uR4PI2dCoXDIjs0cP",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/16Bf9uR4PI2dCoXDIjs0cP",
+      "title": "Monarchy of Roses",
+      "artists": [
+        "Red Hot Chili Peppers"
+      ],
+      "album": "I'm with You",
+      "duration_ms": 251000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b27396136a2ab5696812e9b26723",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO0nT692\\Red Hot Chili Peppers - Monarchy of Roses.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO0nT692"
+      ]
+    },
+    {
+      "id": "6HksxcBzMVdT17aq1Q79Xe",
+      "spotify_id": "6HksxcBzMVdT17aq1Q79Xe",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/6HksxcBzMVdT17aq1Q79Xe",
+      "title": "My Friends - 2014 Remaster",
+      "artists": [
+        "Red Hot Chili Peppers"
+      ],
+      "album": "One Hot Minute (Deluxe Edition)",
+      "duration_ms": 248000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2737f3dcf99224570b053294ccf",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO0nT692\\Red Hot Chili Peppers - My Friends - 2014 Remaster.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO0nT692"
+      ]
+    },
+    {
+      "id": "64BbK9SFKH2jk86U3dGj2P",
+      "spotify_id": "64BbK9SFKH2jk86U3dGj2P",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/64BbK9SFKH2jk86U3dGj2P",
+      "title": "Otherside - 2014 Remaster",
+      "artists": [
+        "Red Hot Chili Peppers"
+      ],
+      "album": "Californication (Deluxe Edition)",
+      "duration_ms": 255000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b27394d08ab63e57b0cae74e8595",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO0nT692\\Red Hot Chili Peppers - Otherside - 2014 Remaster.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO0nT692"
+      ]
+    },
+    {
+      "id": "1Se0r96r0gnqg67kJPmESc",
+      "spotify_id": "1Se0r96r0gnqg67kJPmESc",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/1Se0r96r0gnqg67kJPmESc",
+      "title": "Parallel Universe - 2014 Remaster",
+      "artists": [
+        "Red Hot Chili Peppers"
+      ],
+      "album": "Californication (Deluxe Edition)",
+      "duration_ms": 269000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b27394d08ab63e57b0cae74e8595",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO0nT692\\Red Hot Chili Peppers - Parallel Universe - 2014 Remaster.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO0nT692"
+      ]
+    },
+    {
+      "id": "3W2reBya7FkjHCP1B2nmQr",
+      "spotify_id": "3W2reBya7FkjHCP1B2nmQr",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/3W2reBya7FkjHCP1B2nmQr",
+      "title": "Peace and Love",
+      "artists": [
+        "Red Hot Chili Peppers"
+      ],
+      "album": "Return of the Dream Canteen",
+      "duration_ms": 243000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2732e5ac4556c1da606025d16ef",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO0nT692\\Red Hot Chili Peppers - Peace and Love.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO0nT692"
+      ]
+    },
+    {
+      "id": "6WUjz18yIeTGDR1E69WHtf",
+      "spotify_id": "6WUjz18yIeTGDR1E69WHtf",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/6WUjz18yIeTGDR1E69WHtf",
+      "title": "Porcelain",
+      "artists": [
+        "Red Hot Chili Peppers"
+      ],
+      "album": "Californication (Deluxe Edition)",
+      "duration_ms": 163000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b27394d08ab63e57b0cae74e8595",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO0nT692\\Red Hot Chili Peppers - Porcelain.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO0nT692"
+      ]
+    },
+    {
+      "id": "7Gpr3kKk4BMgItz6UbI73q",
+      "spotify_id": "7Gpr3kKk4BMgItz6UbI73q",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/7Gpr3kKk4BMgItz6UbI73q",
+      "title": "Road Trippin'",
+      "artists": [
+        "Red Hot Chili Peppers"
+      ],
+      "album": "Californication",
+      "duration_ms": 204000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273a9249ebb15ca7a5b75f16a90",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO0nT692\\Red Hot Chili Peppers - Road Trippin'.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO0nT692"
+      ]
+    },
+    {
+      "id": "1G391cbiT3v3Cywg8T7DM1",
+      "spotify_id": "1G391cbiT3v3Cywg8T7DM1",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/1G391cbiT3v3Cywg8T7DM1",
+      "title": "Scar Tissue - 2014 Remaster",
+      "artists": [
+        "Red Hot Chili Peppers"
+      ],
+      "album": "Californication (Deluxe Edition)",
+      "duration_ms": 215000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b27394d08ab63e57b0cae74e8595",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO0nT692\\Red Hot Chili Peppers - Scar Tissue - 2014 Remaster.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO0nT692"
+      ]
+    },
+    {
+      "id": "4c4TCbToFf6X8CncWJuHa3",
+      "spotify_id": "4c4TCbToFf6X8CncWJuHa3",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/4c4TCbToFf6X8CncWJuHa3",
+      "title": "She's a Lover",
+      "artists": [
+        "Red Hot Chili Peppers"
+      ],
+      "album": "Unlimited Love",
+      "duration_ms": 221000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273000db23d185de8c78efabd92",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO0nT692\\Red Hot Chili Peppers - She's a Lover.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO0nT692"
+      ]
+    },
+    {
+      "id": "6GsP3uMCd0Dn5T37C93waZ",
+      "spotify_id": "6GsP3uMCd0Dn5T37C93waZ",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/6GsP3uMCd0Dn5T37C93waZ",
+      "title": "Sick Love",
+      "artists": [
+        "Red Hot Chili Peppers"
+      ],
+      "album": "The Getaway",
+      "duration_ms": 221000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b27358406b3f1ac3ceaff7a64fef",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO0nT692\\Red Hot Chili Peppers - Sick Love.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO0nT692"
+      ]
+    },
+    {
+      "id": "2aibwv5hGXSgw7Yru8IYTO",
+      "spotify_id": "2aibwv5hGXSgw7Yru8IYTO",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/2aibwv5hGXSgw7Yru8IYTO",
+      "title": "Snow (Hey Oh)",
+      "artists": [
+        "Red Hot Chili Peppers"
+      ],
+      "album": "Stadium Arcadium",
+      "duration_ms": 334000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b27309fd83d32aee93dceba78517",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO0nT692\\Red Hot Chili Peppers - Snow (Hey Oh).mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO0nT692"
+      ]
+    },
+    {
+      "id": "3arKRnq9OUd7yq6LRwVW8I",
+      "spotify_id": "3arKRnq9OUd7yq6LRwVW8I",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/3arKRnq9OUd7yq6LRwVW8I",
+      "title": "Soul to Squeeze - 2014 Remaster",
+      "artists": [
+        "Red Hot Chili Peppers"
+      ],
+      "album": "Greatest Hits",
+      "duration_ms": 289000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2735590b4ee88187cb06a5b102d",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO0nT692\\Red Hot Chili Peppers - Soul to Squeeze - 2014 Remaster.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO0nT692"
+      ]
+    },
+    {
+      "id": "0J3ytriezGZ3KCREfHKDOI",
+      "spotify_id": "0J3ytriezGZ3KCREfHKDOI",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/0J3ytriezGZ3KCREfHKDOI",
+      "title": "Strip My Mind",
+      "artists": [
+        "Red Hot Chili Peppers"
+      ],
+      "album": "Stadium Arcadium",
+      "duration_ms": 259000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b27309fd83d32aee93dceba78517",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO0nT692\\Red Hot Chili Peppers - Strip My Mind.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO0nT692"
+      ]
+    },
+    {
+      "id": "0psB5QzGb4653K0uaPgEyh",
+      "spotify_id": "0psB5QzGb4653K0uaPgEyh",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/0psB5QzGb4653K0uaPgEyh",
+      "title": "Suck My Kiss",
+      "artists": [
+        "Red Hot Chili Peppers"
+      ],
+      "album": "Blood Sugar Sex Magik (Deluxe Edition)",
+      "duration_ms": 217000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273153d79816d853f2694b2cc70",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO0nT692\\Red Hot Chili Peppers - Suck My Kiss.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO0nT692"
+      ]
+    },
+    {
+      "id": "0itNMuBHye9fu392b4e9oa",
+      "spotify_id": "0itNMuBHye9fu392b4e9oa",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/0itNMuBHye9fu392b4e9oa",
+      "title": "Tell Me Baby",
+      "artists": [
+        "Red Hot Chili Peppers"
+      ],
+      "album": "Stadium Arcadium",
+      "duration_ms": 247000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b27309fd83d32aee93dceba78517",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO0nT692\\Red Hot Chili Peppers - Tell Me Baby.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO0nT692"
+      ]
+    },
+    {
+      "id": "0PgNhIg5n0UAOBVn43b8b6",
+      "spotify_id": "0PgNhIg5n0UAOBVn43b8b6",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/0PgNhIg5n0UAOBVn43b8b6",
+      "title": "The Adventures of Rain Dance Maggie",
+      "artists": [
+        "Red Hot Chili Peppers"
+      ],
+      "album": "I'm with You",
+      "duration_ms": 282000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b27396136a2ab5696812e9b26723",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO0nT692\\Red Hot Chili Peppers - The Adventures of Rain Dance Maggie.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO0nT692"
+      ]
+    },
+    {
+      "id": "3bIQIx7hveYPQDdhjZ1kcq",
+      "spotify_id": "3bIQIx7hveYPQDdhjZ1kcq",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/3bIQIx7hveYPQDdhjZ1kcq",
+      "title": "The Getaway",
+      "artists": [
+        "Red Hot Chili Peppers"
+      ],
+      "album": "The Getaway",
+      "duration_ms": 250000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b27358406b3f1ac3ceaff7a64fef",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO0nT692\\Red Hot Chili Peppers - The Getaway.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO0nT692"
+      ]
+    },
+    {
+      "id": "0pjCkLjbgSLn5c0Ilwuv8z",
+      "spotify_id": "0pjCkLjbgSLn5c0Ilwuv8z",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/0pjCkLjbgSLn5c0Ilwuv8z",
+      "title": "The Longest Wave",
+      "artists": [
+        "Red Hot Chili Peppers"
+      ],
+      "album": "The Getaway",
+      "duration_ms": 211000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b27358406b3f1ac3ceaff7a64fef",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO0nT692\\Red Hot Chili Peppers - The Longest Wave.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO0nT692"
+      ]
+    },
+    {
+      "id": "4UEMZFRrxVUkuMVaHhWoKQ",
+      "spotify_id": "4UEMZFRrxVUkuMVaHhWoKQ",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/4UEMZFRrxVUkuMVaHhWoKQ",
+      "title": "The Shape I'm Takin'",
+      "artists": [
+        "Red Hot Chili Peppers"
+      ],
+      "album": "The Shape I'm Takin'",
+      "duration_ms": 215000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b27320888206011c2f277b4d393c",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO0nT692\\Red Hot Chili Peppers - The Shape I'm Takin'.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO0nT692"
+      ]
+    },
+    {
+      "id": "1ndGB6rvxKYN9seCYO1dTF",
+      "spotify_id": "1ndGB6rvxKYN9seCYO1dTF",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/1ndGB6rvxKYN9seCYO1dTF",
+      "title": "The Zephyr Song",
+      "artists": [
+        "Red Hot Chili Peppers"
+      ],
+      "album": "By the Way (Deluxe Edition)",
+      "duration_ms": 231000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273de1af2785a83cc660155a0c4",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO0nT692\\Red Hot Chili Peppers - The Zephyr Song.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO0nT692"
+      ]
+    },
+    {
+      "id": "0GIDR7iLJgV5fJwdcv8TXo",
+      "spotify_id": "0GIDR7iLJgV5fJwdcv8TXo",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/0GIDR7iLJgV5fJwdcv8TXo",
+      "title": "This Velvet Glove",
+      "artists": [
+        "Red Hot Chili Peppers"
+      ],
+      "album": "Californication",
+      "duration_ms": 225000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273a9249ebb15ca7a5b75f16a90",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO0nT692\\Red Hot Chili Peppers - This Velvet Glove.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO0nT692"
+      ]
+    },
+    {
+      "id": "7BCxIjRsqbc9Yiy2haBCIK",
+      "spotify_id": "7BCxIjRsqbc9Yiy2haBCIK",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/7BCxIjRsqbc9Yiy2haBCIK",
+      "title": "Tippa My Tongue",
+      "artists": [
+        "Red Hot Chili Peppers"
+      ],
+      "album": "Return of the Dream Canteen",
+      "duration_ms": 260000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2732e5ac4556c1da606025d16ef",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO0nT692\\Red Hot Chili Peppers - Tippa My Tongue.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO0nT692"
+      ]
+    },
+    {
+      "id": "3d9DChrdc6BOeFsbrZ3Is0",
+      "spotify_id": "3d9DChrdc6BOeFsbrZ3Is0",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/3d9DChrdc6BOeFsbrZ3Is0",
+      "title": "Under the Bridge - 2014 Remaster",
+      "artists": [
+        "Red Hot Chili Peppers"
+      ],
+      "album": "Blood Sugar Sex Magik (Deluxe Edition)",
+      "duration_ms": 264000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273153d79816d853f2694b2cc70",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO0nT692\\Red Hot Chili Peppers - Under the Bridge - 2014 Remaster.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO0nT692"
+      ]
+    },
+    {
+      "id": "39badcyKTjOtBvv4aywpfs",
+      "spotify_id": "39badcyKTjOtBvv4aywpfs",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/39badcyKTjOtBvv4aywpfs",
+      "title": "Universally Speaking",
+      "artists": [
+        "Red Hot Chili Peppers"
+      ],
+      "album": "By the Way (Deluxe Edition)",
+      "duration_ms": 256000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273de1af2785a83cc660155a0c4",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO0nT692\\Red Hot Chili Peppers - Universally Speaking.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO0nT692"
+      ]
+    },
+    {
+      "id": "3L2Nyi3T7XabH8EEZFLDdX",
+      "spotify_id": "3L2Nyi3T7XabH8EEZFLDdX",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/3L2Nyi3T7XabH8EEZFLDdX",
+      "title": "Wet Sand",
+      "artists": [
+        "Red Hot Chili Peppers"
+      ],
+      "album": "Stadium Arcadium",
+      "duration_ms": 309000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b27309fd83d32aee93dceba78517",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO0nT692\\Red Hot Chili Peppers - Wet Sand.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO0nT692"
+      ]
+    },
+    {
+      "id": "62MNMZaNTYWqjsD0Isce0l",
+      "spotify_id": "62MNMZaNTYWqjsD0Isce0l",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/62MNMZaNTYWqjsD0Isce0l",
+      "title": "White Braids & Pillow Chair",
+      "artists": [
+        "Red Hot Chili Peppers"
+      ],
+      "album": "Unlimited Love",
+      "duration_ms": 220000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273000db23d185de8c78efabd92",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO0nT692\\Red Hot Chili Peppers - White Braids & Pillow Chair.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO0nT692"
+      ]
+    },
+    {
+      "id": "6mRSa6Mi1E8OACl44a1xFL",
+      "spotify_id": "6mRSa6Mi1E8OACl44a1xFL",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/6mRSa6Mi1E8OACl44a1xFL",
+      "title": "Estrela - Ao Vivo",
+      "artists": [
+        "Rey Vaqueiro",
+        "Zé Vaqueiro"
+      ],
+      "album": "O Rey na Vaquejada 2.0 (Ao Vivo)",
+      "duration_ms": 219000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2732339cc4b722f4a5438532e6e",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO3nODok\\Rey Vaqueiro, Zé Vaqueiro - Estrela - Ao Vivo.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO3nODok"
+      ]
+    },
+    {
+      "id": "3jgkuRPXt1hW1WSDP9hcld",
+      "spotify_id": "3jgkuRPXt1hW1WSDP9hcld",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/3jgkuRPXt1hW1WSDP9hcld",
+      "title": "Tenho Medo - Ao Vivo",
+      "artists": [
+        "Rey Vaqueiro",
+        "Zé Vaqueiro"
+      ],
+      "album": "O Rey na Vaquejada 2.0 (Ao Vivo)",
+      "duration_ms": 155000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2732339cc4b722f4a5438532e6e",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO3nODok\\Rey Vaqueiro, Zé Vaqueiro - Tenho Medo - Ao Vivo.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO3nODok"
+      ]
+    },
+    {
+      "id": "30VrBsh1STRBoIrhQOAwzK",
+      "spotify_id": "30VrBsh1STRBoIrhQOAwzK",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/30VrBsh1STRBoIrhQOAwzK",
+      "title": "Disturbia",
+      "artists": [
+        "Rihanna"
+      ],
+      "album": "Good Girl Gone Bad: Reloaded",
+      "duration_ms": 238000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273c10fafad6a659f2802b32421",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1E8JuTpPiqjZ12\\Rihanna - Disturbia.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1E8JuTpPiqjZ12"
+      ]
+    },
+    {
+      "id": "1Jo0Zg7XlrA6z0mFTZVdkn",
+      "spotify_id": "1Jo0Zg7XlrA6z0mFTZVdkn",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/1Jo0Zg7XlrA6z0mFTZVdkn",
+      "title": "Don't Stop The Music",
+      "artists": [
+        "Rihanna"
+      ],
+      "album": "Good Girl Gone Bad",
+      "duration_ms": 267000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273b9ff0a5f40d3406aed5e5e3b",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1E8JuTpPiqjZ12\\Rihanna - Don't Stop The Music.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1E8JuTpPiqjZ12"
+      ]
+    },
+    {
+      "id": "2ENexcMEMsYk0rVJigVD3i",
+      "spotify_id": "2ENexcMEMsYk0rVJigVD3i",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/2ENexcMEMsYk0rVJigVD3i",
+      "title": "Only Girl (In The World)",
+      "artists": [
+        "Rihanna"
+      ],
+      "album": "Loud",
+      "duration_ms": 235000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b27331548865f7c729290b96c794",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1E8JuTpPiqjZ12\\Rihanna - Only Girl (In The World).mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1E8JuTpPiqjZ12"
+      ]
+    },
+    {
+      "id": "3U3Ff8ZvL6oEu1r98gCCWW",
+      "spotify_id": "3U3Ff8ZvL6oEu1r98gCCWW",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/3U3Ff8ZvL6oEu1r98gCCWW",
+      "title": "Pon de Replay",
+      "artists": [
+        "Rihanna"
+      ],
+      "album": "Music Of The Sun",
+      "duration_ms": 246000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2738a73599d216f203d119f0451",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1E8JuTpPiqjZ12\\Rihanna - Pon de Replay.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1E8JuTpPiqjZ12"
+      ]
+    },
+    {
+      "id": "7ySUcLPVX7KudhnmNcgY2D",
+      "spotify_id": "7ySUcLPVX7KudhnmNcgY2D",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/7ySUcLPVX7KudhnmNcgY2D",
+      "title": "S&M",
+      "artists": [
+        "Rihanna"
+      ],
+      "album": "Loud",
+      "duration_ms": 243000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b27331548865f7c729290b96c794",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1E8JuTpPiqjZ12\\Rihanna - S&M.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1E8JuTpPiqjZ12"
+      ]
+    },
+    {
+      "id": "2yPoXCs7BSIUrucMdK5PzV",
+      "spotify_id": "2yPoXCs7BSIUrucMdK5PzV",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/2yPoXCs7BSIUrucMdK5PzV",
+      "title": "Umbrella",
+      "artists": [
+        "Rihanna",
+        "JAŸ-Z"
+      ],
+      "album": "Good Girl Gone Bad",
+      "duration_ms": 275000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273b9ff0a5f40d3406aed5e5e3b",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1E8JuTpPiqjZ12\\Rihanna, JAŸ-Z - Umbrella.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1E8JuTpPiqjZ12"
+      ]
+    },
+    {
+      "id": "1CdqVF1ywD0ZO1zXtB9yWa",
+      "spotify_id": "1CdqVF1ywD0ZO1zXtB9yWa",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/1CdqVF1ywD0ZO1zXtB9yWa",
+      "title": "Break Your Heart",
+      "artists": [
+        "Taio Cruz",
+        "Ludacris"
+      ],
+      "album": "Rokstarr",
+      "duration_ms": 186000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273a9006ae892a2255a865c0f7a",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1E8JuTpPiqjZ12\\Taio Cruz, Ludacris - Break Your Heart.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1E8JuTpPiqjZ12"
+      ]
+    },
+    {
+      "id": "4SHpy5fNwPnosoMOI2GzUW",
+      "spotify_id": "4SHpy5fNwPnosoMOI2GzUW",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/4SHpy5fNwPnosoMOI2GzUW",
+      "title": "Tudo Mudou",
+      "artists": [
+        "Talita Mel",
+        "Zé Vaqueiro"
+      ],
+      "album": "Tudo Mudou",
+      "duration_ms": 181000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b27341be44b0bf8e224f8a3aafaa",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO3nODok\\Talita Mel, Zé Vaqueiro - Tudo Mudou.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO3nODok"
+      ]
+    },
+    {
+      "id": "7uJpUWXsjPl4b0pXVPMDef",
+      "spotify_id": "7uJpUWXsjPl4b0pXVPMDef",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/7uJpUWXsjPl4b0pXVPMDef",
+      "title": "ABC da Vaquejada",
+      "artists": [
+        "Tarcísio do Acordeon",
+        "João Gomes",
+        "Zé Vaqueiro",
+        "Mc Don Juan"
+      ],
+      "album": "ABC da Vaquejada",
+      "duration_ms": 145000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273cadb8798e9eb08c7f00bf7a2",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO3nODok\\Tarcísio do Acordeon, João Gomes, Zé Vaqueiro, Mc Don Juan - ABC da Vaquejada.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO3nODok"
+      ]
+    },
+    {
+      "id": "2bLqfJjuC5syrsgDsZfGmn",
+      "spotify_id": "2bLqfJjuC5syrsgDsZfGmn",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/2bLqfJjuC5syrsgDsZfGmn",
+      "title": "The Way I Are",
+      "artists": [
+        "Timbaland",
+        "Keri Hilson",
+        "D.O.E."
+      ],
+      "album": "Shock Value",
+      "duration_ms": 179000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2734ed674ab91bdc566534f9285",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1E8JuTpPiqjZ12\\Timbaland, Keri Hilson, D.O.E. - The Way I Are.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1E8JuTpPiqjZ12"
+      ]
+    },
+    {
+      "id": "4356Typ82hUiFAynbLYbPn",
+      "spotify_id": "4356Typ82hUiFAynbLYbPn",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/4356Typ82hUiFAynbLYbPn",
+      "title": "DJ Got Us Fallin' In Love (feat. Pitbull)",
+      "artists": [
+        "USHER",
+        "Pitbull"
+      ],
+      "album": "Raymond v Raymond (Expanded Edition)",
+      "duration_ms": 220000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b27386b0c9728ad3ed338eaeea79",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1E8JuTpPiqjZ12\\USHER, Pitbull - DJ Got Us Fallin' In Love (feat. Pitbull).mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1E8JuTpPiqjZ12"
+      ]
+    },
+    {
+      "id": "1ta4Xmvv85ZyTw7sy3G5DD",
+      "spotify_id": "1ta4Xmvv85ZyTw7sy3G5DD",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/1ta4Xmvv85ZyTw7sy3G5DD",
+      "title": "Barreiras - Ao Vivo",
+      "artists": [
+        "Wesley Safadão",
+        "Xand Avião",
+        "Zé Vaqueiro"
+      ],
+      "album": "Meu Forró É Mundo (Ao Vivo)",
+      "duration_ms": 159000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b27378777bb0a7cdccd7ccb4f99f",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO3nODok\\Wesley Safadão, Xand Avião, Zé Vaqueiro - Barreiras - Ao Vivo.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO3nODok"
+      ]
+    },
+    {
+      "id": "3Vsk55NKtUZGzFgpoxGzeb",
+      "spotify_id": "3Vsk55NKtUZGzFgpoxGzeb",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/3Vsk55NKtUZGzFgpoxGzeb",
+      "title": "Brincar de Amar - Ao Vivo",
+      "artists": [
+        "Wesley Safadão",
+        "Xand Avião",
+        "Zé Vaqueiro"
+      ],
+      "album": "Meu Forró É Mundo (Ao Vivo)",
+      "duration_ms": 169000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b27378777bb0a7cdccd7ccb4f99f",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO3nODok\\Wesley Safadão, Xand Avião, Zé Vaqueiro - Brincar de Amar - Ao Vivo.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO3nODok"
+      ]
+    },
+    {
+      "id": "6dSGBqaLB1gzloPQA8Deqo",
+      "spotify_id": "6dSGBqaLB1gzloPQA8Deqo",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/6dSGBqaLB1gzloPQA8Deqo",
+      "title": "Doce Pecado - Ao Vivo",
+      "artists": [
+        "Wesley Safadão",
+        "Xand Avião",
+        "Zé Vaqueiro"
+      ],
+      "album": "Meu Forró É Mundo (Ao Vivo)",
+      "duration_ms": 189000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b27378777bb0a7cdccd7ccb4f99f",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO3nODok\\Wesley Safadão, Xand Avião, Zé Vaqueiro - Doce Pecado - Ao Vivo.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO3nODok"
+      ]
+    },
+    {
+      "id": "0GSkoU7eaY0VvEPKdcAtHQ",
+      "spotify_id": "0GSkoU7eaY0VvEPKdcAtHQ",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/0GSkoU7eaY0VvEPKdcAtHQ",
+      "title": "Forrobodó - Ao Vivo",
+      "artists": [
+        "Wesley Safadão",
+        "Xand Avião",
+        "Zé Vaqueiro"
+      ],
+      "album": "Meu Forró É Mundo (Ao Vivo)",
+      "duration_ms": 154000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b27378777bb0a7cdccd7ccb4f99f",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO3nODok\\Wesley Safadão, Xand Avião, Zé Vaqueiro - Forrobodó - Ao Vivo.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO3nODok"
+      ]
+    },
+    {
+      "id": "24880w0GVirORUtNLSPmGc",
+      "spotify_id": "24880w0GVirORUtNLSPmGc",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/24880w0GVirORUtNLSPmGc",
+      "title": "Mala e Cuia - Ao Vivo",
+      "artists": [
+        "Wesley Safadão",
+        "Xand Avião",
+        "Zé Vaqueiro"
+      ],
+      "album": "Meu Forró É Mundo (Ao Vivo)",
+      "duration_ms": 105000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b27378777bb0a7cdccd7ccb4f99f",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO3nODok\\Wesley Safadão, Xand Avião, Zé Vaqueiro - Mala e Cuia - Ao Vivo.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO3nODok"
+      ]
+    },
+    {
+      "id": "115Pqrml85HpHlylru3HLL",
+      "spotify_id": "115Pqrml85HpHlylru3HLL",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/115Pqrml85HpHlylru3HLL",
+      "title": "Cê Volta - Ao Vivo",
+      "artists": [
+        "Wesley Safadão",
+        "Zé Vaqueiro"
+      ],
+      "album": "Meu Forró É Mundo (Ao Vivo)",
+      "duration_ms": 155000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b27378777bb0a7cdccd7ccb4f99f",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO3nODok\\Wesley Safadão, Zé Vaqueiro - Cê Volta - Ao Vivo.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO3nODok"
+      ]
+    },
+    {
+      "id": "4UUD30Fv5NhJkWRjLYTXfh",
+      "spotify_id": "4UUD30Fv5NhJkWRjLYTXfh",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/4UUD30Fv5NhJkWRjLYTXfh",
+      "title": "Meio Dia / Viajante Forrozeiro - Ao Vivo",
+      "artists": [
+        "Wesley Safadão",
+        "Zé Vaqueiro"
+      ],
+      "album": "Bem-Vindo ao Meu Mundo - Forró & Vaquejada (Ao Vivo)",
+      "duration_ms": 225000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2731a3734d2d93c65eb37039e7a",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO3nODok\\Wesley Safadão, Zé Vaqueiro - Meio Dia Viajante Forrozeiro - Ao Vivo.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO3nODok"
+      ]
+    },
+    {
+      "id": "2epQhTaZrZOOvHEEXP0Hy2",
+      "spotify_id": "2epQhTaZrZOOvHEEXP0Hy2",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/2epQhTaZrZOOvHEEXP0Hy2",
+      "title": "Quatro Semanas de Amor / Não Me Julgue / Do Meu Jeito - Ao Vivo",
+      "artists": [
+        "Wesley Safadão",
+        "Zé Vaqueiro"
+      ],
+      "album": "Bem-Vindo ao Meu Mundo - Forró & Vaquejada (Ao Vivo)",
+      "duration_ms": 294000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2731a3734d2d93c65eb37039e7a",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO3nODok\\Wesley Safadão, Zé Vaqueiro - Quatro Semanas de Amor Não Me Julgue Do Meu Jeito - Ao Vivo.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO3nODok"
+      ]
+    },
+    {
+      "id": "2IaNyvGnNhnExJWoEsOHwj",
+      "spotify_id": "2IaNyvGnNhnExJWoEsOHwj",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/2IaNyvGnNhnExJWoEsOHwj",
+      "title": "Amnésia - Ao Vivo",
+      "artists": [
+        "Zé Vaqueiro"
+      ],
+      "album": "Muído Do Original (Ao Vivo Em Caruaru)",
+      "duration_ms": 142000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2730206b40cdf998f47c7f3cdce",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO3nODok\\Zé Vaqueiro - Amnésia - Ao Vivo.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO3nODok"
+      ]
+    },
+    {
+      "id": "4sNVJ7S1hwZycKkCZY9gVx",
+      "spotify_id": "4sNVJ7S1hwZycKkCZY9gVx",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/4sNVJ7S1hwZycKkCZY9gVx",
+      "title": "Cangote",
+      "artists": [
+        "Zé Vaqueiro"
+      ],
+      "album": "O Original",
+      "duration_ms": 231000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2735e574a5387c5d9997514b698",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO3nODok\\Zé Vaqueiro - Cangote.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO3nODok"
+      ]
+    },
+    {
+      "id": "7hHcdF9TWjexlim3nYxpBG",
+      "spotify_id": "7hHcdF9TWjexlim3nYxpBG",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/7hHcdF9TWjexlim3nYxpBG",
+      "title": "Clichê",
+      "artists": [
+        "Zé Vaqueiro"
+      ],
+      "album": "Que Pancada de Mulher",
+      "duration_ms": 187000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b27346754457db335bf8e82351d5",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO3nODok\\Zé Vaqueiro - Clichê.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO3nODok"
+      ]
+    },
+    {
+      "id": "70SX07s7cRqdf0VGLNyPfD",
+      "spotify_id": "70SX07s7cRqdf0VGLNyPfD",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/70SX07s7cRqdf0VGLNyPfD",
+      "title": "Coisas do Interior",
+      "artists": [
+        "Zé Vaqueiro"
+      ],
+      "album": "Do Melhor Jeito",
+      "duration_ms": 146000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2730f98b9f1f752049c1ccedcea",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO3nODok\\Zé Vaqueiro - Coisas do Interior.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO3nODok"
+      ]
+    },
+    {
+      "id": "3xCkNUiap7EBjqnRldHSSh",
+      "spotify_id": "3xCkNUiap7EBjqnRldHSSh",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/3xCkNUiap7EBjqnRldHSSh",
+      "title": "Coladin (Minha Deusa)",
+      "artists": [
+        "Zé Vaqueiro"
+      ],
+      "album": "Indícios",
+      "duration_ms": 228000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273490c081cf00f636d5ffbcb92",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO3nODok\\Zé Vaqueiro - Coladin (Minha Deusa).mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO3nODok"
+      ]
+    },
+    {
+      "id": "7wIP3ZS6JbXpKqQiF9DEhy",
+      "spotify_id": "7wIP3ZS6JbXpKqQiF9DEhy",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/7wIP3ZS6JbXpKqQiF9DEhy",
+      "title": "Como No Filme - Ao Vivo",
+      "artists": [
+        "Zé Vaqueiro"
+      ],
+      "album": "Muído Do Original (Ao Vivo Em Caruaru)",
+      "duration_ms": 146000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2730206b40cdf998f47c7f3cdce",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO3nODok\\Zé Vaqueiro - Como No Filme - Ao Vivo.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO3nODok"
+      ]
+    },
+    {
+      "id": "1XyJUXZ2clGOcWSeaCd4MS",
+      "spotify_id": "1XyJUXZ2clGOcWSeaCd4MS",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/1XyJUXZ2clGOcWSeaCd4MS",
+      "title": "Confidencial",
+      "artists": [
+        "Zé Vaqueiro"
+      ],
+      "album": "O Estouro das Vaquejadas",
+      "duration_ms": 205000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273a436fd4b06f84c538da97ceb",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO3nODok\\Zé Vaqueiro - Confidencial.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO3nODok"
+      ]
+    },
+    {
+      "id": "1vKZmkvwJMEir9w8SxnTI3",
+      "spotify_id": "1vKZmkvwJMEir9w8SxnTI3",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/1vKZmkvwJMEir9w8SxnTI3",
+      "title": "Decida",
+      "artists": [
+        "Zé Vaqueiro"
+      ],
+      "album": "O Original",
+      "duration_ms": 149000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2735e574a5387c5d9997514b698",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO3nODok\\Zé Vaqueiro - Decida.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO3nODok"
+      ]
+    },
+    {
+      "id": "3s5JkcklqFvrDYLPrSzhtx",
+      "spotify_id": "3s5JkcklqFvrDYLPrSzhtx",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/3s5JkcklqFvrDYLPrSzhtx",
+      "title": "Destino",
+      "artists": [
+        "Zé Vaqueiro"
+      ],
+      "album": "Que Pancada de Mulher",
+      "duration_ms": 155000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b27346754457db335bf8e82351d5",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO3nODok\\Zé Vaqueiro - Destino.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO3nODok"
+      ]
+    },
+    {
+      "id": "7yjduLSgPntFlq79Cuzrfz",
+      "spotify_id": "7yjduLSgPntFlq79Cuzrfz",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/7yjduLSgPntFlq79Cuzrfz",
+      "title": "Eu Tenho Medo",
+      "artists": [
+        "Zé Vaqueiro"
+      ],
+      "album": "O Original",
+      "duration_ms": 216000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2735e574a5387c5d9997514b698",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO3nODok\\Zé Vaqueiro - Eu Tenho Medo.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO3nODok"
+      ]
+    },
+    {
+      "id": "1g79R89yox8DfxyvNTdXp3",
+      "spotify_id": "1g79R89yox8DfxyvNTdXp3",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/1g79R89yox8DfxyvNTdXp3",
+      "title": "Fingindo Maturidade",
+      "artists": [
+        "Zé Vaqueiro"
+      ],
+      "album": "Que Pancada de Mulher",
+      "duration_ms": 165000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b27346754457db335bf8e82351d5",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO3nODok\\Zé Vaqueiro - Fingindo Maturidade.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO3nODok"
+      ]
+    },
+    {
+      "id": "2K0ymlc5mcph42LjayHIoZ",
+      "spotify_id": "2K0ymlc5mcph42LjayHIoZ",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/2K0ymlc5mcph42LjayHIoZ",
+      "title": "Hoje Tem - Ao Vivo",
+      "artists": [
+        "Zé Vaqueiro"
+      ],
+      "album": "Muído Do Original (Ao Vivo Em Caruaru)",
+      "duration_ms": 169000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2730206b40cdf998f47c7f3cdce",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO3nODok\\Zé Vaqueiro - Hoje Tem - Ao Vivo.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO3nODok"
+      ]
+    },
+    {
+      "id": "0croxrAHihVLdCAG2OooQg",
+      "spotify_id": "0croxrAHihVLdCAG2OooQg",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/0croxrAHihVLdCAG2OooQg",
+      "title": "Maravilhosa - Ao Vivo",
+      "artists": [
+        "Zé Vaqueiro"
+      ],
+      "album": "Maravilhosa (Ao Vivo)",
+      "duration_ms": 115000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2733db97e8f9e404feb92f6f40e",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO3nODok\\Zé Vaqueiro - Maravilhosa - Ao Vivo.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO3nODok"
+      ]
+    },
+    {
+      "id": "5JdReeLc1RQPwNZUGDdcAw",
+      "spotify_id": "5JdReeLc1RQPwNZUGDdcAw",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/5JdReeLc1RQPwNZUGDdcAw",
+      "title": "Meu Eu em Você",
+      "artists": [
+        "Zé Vaqueiro"
+      ],
+      "album": "Meu Eu em Você",
+      "duration_ms": 139000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2739879fa3f8e42b745107e331f",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO3nODok\\Zé Vaqueiro - Meu Eu em Você.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO3nODok"
+      ]
+    },
+    {
+      "id": "1w5GF97jRe8bnNKcBPYPyf",
+      "spotify_id": "1w5GF97jRe8bnNKcBPYPyf",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/1w5GF97jRe8bnNKcBPYPyf",
+      "title": "Meu Mel",
+      "artists": [
+        "Zé Vaqueiro"
+      ],
+      "album": "O Original",
+      "duration_ms": 163000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2735e574a5387c5d9997514b698",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO3nODok\\Zé Vaqueiro - Meu Mel.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO3nODok"
+      ]
+    },
+    {
+      "id": "3wCJJEcqW1R0rTtRbxFDwG",
+      "spotify_id": "3wCJJEcqW1R0rTtRbxFDwG",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/3wCJJEcqW1R0rTtRbxFDwG",
+      "title": "O Que É Amor Pra Você",
+      "artists": [
+        "Zé Vaqueiro"
+      ],
+      "album": "Que Pancada de Mulher",
+      "duration_ms": 162000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b27346754457db335bf8e82351d5",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO3nODok\\Zé Vaqueiro - O Que É Amor Pra Você.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO3nODok"
+      ]
+    },
+    {
+      "id": "5kZy49f0zCrW2EYL1jMeXQ",
+      "spotify_id": "5kZy49f0zCrW2EYL1jMeXQ",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/5kZy49f0zCrW2EYL1jMeXQ",
+      "title": "Pássaro Noturno - Ao Vivo",
+      "artists": [
+        "Zé Vaqueiro"
+      ],
+      "album": "Dendicasa (Ao Vivo)",
+      "duration_ms": 195000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b27373cc6e3c39ae085a74d3a846",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO3nODok\\Zé Vaqueiro - Pássaro Noturno - Ao Vivo.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO3nODok"
+      ]
+    },
+    {
+      "id": "7aIfVAFuehN5JPxAnqZ42O",
+      "spotify_id": "7aIfVAFuehN5JPxAnqZ42O",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/7aIfVAFuehN5JPxAnqZ42O",
+      "title": "Pergunta Boba - Ao Vivo",
+      "artists": [
+        "Zé Vaqueiro"
+      ],
+      "album": "Muído Do Original (Ao Vivo Em Caruaru)",
+      "duration_ms": 235000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2730206b40cdf998f47c7f3cdce",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO3nODok\\Zé Vaqueiro - Pergunta Boba - Ao Vivo.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO3nODok"
+      ]
+    },
+    {
+      "id": "2saukRLEI6BMKGvsTzpovd",
+      "spotify_id": "2saukRLEI6BMKGvsTzpovd",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/2saukRLEI6BMKGvsTzpovd",
+      "title": "Que Vida Boa - Ao Vivo",
+      "artists": [
+        "Zé Vaqueiro"
+      ],
+      "album": "Ser Tão Eu (Ao Vivo [Deluxe])",
+      "duration_ms": 144000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2734dfe58e46ae4d384bacef805",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO3nODok\\Zé Vaqueiro - Que Vida Boa - Ao Vivo.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO3nODok"
+      ]
+    },
+    {
+      "id": "4Amyxn7MneXSO6yL0varJL",
+      "spotify_id": "4Amyxn7MneXSO6yL0varJL",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/4Amyxn7MneXSO6yL0varJL",
+      "title": "Se Você Se Entregar",
+      "artists": [
+        "Zé Vaqueiro"
+      ],
+      "album": "Vem Me Amar",
+      "duration_ms": 200000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2731e868e7ff5e841fb9cc51c7a",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO3nODok\\Zé Vaqueiro - Se Você Se Entregar.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO3nODok"
+      ]
+    },
+    {
+      "id": "4XePYIy1qy9FEfJFrfESIQ",
+      "spotify_id": "4XePYIy1qy9FEfJFrfESIQ",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/4XePYIy1qy9FEfJFrfESIQ",
+      "title": "Tá Faltando Eu",
+      "artists": [
+        "Zé Vaqueiro"
+      ],
+      "album": "Que Pancada de Mulher",
+      "duration_ms": 158000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b27346754457db335bf8e82351d5",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO3nODok\\Zé Vaqueiro - Tá Faltando Eu.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO3nODok"
+      ]
+    },
+    {
+      "id": "5vSC8WPxGIg0R1XFPYPT4c",
+      "spotify_id": "5vSC8WPxGIg0R1XFPYPT4c",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/5vSC8WPxGIg0R1XFPYPT4c",
+      "title": "Um Dia",
+      "artists": [
+        "Zé Vaqueiro"
+      ],
+      "album": "Eu Me Rendo",
+      "duration_ms": 200000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273f1bcfcd6ee45154cad3cf885",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO3nODok\\Zé Vaqueiro - Um Dia.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO3nODok"
+      ]
+    },
+    {
+      "id": "1h4u5t0EJZki8ieNGwwFXc",
+      "spotify_id": "1h4u5t0EJZki8ieNGwwFXc",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/1h4u5t0EJZki8ieNGwwFXc",
+      "title": "Volta Comigo BB",
+      "artists": [
+        "Zé Vaqueiro"
+      ],
+      "album": "Volta Comigo BB",
+      "duration_ms": 210000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273f9e47cf69a9429e572e9bb09",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO3nODok\\Zé Vaqueiro - Volta Comigo BB.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO3nODok"
+      ]
+    },
+    {
+      "id": "4xvTyIwlOwVtTG09cfP7wp",
+      "spotify_id": "4xvTyIwlOwVtTG09cfP7wp",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/4xvTyIwlOwVtTG09cfP7wp",
+      "title": "Deslocado",
+      "artists": [
+        "Zé Vaqueiro",
+        "Ed Gama"
+      ],
+      "album": "Deslocado",
+      "duration_ms": 151000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273aa7c529c8ad81fcd51627b52",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO3nODok\\Zé Vaqueiro, Ed Gama - Deslocado.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO3nODok"
+      ]
+    },
+    {
+      "id": "5empEM883HpUMaci2hj2Ej",
+      "spotify_id": "5empEM883HpUMaci2hj2Ej",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/5empEM883HpUMaci2hj2Ej",
+      "title": "Ficar Por Ficar - Ao Vivo",
+      "artists": [
+        "Zé Vaqueiro",
+        "Forró da Brucelose & Gilson Neto"
+      ],
+      "album": "Ficar Por Ficar (Ao Vivo)",
+      "duration_ms": 171000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b27356befd8136559fe6f7ea8ef6",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO3nODok\\Zé Vaqueiro, Forró da Brucelose & Gilson Neto - Ficar Por Ficar - Ao Vivo.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO3nODok"
+      ]
+    },
+    {
+      "id": "6RoAtlEVZzKfZEDQ4WWUdx",
+      "spotify_id": "6RoAtlEVZzKfZEDQ4WWUdx",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/6RoAtlEVZzKfZEDQ4WWUdx",
+      "title": "Arriadin por Tu - Ao Vivo",
+      "artists": [
+        "Zé Vaqueiro",
+        "João Gomes"
+      ],
+      "album": "Ser Tão Eu (Ao Vivo [Deluxe])",
+      "duration_ms": 161000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2734dfe58e46ae4d384bacef805",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO3nODok\\Zé Vaqueiro, João Gomes - Arriadin por Tu - Ao Vivo.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO3nODok"
+      ]
+    },
+    {
+      "id": "7GgQXWAceqznlOLTRXUd1m",
+      "spotify_id": "7GgQXWAceqznlOLTRXUd1m",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/7GgQXWAceqznlOLTRXUd1m",
+      "title": "Qualidade de Vida",
+      "artists": [
+        "Zé Vaqueiro",
+        "Léo Foguete"
+      ],
+      "album": "Qualidade de Vida",
+      "duration_ms": 146000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273eeddf182e1ff5e19578df05d",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO3nODok\\Zé Vaqueiro, Léo Foguete - Qualidade de Vida.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO3nODok"
+      ]
+    },
+    {
+      "id": "1G7wLtw9ezuuCy3j49zDrV",
+      "spotify_id": "1G7wLtw9ezuuCy3j49zDrV",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/1G7wLtw9ezuuCy3j49zDrV",
+      "title": "Só Penso Em Vaquejada - Ao Vivo",
+      "artists": [
+        "Zé Vaqueiro",
+        "Toque Dez"
+      ],
+      "album": "Muído Do Original (Ao Vivo Em Caruaru)",
+      "duration_ms": 175000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2730206b40cdf998f47c7f3cdce",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO3nODok\\Zé Vaqueiro, Toque Dez - Só Penso Em Vaquejada - Ao Vivo.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO3nODok"
+      ]
+    },
+    {
+      "id": "7wMVzl22OE7mV7Cm00O1a7",
+      "spotify_id": "7wMVzl22OE7mV7Cm00O1a7",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/7wMVzl22OE7mV7Cm00O1a7",
+      "title": "DNA do Mato",
+      "artists": [
+        "Zé Vaqueiro",
+        "Wesley Safadão",
+        "NATTAN"
+      ],
+      "album": "DNA do Mato",
+      "duration_ms": 159000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2738029c72c34c06b7e5d382ce2",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO3nODok\\Zé Vaqueiro, Wesley Safadão, NATTAN - DNA do Mato.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO3nODok"
+      ]
+    },
+    {
+      "id": "4hczulecIkZbGIC0RruIZV",
+      "spotify_id": "4hczulecIkZbGIC0RruIZV",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/4hczulecIkZbGIC0RruIZV",
+      "title": "Que Pancada de Mulher",
+      "artists": [
+        "Zé Vaqueiro",
+        "Xand Avião"
+      ],
+      "album": "Que Pancada de Mulher",
+      "duration_ms": 137000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273e779e7920396c902721a8d40",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO3nODok\\Zé Vaqueiro, Xand Avião - Que Pancada de Mulher.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO3nODok"
+      ]
+    },
+    {
+      "id": "6Fm0DxUyOYZOqSJXXyancI",
+      "spotify_id": "6Fm0DxUyOYZOqSJXXyancI",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/6Fm0DxUyOYZOqSJXXyancI",
+      "title": "Solteira Que É Fiel - Ao Vivo em Caruaru",
+      "artists": [
+        "Zé Vaqueiro",
+        "Zé Felipe"
+      ],
+      "album": "Muído Do Original (Ao Vivo Em Caruaru)",
+      "duration_ms": 136000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2730206b40cdf998f47c7f3cdce",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1DZ06evO3nODok\\Zé Vaqueiro, Zé Felipe - Solteira Que É Fiel - Ao Vivo em Caruaru.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1DZ06evO3nODok"
+      ]
+    }
+  ]
+}

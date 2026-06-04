@@ -1,0 +1,72 @@
+{
+  "engine": "Google Gemini TTS (gemini-2.5-flash-preview-tts)",
+  "language": "pt-BR",
+  "style": "Você é locutora de rádio FM brasileira, feminina, sedutora, calorosa e animada. Fale em português do Brasil com naturalidade, como se estivesse no ar ao vivo.",
+  "tags_doc": "[laughing], [sigh], [short pause], [medium pause], [long pause], [whispering]",
+  "samples": [
+    {
+      "id": "kore",
+      "label": "Kore — quente e equilibrada",
+      "voice": "Kore",
+      "file": "kore-vinheta-radio.mp3",
+      "script": "Olá, ouvinte lindo! Você sintonizou na Rádio no Grale, a Alta Cúpula que não te deixa ficar parado! [short pause] A noite está pegando fogo, o som está absurdamente bom, e eu estou aqui só pra te manter colado nessa frequência. Reaja com uma risada calorosa e divertida. [laughing] Vira o volume, sente o grave… e vem comigo até o amanhecer! [laughing]",
+      "model": "gemini-2.5-flash-preview-tts"
+    },
+    {
+      "id": "aoede",
+      "label": "Aoede — suave e musical",
+      "voice": "Aoede",
+      "file": "aoede-vinheta-radio.mp3",
+      "script": "Olá, ouvinte lindo! Você sintonizou na Rádio no Grale, a Alta Cúpula que não te deixa ficar parado! [short pause] A noite está pegando fogo, o som está absurdamente bom, e eu estou aqui só pra te manter colado nessa frequência. Reaja com uma risada calorosa e divertida. [laughing] Vira o volume, sente o grave… e vem comigo até o amanhecer! [laughing]",
+      "model": "gemini-2.5-flash-preview-tts"
+    },
+    {
+      "id": "despina",
+      "label": "Despina — clara e firme",
+      "voice": "Despina",
+      "file": "despina-vinheta-radio.mp3",
+      "script": "Olá, ouvinte lindo! Você sintonizou na Rádio no Grale, a Alta Cúpula que não te deixa ficar parado! [short pause] A noite está pegando fogo, o som está absurdamente bom, e eu estou aqui só pra te manter colado nessa frequência. Reaja com uma risada calorosa e divertida. [laughing] Vira o volume, sente o grave… e vem comigo até o amanhecer! [laughing]",
+      "model": "gemini-2.5-flash-preview-tts"
+    },
+    {
+      "id": "sulafat",
+      "label": "Sulafat — grave sedutora",
+      "voice": "Sulafat",
+      "file": "sulafat-vinheta-radio.mp3",
+      "script": "Olá, ouvinte lindo! Você sintonizou na Rádio no Grale, a Alta Cúpula que não te deixa ficar parado! [short pause] A noite está pegando fogo, o som está absurdamente bom, e eu estou aqui só pra te manter colado nessa frequência. Reaja com uma risada calorosa e divertida. [laughing] Vira o volume, sente o grave… e vem comigo até o amanhecer! [laughing]",
+      "model": "gemini-2.5-flash-preview-tts"
+    },
+    {
+      "id": "leda",
+      "label": "Leda — jovem e brilhante",
+      "voice": "Leda",
+      "file": "leda-vinheta-radio.mp3",
+      "script": "Olá, ouvinte lindo! Você sintonizou na Rádio no Grale, a Alta Cúpula que não te deixa ficar parado! [short pause] A noite está pegando fogo, o som está absurdamente bom, e eu estou aqui só pra te manter colado nessa frequência. Reaja com uma risada calorosa e divertida. [laughing] Vira o volume, sente o grave… e vem comigo até o amanhecer! [laughing]",
+      "model": "gemini-2.5-flash-preview-tts"
+    },
+    {
+      "id": "expressivo-risada",
+      "label": "Teste de risada (Kore)",
+      "voice": "Kore",
+      "text": "Reaja com uma risada feminina calorosa e sedutora, como locutora de radio. [laughing] [laughing]",
+      "file": "kore-expressivo-risada.mp3",
+      "model": "gemini-2.5-pro-preview-tts"
+    },
+    {
+      "id": "expressivo-madrugada",
+      "label": "Suspiro + pausa (Kore)",
+      "voice": "Kore",
+      "text": "Você ligou na Rádio no Grale… fala baixinho, íntima, cansada mas sedutora. [sigh] [medium pause] Fica comigo nessa frequência… [short pause] não desliga.",
+      "file": "kore-expressivo-madrugada.mp3",
+      "model": "gemini-2.5-flash-preview-tts"
+    },
+    {
+      "id": "expressivo-pacote",
+      "label": "Pacote completo (Kore)",
+      "voice": "Kore",
+      "text": "Olá, ouvinte lindo! Você sintonizou na Rádio no Grale, a Alta Cúpula que não te deixa ficar parado! [short pause] A noite está pegando fogo, o som está absurdamente bom, e eu estou aqui só pra te manter colado nessa frequência. Reaja com uma risada calorosa e divertida. [laughing] Vira o volume, sente o grave… e vem comigo até o amanhecer! [laughing]",
+      "file": "kore-expressivo-pacote.mp3",
+      "model": "gemini-2.5-flash-preview-tts"
+    }
+  ]
+}

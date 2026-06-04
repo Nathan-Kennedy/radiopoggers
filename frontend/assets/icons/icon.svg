@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title">
+  <title id="title">RADIO NO GRALE</title>
+  <!-- Guitar silhouette: SVG Repo CC0 (abstract-shape-electric-guitar) -->
+  <defs>
+    <linearGradient id="topGlow" x1="0.5" y1="0" x2="0.5" y2="1">
+      <stop offset="0%" stop-color="#e11d2e" stop-opacity="0.26"/>
+      <stop offset="100%" stop-color="#e11d2e" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="stripes" width="8" height="8" patternUnits="userSpaceOnUse">
+      <rect width="8" height="8" fill="#070707"/>
+      <rect x="7" width="1" height="8" fill="#ffffff" opacity="0.03"/>
+    </pattern>
+    <filter id="markGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#e11d2e" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+  <rect width="512" height="512" fill="#070707"/>
+  <rect width="512" height="512" fill="url(#stripes)"/>
+  <rect width="512" height="240" fill="url(#topGlow)"/>
+  <g transform="translate(256 274) rotate(-8) scale(1.08) translate(-165.12 -165.12)" filter="url(#markGlow)">
+    <path
+      fill="#ff3344"
+      d="M255.054,44.139c4.546,4.969,3.044,13.743-3.346,19.597c-0.362,0.324-2.485,3.192-3.304,4.143l-75.134,78.868
+        c-28.685-7.319-73.02,17.825-73.02,17.825c25.771,5.51-10.015,36.382-18.817,31.742c-8.803-4.629,1.284-21.157,1.284-21.157
+        C11.772,209.9,0,290.985,0,290.985S20.492,249.7,76.015,236.92c3.819-0.88,7.226-1.217,10.286-1.107l-5.641,6.441l22.584,19.78
+        l5.146-5.882c6.455,25.817-5.424,67.004-5.424,67.004c90.799-0.585,91.881-86.552,90.063-78.717
+        c-1.812,7.829-41.886,15.751-7.291-30.381c34.601-46.132,135.231-46.939,135.231-46.939c-17.947-16.811-80.52-27.177-80.52-27.177
+        s3.252,5.536,4.536,13.205c1.284,7.666-19.035,10.151-36.278,11.114c-8.243,0.466-11.765-4.292-13.22-9.383l67.679-71.046
+        c0.367-0.394,3.257-3.192,3.66-3.562c6.4-5.854,15.271-6.566,19.812-1.598c0.301,0.329,0.57,0.676,0.818,1.03L330.24,7.084
+        l-76.14,36.148C254.432,43.513,254.758,43.81,255.054,44.139z"
+    />
+  </g>
+</svg>

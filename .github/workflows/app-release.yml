@@ -1,0 +1,49 @@
+name: App release
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+
+      - name: Sync assets
+        shell: pwsh
+        run: ./scripts/sync-app-assets.ps1
+
+      - name: Pub get
+        working-directory: apps/radiopoggers_app
+        run: flutter pub get
+
+      - name: Ensure platforms
+        working-directory: apps/radiopoggers_app
+        run: flutter create . --platforms=windows,android
+
+      - name: Build Windows
+        working-directory: apps/radiopoggers_app
+        run: flutter build windows --release
+
+      - name: Build Android APK
+        working-directory: apps/radiopoggers_app
+        run: flutter build apk --release
+
+      - name: Package artifacts
+        shell: pwsh
+        run: ./scripts/package-app-release.ps1 -SkipBuild
+
+      - name: Upload to GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            dist/app-release/RadioPoggers-Windows-x64.zip
+            dist/app-release/RadioPoggers-android.apk
+            dist/app-release/SHA256SUMS.txt
+          generate_release_notes: true

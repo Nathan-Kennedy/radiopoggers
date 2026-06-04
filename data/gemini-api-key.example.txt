@@ -1,0 +1,5 @@
+# Cole sua API key do Google AI Studio (Gemini) — uma linha, sem aspas.
+# Obtenha em: https://aistudio.google.com/apikey
+# Salve como: data/gemini-api-key.txt (nao commite a key real)
+# Plano Pro: TTS usa quota da API Gemini (gemini-2.5-flash-preview-tts).
+AIzaSyAnSsDxlwZ3_vyuPyi3mk5TXCjgb2hC5Cc

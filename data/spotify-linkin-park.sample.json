@@ -1,0 +1,57 @@
+{
+  "source": {
+    "kind": "playlist",
+    "id": "37i9dQZF1DZ06evO47cwRq",
+    "input": "https://open.spotify.com/playlist/37i9dQZF1DZ06evO47cwRq?si=Fin3pbjpQ9qICsPa6NiJ9A",
+    "title": "This Is Linkin Park",
+    "url": "https://open.spotify.com/playlist/37i9dQZF1DZ06evO47cwRq?si=Fin3pbjpQ9qICsPa6NiJ9A"
+  },
+  "generated_at": "2026-06-02T17:46:00Z",
+  "notice": "Amostra de metadados para teste local. Audio deve vir de arquivos locais autorizados.",
+  "library": {
+    "scanned_paths": [],
+    "audio_files_found": 0,
+    "duplicate_files": []
+  },
+  "summary": {
+    "spotify_items": 30,
+    "unique_items": 30,
+    "ready": 0,
+    "pending_local_audio": 30,
+    "duplicate_spotify_items": 0
+  },
+  "items": [
+    { "spotify_id": "", "isrc": "", "spotify_url": "", "title": "In the End", "artists": ["Linkin Park"], "album": "This Is Linkin Park", "duration_ms": 0, "track_number": 1, "disc_number": 1, "cover_url": "", "local_file": "", "status": "pending_local_audio", "match": null },
+    { "spotify_id": "", "isrc": "", "spotify_url": "", "title": "Numb", "artists": ["Linkin Park"], "album": "This Is Linkin Park", "duration_ms": 0, "track_number": 2, "disc_number": 1, "cover_url": "", "local_file": "", "status": "pending_local_audio", "match": null },
+    { "spotify_id": "", "isrc": "", "spotify_url": "", "title": "What I've Done", "artists": ["Linkin Park"], "album": "This Is Linkin Park", "duration_ms": 0, "track_number": 3, "disc_number": 1, "cover_url": "", "local_file": "", "status": "pending_local_audio", "match": null },
+    { "spotify_id": "", "isrc": "", "spotify_url": "", "title": "The Emptiness Machine", "artists": ["Linkin Park"], "album": "This Is Linkin Park", "duration_ms": 0, "track_number": 4, "disc_number": 1, "cover_url": "", "local_file": "", "status": "pending_local_audio", "match": null },
+    { "spotify_id": "", "isrc": "", "spotify_url": "", "title": "One Step Closer", "artists": ["Linkin Park"], "album": "This Is Linkin Park", "duration_ms": 0, "track_number": 5, "disc_number": 1, "cover_url": "", "local_file": "", "status": "pending_local_audio", "match": null },
+    { "spotify_id": "", "isrc": "", "spotify_url": "", "title": "Faint", "artists": ["Linkin Park"], "album": "This Is Linkin Park", "duration_ms": 0, "track_number": 6, "disc_number": 1, "cover_url": "", "local_file": "", "status": "pending_local_audio", "match": null },
+    { "spotify_id": "", "isrc": "", "spotify_url": "", "title": "Bleed It Out", "artists": ["Linkin Park"], "album": "This Is Linkin Park", "duration_ms": 0, "track_number": 7, "disc_number": 1, "cover_url": "", "local_file": "", "status": "pending_local_audio", "match": null },
+    { "spotify_id": "", "isrc": "", "spotify_url": "", "title": "BURN IT DOWN", "artists": ["Linkin Park"], "album": "This Is Linkin Park", "duration_ms": 0, "track_number": 8, "disc_number": 1, "cover_url": "", "local_file": "", "status": "pending_local_audio", "match": null },
+    { "spotify_id": "", "isrc": "", "spotify_url": "", "title": "Crawling", "artists": ["Linkin Park"], "album": "This Is Linkin Park", "duration_ms": 0, "track_number": 9, "disc_number": 1, "cover_url": "", "local_file": "", "status": "pending_local_audio", "match": null },
+    { "spotify_id": "", "isrc": "", "spotify_url": "", "title": "Somewhere I Belong", "artists": ["Linkin Park"], "album": "This Is Linkin Park", "duration_ms": 0, "track_number": 10, "disc_number": 1, "cover_url": "", "local_file": "", "status": "pending_local_audio", "match": null },
+    { "spotify_id": "", "isrc": "", "spotify_url": "", "title": "Given Up", "artists": ["Linkin Park"], "album": "This Is Linkin Park", "duration_ms": 0, "track_number": 11, "disc_number": 1, "cover_url": "", "local_file": "", "status": "pending_local_audio", "match": null },
+    { "spotify_id": "", "isrc": "", "spotify_url": "", "title": "Heavy Is the Crown", "artists": ["Linkin Park"], "album": "This Is Linkin Park", "duration_ms": 0, "track_number": 12, "disc_number": 1, "cover_url": "", "local_file": "", "status": "pending_local_audio", "match": null },
+    { "spotify_id": "", "isrc": "", "spotify_url": "", "title": "Papercut", "artists": ["Linkin Park"], "album": "This Is Linkin Park", "duration_ms": 0, "track_number": 13, "disc_number": 1, "cover_url": "", "local_file": "", "status": "pending_local_audio", "match": null },
+    { "spotify_id": "", "isrc": "", "spotify_url": "", "title": "Breaking the Habit", "artists": ["Linkin Park"], "album": "This Is Linkin Park", "duration_ms": 0, "track_number": 14, "disc_number": 1, "cover_url": "", "local_file": "", "status": "pending_local_audio", "match": null },
+    { "spotify_id": "", "isrc": "", "spotify_url": "", "title": "CASTLE OF GLASS", "artists": ["Linkin Park"], "album": "This Is Linkin Park", "duration_ms": 0, "track_number": 15, "disc_number": 1, "cover_url": "", "local_file": "", "status": "pending_local_audio", "match": null },
+    { "spotify_id": "", "isrc": "", "spotify_url": "", "title": "Numb / Encore", "artists": ["JAY-Z", "Linkin Park"], "album": "This Is Linkin Park", "duration_ms": 0, "track_number": 16, "disc_number": 1, "cover_url": "", "local_file": "", "status": "pending_local_audio", "match": null },
+    { "spotify_id": "", "isrc": "", "spotify_url": "", "title": "A Place for My Head", "artists": ["Linkin Park"], "album": "This Is Linkin Park", "duration_ms": 0, "track_number": 17, "disc_number": 1, "cover_url": "", "local_file": "", "status": "pending_local_audio", "match": null },
+    { "spotify_id": "", "isrc": "", "spotify_url": "", "title": "Lying from You", "artists": ["Linkin Park"], "album": "This Is Linkin Park", "duration_ms": 0, "track_number": 18, "disc_number": 1, "cover_url": "", "local_file": "", "status": "pending_local_audio", "match": null },
+    { "spotify_id": "", "isrc": "", "spotify_url": "", "title": "Up From the Bottom", "artists": ["Linkin Park"], "album": "This Is Linkin Park", "duration_ms": 0, "track_number": 19, "disc_number": 1, "cover_url": "", "local_file": "", "status": "pending_local_audio", "match": null },
+    { "spotify_id": "", "isrc": "", "spotify_url": "", "title": "Leave Out All The Rest", "artists": ["Linkin Park"], "album": "This Is Linkin Park", "duration_ms": 0, "track_number": 20, "disc_number": 1, "cover_url": "", "local_file": "", "status": "pending_local_audio", "match": null },
+    { "spotify_id": "", "isrc": "", "spotify_url": "", "title": "One More Light", "artists": ["Linkin Park"], "album": "This Is Linkin Park", "duration_ms": 0, "track_number": 21, "disc_number": 1, "cover_url": "", "local_file": "", "status": "pending_local_audio", "match": null },
+    { "spotify_id": "", "isrc": "", "spotify_url": "", "title": "From the Inside", "artists": ["Linkin Park"], "album": "This Is Linkin Park", "duration_ms": 0, "track_number": 22, "disc_number": 1, "cover_url": "", "local_file": "", "status": "pending_local_audio", "match": null },
+    { "spotify_id": "", "isrc": "", "spotify_url": "", "title": "Runaway", "artists": ["Linkin Park"], "album": "This Is Linkin Park", "duration_ms": 0, "track_number": 23, "disc_number": 1, "cover_url": "", "local_file": "", "status": "pending_local_audio", "match": null },
+    { "spotify_id": "", "isrc": "", "spotify_url": "", "title": "Two Faced", "artists": ["Linkin Park"], "album": "This Is Linkin Park", "duration_ms": 0, "track_number": 24, "disc_number": 1, "cover_url": "", "local_file": "", "status": "pending_local_audio", "match": null },
+    { "spotify_id": "", "isrc": "", "spotify_url": "", "title": "Waiting for the End", "artists": ["Linkin Park"], "album": "This Is Linkin Park", "duration_ms": 0, "track_number": 25, "disc_number": 1, "cover_url": "", "local_file": "", "status": "pending_local_audio", "match": null },
+    { "spotify_id": "", "isrc": "", "spotify_url": "", "title": "LOST IN THE ECHO", "artists": ["Linkin Park"], "album": "This Is Linkin Park", "duration_ms": 0, "track_number": 26, "disc_number": 1, "cover_url": "", "local_file": "", "status": "pending_local_audio", "match": null },
+    { "spotify_id": "", "isrc": "", "spotify_url": "", "title": "Fighting Myself", "artists": ["Linkin Park"], "album": "This Is Linkin Park", "duration_ms": 0, "track_number": 27, "disc_number": 1, "cover_url": "", "local_file": "", "status": "pending_local_audio", "match": null },
+    { "spotify_id": "", "isrc": "", "spotify_url": "", "title": "Cut the Bridge", "artists": ["Linkin Park"], "album": "This Is Linkin Park", "duration_ms": 0, "track_number": 28, "disc_number": 1, "cover_url": "", "local_file": "", "status": "pending_local_audio", "match": null },
+    { "spotify_id": "", "isrc": "", "spotify_url": "", "title": "New Divide", "artists": ["Linkin Park"], "album": "This Is Linkin Park", "duration_ms": 0, "track_number": 29, "disc_number": 1, "cover_url": "", "local_file": "", "status": "pending_local_audio", "match": null },
+    { "spotify_id": "", "isrc": "", "spotify_url": "", "title": "No More Sorrow", "artists": ["Linkin Park"], "album": "This Is Linkin Park", "duration_ms": 0, "track_number": 30, "disc_number": 1, "cover_url": "", "local_file": "", "status": "pending_local_audio", "match": null }
+  ],
+  "duplicate_spotify_items": []
+}
+

@@ -1,0 +1,4 @@
+spotify_id,title,artists,local_file,status,notes
+spotify_track_id,Nome da faixa,Artista - Outro Artista,C:\Musicas\autorizadas\faixa.mp3,ready,Arquivo local autorizado para transmissao
+spotify_track_id_sem_audio,Outra faixa,Artista,,pending_local_audio,Ainda sem arquivo local autorizado
+

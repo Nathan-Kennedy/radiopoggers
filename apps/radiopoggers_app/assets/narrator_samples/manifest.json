@@ -1,0 +1,47 @@
+{
+  "purpose": "Amostras fixas do picker de narradoras (sem gerar audio no clique).",
+  "miku": [
+    {
+      "file": "miku/01-track-change.mp3",
+      "caption": "Hihi! RADIO NO GRALE no ar com Rebirth. ANGRA mandando ver em RONDONIA STATE OF BRAZIL!"
+    },
+    {
+      "file": "miku/02-mid-track.mp3",
+      "caption": "Daisuki! Amo demais quem fica na RADIO NO GRALE ouvindo Rebirth! Kawaii demais!"
+    },
+    {
+      "file": "miku/03-vote-pedido.mp3",
+      "caption": "A estante mandou ver! In The End no ar agora! Miku comemora!"
+    },
+    {
+      "file": "miku/04-track-night.mp3",
+      "caption": "Atencao, ouvinte! Voce esta ouvindo RADIO NO GRALE e vem Californication, de Red Hot Chili Peppers!"
+    },
+    {
+      "file": "miku/05-mid-info.mp3",
+      "caption": "Hoje e quarta-feira em Ariquemes! Miku lembra: voce esta na RADIO NO GRALE ouvindo Rebirth. Bora!"
+    }
+  ],
+  "hoshino": [
+    {
+      "file": "hoshino/01-vinheta.mp3",
+      "caption": "Ola, eu sou a Hoshino — voce sintonizou a RADIO NO GRALE!"
+    },
+    {
+      "file": "hoshino/02-madrugada.mp3",
+      "caption": "Voce ligou na RADIO NO GRALE… fica comigo nessa frequencia."
+    },
+    {
+      "file": "hoshino/03-pacote.mp3",
+      "caption": "A noite esta pegando fogo e o som esta absurdamente bom!"
+    },
+    {
+      "file": "hoshino/04-risada.mp3",
+      "caption": "Risada calorosa de locutora no ar."
+    },
+    {
+      "file": "hoshino/05-track-change.mp3",
+      "caption": "Ei, fã da RADIO NO GRALE! Quer o segredo do som bom? Curadoria. Agora Rebirth, de ANGRA!"
+    }
+  ]
+}

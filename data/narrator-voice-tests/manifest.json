@@ -1,0 +1,57 @@
+{
+  "purpose": "Testes de narradora feminina — Radio no Grale (separado da Miku)",
+  "sample_text": "Olá, ouvinte lindo! Você sintonizou na Rádio no Grale, a Alta Cúpula que não te deixa ficar parado! A noite está pegando fogo, o som está absurdamente bom, e eu estou aqui só pra te manter colado nessa frequência. Vira o volume, sente o grave, deixa o corpo balançar… e vem comigo até o amanhecer! Hã-hã!",
+  "backend": "edge-tts",
+  "samples": [
+    {
+      "id": "01-francisca-locutora-quente",
+      "label": "Francisca — locutora FM quente (BR)",
+      "voice": "pt-BR-FranciscaNeural",
+      "rate": "+6%",
+      "pitch": "-2Hz",
+      "description": "Voz brasileira clássica de rádio; grave suave, tom acolhedor e sedutor.",
+      "file": "01-francisca-locutora-quente.mp3",
+      "size_kb": 108
+    },
+    {
+      "id": "02-thalita-animada-brilhante",
+      "label": "Thalita — animada e brilhante (BR)",
+      "voice": "pt-BR-ThalitaMultilingualNeural",
+      "rate": "+14%",
+      "pitch": "+4Hz",
+      "description": "Mais jovem e elétrica; boa para vinhetas com energia e sorriso na voz.",
+      "file": "02-thalita-animada-brilhante.mp3",
+      "size_kb": 104
+    },
+    {
+      "id": "03-raquel-elegante-sedutora",
+      "label": "Raquel — elegante sedutora (PT)",
+      "voice": "pt-PT-RaquelNeural",
+      "rate": "-4%",
+      "pitch": "-3Hz",
+      "description": "Tom europeu sofisticado; pausada, charmosa, estilo locutora noturna.",
+      "file": "03-raquel-elegante-sedutora.mp3",
+      "size_kb": 135
+    },
+    {
+      "id": "04-ava-multilingual-ousada",
+      "label": "Ava — multilingual ousada (EN/PT)",
+      "voice": "en-US-AvaMultilingualNeural",
+      "rate": "+8%",
+      "pitch": "+1Hz",
+      "description": "Timbre internacional; firme e confiante, leitura natural do português.",
+      "file": "04-ava-multilingual-ousada.mp3",
+      "size_kb": 107
+    },
+    {
+      "id": "05-emma-multilingual-suave",
+      "label": "Emma — multilingual suave (EN/PT)",
+      "voice": "en-US-EmmaMultilingualNeural",
+      "rate": "+2%",
+      "pitch": "-4Hz",
+      "description": "Mais doce e íntima; sussurro de locutora, ideal para chamadas sedutoras.",
+      "file": "05-emma-multilingual-suave.mp3",
+      "size_kb": 120
+    }
+  ]
+}

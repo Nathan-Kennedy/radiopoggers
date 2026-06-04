@@ -1,0 +1,143 @@
+{
+  "version": 1,
+  "license": "Mixkit License — https://mixkit.co/license/ (uso comercial sem atribuição obrigatória)",
+  "items": [
+    {
+      "id": "sweep_express",
+      "label": "Sweep express",
+      "description": "Transição rápida estilo rádio/TV",
+      "category": "sweep",
+      "file": "sweep_express.wav",
+      "mixkit_id": 166,
+      "source_url": "https://mixkit.co/free-sound-effects/sweep/"
+    },
+    {
+      "id": "sweep_short",
+      "label": "Sweep curto",
+      "description": "Whoosh de entrada/saída",
+      "category": "sweep",
+      "file": "sweep_short.wav",
+      "mixkit_id": 175,
+      "source_url": "https://mixkit.co/free-sound-effects/sweep/"
+    },
+    {
+      "id": "sci_fi_sweep",
+      "label": "Sci-fi sweep",
+      "description": "Subida eletrônica futurista",
+      "category": "sweep",
+      "file": "sci_fi_sweep.wav",
+      "mixkit_id": 3114,
+      "source_url": "https://mixkit.co/free-sound-effects/sweep/"
+    },
+    {
+      "id": "trophy_sweep",
+      "label": "Sweep troféu",
+      "description": "Notificação épica de programa",
+      "category": "sweep",
+      "file": "trophy_sweep.wav",
+      "mixkit_id": 255,
+      "source_url": "https://mixkit.co/free-sound-effects/notification/"
+    },
+    {
+      "id": "radio_static",
+      "label": "Estática FM",
+      "description": "FX de dial / estática de rádio",
+      "category": "radio",
+      "file": "radio_static.wav",
+      "mixkit_id": 2561,
+      "source_url": "https://mixkit.co/free-sound-effects/radio/"
+    },
+    {
+      "id": "sci_fi_waves",
+      "label": "Ondas sci-fi",
+      "description": "Modulação espacial de rádio",
+      "category": "radio",
+      "file": "sci_fi_waves.wav",
+      "mixkit_id": 895,
+      "source_url": "https://mixkit.co/free-sound-effects/radio/"
+    },
+    {
+      "id": "alien_freq",
+      "label": "Freq. alienígena",
+      "description": "Scanner / contato alien — divertido",
+      "category": "radio",
+      "file": "alien_freq.wav",
+      "mixkit_id": 2550,
+      "source_url": "https://mixkit.co/free-sound-effects/radio/"
+    },
+    {
+      "id": "glitch_hit",
+      "label": "Glitch hit",
+      "description": "Pancada digital eletrônica",
+      "category": "fx",
+      "file": "glitch_hit.wav",
+      "mixkit_id": 2940,
+      "source_url": "https://mixkit.co/free-sound-effects/glitch/"
+    },
+    {
+      "id": "fanfare",
+      "label": "Fanfarra",
+      "description": "Entrada triunfal — estilo programa",
+      "category": "id",
+      "file": "fanfare.wav",
+      "mixkit_id": 2293,
+      "source_url": "https://mixkit.co/free-sound-effects/fanfare/",
+      "max_seconds": 2.8
+    },
+    {
+      "id": "win_ding",
+      "label": "Vitória arcade",
+      "description": "Ding de vitória — clima game show",
+      "category": "id",
+      "file": "win_ding.wav",
+      "mixkit_id": 2016,
+      "source_url": "https://mixkit.co/free-sound-effects/video-game/"
+    },
+    {
+      "id": "game_over",
+      "label": "Game over",
+      "description": "Retrô arcade — punch cômico",
+      "category": "fx",
+      "file": "game_over.wav",
+      "mixkit_id": 213,
+      "source_url": "https://mixkit.co/free-sound-effects/video-game/"
+    },
+    {
+      "id": "ui_ping",
+      "label": "Ping estação",
+      "description": "Bipe de interface — ID curta",
+      "category": "id",
+      "file": "ui_ping.wav",
+      "mixkit_id": 2567,
+      "source_url": "https://mixkit.co/free-sound-effects/interface/"
+    },
+    {
+      "id": "ui_click",
+      "label": "Click punch",
+      "description": "Click seco antes da voz",
+      "category": "impact",
+      "file": "ui_click.wav",
+      "mixkit_id": 2568,
+      "source_url": "https://mixkit.co/free-sound-effects/interface/"
+    },
+    {
+      "id": "achievement",
+      "label": "Sino conquista",
+      "description": "Bell de conquista — positivo",
+      "category": "id",
+      "file": "achievement.wav",
+      "mixkit_id": 600,
+      "source_url": "https://mixkit.co/free-sound-effects/success/"
+    },
+    {
+      "id": "countdown_bleep",
+      "label": "Bleeps contagem",
+      "description": "Relógio / contagem regressiva",
+      "category": "fx",
+      "file": "countdown_bleep.wav",
+      "mixkit_id": 916,
+      "source_url": "https://mixkit.co/free-sound-effects/clock/",
+      "max_seconds": 2.5
+    }
+  ]
+}

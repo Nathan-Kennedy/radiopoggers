@@ -1,0 +1,3 @@
+# Cole aqui a API key do AzuraCast (uma linha, sem aspas).
+# Painel AzuraCast → seu usuario → My API Keys → Create API Key
+# Salve uma copia como: data/azuracast-api-key.txt (nao commite a key real)

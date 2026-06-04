@@ -1,0 +1,5 @@
+# Hosts extras no certificado HTTPS (Radmin, IP publico, etc.)
+# Um host por linha. O IP em frontend/config.js (azuracastBaseUrl) ja entra automaticamente.
+#
+# Exemplo:
+# 26.93.202.227

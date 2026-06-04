@@ -1,0 +1,396 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#070707">
+    <meta name="description" content="RADIO NO GRALE — radio online rock, AzuraCast e player Alta Cupula.">
+    <title>RADIO NO GRALE</title>
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="icon" href="assets/icons/icon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Mono:wght@500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="app-shell" id="appShell">
+      <div class="noise" aria-hidden="true"></div>
+      <div class="audio-pulse-light" id="audioPulseLight" aria-hidden="true">
+        <canvas class="audio-pulse-light__canvas" id="audioPulseCanvas"></canvas>
+      </div>
+      <div class="cover-glow" id="coverGlow"></div>
+      <canvas class="ascii-backdrop" id="asciiBackdrop" aria-hidden="true"></canvas>
+      <img
+        class="ascii-backdrop ascii-backdrop--off-gif is-hidden"
+        id="asciiBackdropOffGif"
+        src="assets/ascii-animation%20off.gif"
+        alt=""
+        width="400"
+        height="400"
+        decoding="async"
+        aria-hidden="true"
+      />
+
+      <header class="topbar">
+        <a class="brand" href="#player" aria-label="Ir para o player">
+          <span class="brand-mark">RG</span>
+          <span class="brand-text">
+            <strong>RADIO NO GRALE</strong>
+            <small>A RADIO MAIS POGGERS DE RONDONIA STATE OF BRAZIL</small>
+          </span>
+        </a>
+
+        <div class="topbar-actions">
+          <span class="status-pill" id="connectionStatus">Conectando</span>
+          <a class="ghost-link" id="panelLink" href="http://localhost:8080" target="_blank" rel="noreferrer">Painel</a>
+        </div>
+      </header>
+
+      <section class="hero" id="player">
+        <div class="hero-copy">
+          <span class="eyebrow"><span class="live-dot"></span><span id="liveLabel">Conectando</span></span>
+          <h1 id="stationTitle">RADIO NO GRALE</h1>
+          <p class="hero-tagline">
+            Som alto, zero filtro. Radio privada pra ouvir no navegador ou instalar como app.
+          </p>
+          <div class="hero-stats">
+            <article>
+              <strong id="listenerCount">--</strong>
+              <span>ouvintes</span>
+            </article>
+            <article>
+              <strong id="streamQuality">--</strong>
+              <span>qualidade</span>
+            </article>
+            <article>
+              <strong id="automationState">AutoDJ</strong>
+              <span>modo</span>
+            </article>
+          </div>
+        </div>
+
+        <section class="player-card" aria-label="Player da radio">
+          <div class="player-head">
+            <div class="cover-wrap">
+              <img id="coverArt" src="assets/img/cover-fallback.svg" alt="Capa da musica atual">
+              <div class="visualizer" aria-hidden="true">
+                <span></span><span></span><span></span><span></span><span></span>
+              </div>
+            </div>
+
+            <div class="track-meta" id="trackMeta">
+              <span class="section-label" id="trackSectionLabel">On air</span>
+              <h2 id="trackTitle">Aguardando AzuraCast</h2>
+              <p id="trackArtist">Configure o stream para iniciar a Alta Cupula.</p>
+              <small id="trackAlbum">AzuraCast offline ou ainda nao configurado.</small>
+            </div>
+          </div>
+
+          <div class="progress-panel" aria-label="Progresso da faixa">
+            <div class="progress-times">
+              <span class="progress-time" id="elapsedTime">0:00</span>
+              <span class="progress-label" id="progressLabel">NOW PLAYING</span>
+              <span class="progress-time" id="durationTime">--:--</span>
+            </div>
+            <div class="progress-track" aria-hidden="true">
+              <div class="progress-fill" id="progressFill"></div>
+            </div>
+          </div>
+
+          <div class="controls">
+            <button class="control-button primary control-button--with-icon control-button--icon-only" id="playButton" type="button" aria-label="Tocar radio">
+              <svg class="control-button__icon control-button__icon--play" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M8 5v14l11-7L8 5z"></path>
+              </svg>
+              <svg class="control-button__icon control-button__icon--pause" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z"></path>
+              </svg>
+            </button>
+            <button class="control-button ghost control-button--with-icon" id="muteButton" type="button" aria-label="Silenciar">
+              <svg class="control-button__icon control-button__icon--volume" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+                <path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path>
+              </svg>
+              <svg class="control-button__icon control-button__icon--muted" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                <line x1="23" y1="9" x2="17" y2="15"></line>
+                <line x1="17" y1="9" x2="23" y2="15"></line>
+              </svg>
+              <span class="control-button__label" id="muteLabel">Som</span>
+            </button>
+            <label class="volume-control" for="volumeSlider">
+              <span>Vol</span>
+              <input id="volumeSlider" type="range" min="0" max="100" value="85">
+            </label>
+          </div>
+
+          <div class="vote-actions" id="voteActions">
+            <button class="control-button vote-action narrator-picker-button" id="narratorPickerButton" type="button" aria-label="Trocar narradora">
+              <svg class="vote-action__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path>
+                <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+                <line x1="12" y1="19" x2="12" y2="23"></line>
+                <line x1="8" y1="23" x2="16" y2="23"></line>
+              </svg>
+              <span class="vote-action__label">Narradora</span>
+            </button>
+            <button class="control-button vote-action" id="skipTrackButton" type="button" aria-label="Pular faixa">
+              <svg class="vote-action__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M6 18V6l8.5 6L6 18zm11-12v12h2V6h-2z"></path>
+              </svg>
+              <span class="vote-action__label">Pular faixa</span>
+            </button>
+          </div>
+
+          <div class="stream-message" id="streamMessage" role="status">Clique em Play para iniciar o audio.</div>
+          <div class="voice-drop-panel">
+            <div class="voice-drop-heading">
+              <span class="section-label">Sua voz no ar</span>
+              <span class="voice-drop-timer" id="voiceDropTimer">0:15</span>
+            </div>
+            <p class="voice-drop-hint">
+              Microfone aberto por quinze segundos, ouvinte. Manda teu recado — a Alta Cupula te coloca no ar.
+            </p>
+            <div class="voice-drop-controls">
+              <button class="voice-drop-mic" id="voiceDropButton" type="button" aria-label="Entrar no ar">
+                <svg class="voice-drop-mic__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3z"></path>
+                  <path d="M19 10v1a7 7 0 0 1-14 0v-1"></path>
+                  <line x1="12" y1="18" x2="12" y2="22"></line>
+                  <line x1="8" y1="22" x2="16" y2="22"></line>
+                </svg>
+              </button>
+              <div class="voice-drop-recording is-hidden" id="voiceDropRecording">
+                <span class="voice-drop-recording__pulse" aria-hidden="true"></span>
+                <div class="voice-drop-wave" id="voiceDropWave" aria-hidden="true"></div>
+                <button class="voice-drop-recording__send" id="voiceDropStopButton" type="button" aria-label="Parar e enviar">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M2.01 21 23 12 2.01 3 2 10l15 2-15 2z"></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <p class="voice-drop-status" id="voiceDropStatus">Permita o microfone quando o navegador pedir.</p>
+          </div>
+          <audio id="radioAudio" preload="auto"></audio>
+          <audio id="radioAudioBackup" preload="auto" aria-hidden="true"></audio>
+          <audio id="voiceDropAudio" preload="none"></audio>
+        </section>
+      </section>
+
+      <section class="content-grid">
+        <article class="panel history-panel">
+          <div class="panel-heading">
+            <span class="section-label">Historico</span>
+          </div>
+          <ul class="history-list" id="historyList">
+            <li>O historico aparece quando o AzuraCast enviar dados.</li>
+          </ul>
+        </article>
+
+        <article class="panel playlist-panel">
+          <div class="panel-heading">
+            <span class="section-label">Playlist importada</span>
+          </div>
+          <form class="import-form" id="spotifyImportForm">
+            <label for="spotifyUrlInput">
+              <span>Link da playlist/faixa Spotify</span>
+              <input
+                id="spotifyUrlInput"
+                type="url"
+                inputmode="url"
+                placeholder="https://open.spotify.com/playlist/..."
+                autocomplete="off"
+              >
+            </label>
+            <button class="control-button primary" id="spotifyImportButton" type="submit">Tocar</button>
+          </form>
+          <p class="import-status" id="spotifyImportStatus">
+            Cole um link do Spotify e clique em Tocar para baixar e colocar na radio.
+          </p>
+          <h3 id="spotifyPlaylistTitle">Playlist Spotify</h3>
+          <p id="spotifyPlaylistSummary">As faixas importadas aparecem aqui.</p>
+          <ul class="history-list" id="spotifyPlaylistList">
+            <li>Nenhuma playlist carregada ainda.</li>
+          </ul>
+        </article>
+
+        <article class="panel library-panel">
+          <div class="panel-heading">
+            <span class="section-label">Estante de discos</span>
+          </div>
+          <div class="library-toolbar">
+            <label for="librarySearchInput">
+              <span>Buscar</span>
+              <input
+                id="librarySearchInput"
+                type="search"
+                placeholder="Titulo, artista, album..."
+                autocomplete="off"
+              >
+            </label>
+            <label for="libraryArtistFilter">
+              <span>Artista</span>
+              <select id="libraryArtistFilter">
+                <option value="">Todos</option>
+              </select>
+            </label>
+            <label for="libraryAlbumFilter">
+              <span>Album</span>
+              <select id="libraryAlbumFilter">
+                <option value="">Todos</option>
+              </select>
+            </label>
+          </div>
+          <p id="librarySummary">Carregue a API local para ver suas musicas baixadas.</p>
+          <div class="shelf-preview-bar is-hidden" id="shelfPreviewBar" aria-live="polite">
+            <div class="shelf-preview-bar__copy">
+              <span class="shelf-preview-bar__eyebrow">Previa local — so voce ouve</span>
+              <strong id="shelfPreviewTitle">—</strong>
+            </div>
+            <button class="shelf-preview-bar__stop" type="button" id="shelfPreviewStop">Parar previa</button>
+          </div>
+          <ul class="history-list library-list" id="libraryList">
+            <li>Nenhuma faixa encontrada.</li>
+          </ul>
+          <section class="library-custom-panel" id="libraryCustomPanel" aria-label="Minha playlist">
+            <div class="library-custom-heading">
+              <span class="section-label">Minha playlist</span>
+              <span class="library-custom-count" id="libraryCustomCount">0 faixa(s)</span>
+            </div>
+            <p class="library-custom-hint" id="libraryCustomHint">
+              Ouvir e previa local. + Lista monta a selecao; Pedir na faixa envia pra radio (Tocar ja ou Na fila).
+            </p>
+            <ul class="history-list library-custom-list" id="libraryCustomList">
+              <li class="library-custom-empty">Nenhuma faixa selecionada ainda.</li>
+            </ul>
+            <div class="library-custom-bar">
+              <button class="text-button library-request-button" type="button" id="libraryRequestButton" disabled>Pedir 1ª da lista</button>
+              <button class="text-button" type="button" id="libraryExportButton">Exportar lista</button>
+              <button class="text-button" type="button" id="libraryClearCustomButton">Zerar (votacao)</button>
+            </div>
+          </section>
+          <audio id="shelfPreviewAudio" class="shelf-preview-audio" preload="auto"></audio>
+        </article>
+      </section>
+    </main>
+
+    <div
+      class="vote-modal narrator-picker is-hidden"
+      id="narratorPickerModal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="narratorPickerTitle"
+      aria-hidden="true"
+    >
+      <div class="vote-modal__backdrop" aria-hidden="true"></div>
+      <div class="narrator-picker__panel vote-modal__panel">
+        <span class="section-label narrator-picker__eyebrow">Locucao pessoal</span>
+        <h3 class="narrator-picker__title" id="narratorPickerTitle">Quem te acompanha no ar?</h3>
+        <p class="narrator-picker__meta">So no seu navegador — a radio global continua com a Miku.</p>
+        <div class="narrator-picker__choices">
+          <div class="narrator-picker__column">
+            <button class="narrator-picker__choice narrator-picker__choice--miku" id="narratorPickMiku" type="button">
+              <canvas class="narrator-picker__ascii" id="narratorPickerMikuAscii" aria-hidden="true"></canvas>
+              <span class="narrator-picker__name">Miku</span>
+            </button>
+            <button class="narrator-picker__preview narrator-picker__preview--miku" id="narratorPreviewMiku" type="button">
+              Ouvir amostra
+            </button>
+          </div>
+          <div class="narrator-picker__column">
+            <button class="narrator-picker__choice narrator-picker__choice--hoshino" id="narratorPickHoshino" type="button">
+              <canvas class="narrator-picker__ascii" id="narratorPickerHoshinoAscii" aria-hidden="true"></canvas>
+              <span class="narrator-picker__name">Hoshino</span>
+            </button>
+            <button class="narrator-picker__preview narrator-picker__preview--hoshino" id="narratorPreviewHoshino" type="button">
+              Ouvir amostra
+            </button>
+          </div>
+        </div>
+        <button class="text-button narrator-picker__close" id="narratorPickerClose" type="button">Fechar</button>
+      </div>
+    </div>
+
+    <div
+      class="vote-modal vote-overlay is-hidden"
+      id="voteOverlay"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="voteOverlayTitle"
+      aria-live="polite"
+      aria-hidden="true"
+    >
+      <div class="vote-modal__backdrop" aria-hidden="true"></div>
+      <div class="vote-overlay__panel vote-modal__panel">
+        <span class="section-label vote-overlay__eyebrow" id="voteOverlayEyebrow">Votacao ao vivo</span>
+        <h3 class="vote-overlay__title" id="voteOverlayTitle">O que a galera decide?</h3>
+        <p class="vote-overlay__meta" id="voteOverlayMeta">-- ouvintes ouvindo</p>
+        <div class="vote-overlay__timer" id="voteOverlayTimer">00:20</div>
+        <div class="vote-overlay__bars" id="voteOverlayBars">
+          <div class="vote-bar vote-bar--yes">
+            <span class="vote-bar__label" id="voteYesLabel">Sim</span>
+            <div class="vote-bar__track"><div class="vote-bar__fill" id="voteYesFill"></div></div>
+            <strong id="voteYesCount">0</strong>
+          </div>
+          <div class="vote-bar vote-bar--no">
+            <span class="vote-bar__label" id="voteNoLabel">Nao</span>
+            <div class="vote-bar__track"><div class="vote-bar__fill" id="voteNoFill"></div></div>
+            <strong id="voteNoCount">0</strong>
+          </div>
+        </div>
+        <div class="vote-overlay__choices" id="voteOverlayChoices">
+          <button class="vote-choice vote-choice--yes" id="voteChoiceYes" type="button">Sim</button>
+          <button class="vote-choice vote-choice--no" id="voteChoiceNo" type="button">Nao</button>
+        </div>
+        <div class="vote-lottery is-hidden" id="voteLottery" aria-hidden="true">
+          <div class="vote-lottery__stage">
+            <div class="vote-lottery__flash" aria-hidden="true"></div>
+            <div class="vote-lottery__bolt vote-lottery__bolt--left" aria-hidden="true"></div>
+            <div class="vote-lottery__bolt vote-lottery__bolt--right" aria-hidden="true"></div>
+            <div class="vote-lottery__wheel-wrap">
+              <div class="vote-lottery__pointer" aria-hidden="true"></div>
+              <div class="vote-lottery__wheel" id="voteLotteryWheel">
+                <span class="vote-lottery__wheel-face">ROCK</span>
+                <span class="vote-lottery__wheel-ring" aria-hidden="true"></span>
+              </div>
+            </div>
+            <div class="vote-lottery__sparks" aria-hidden="true">
+              <span></span><span></span><span></span><span></span><span></span><span></span>
+            </div>
+          </div>
+          <p class="vote-lottery__result" id="voteLotteryResult">Sorteando...</p>
+        </div>
+        <p class="vote-overlay__status" id="voteOverlayStatus"></p>
+      </div>
+    </div>
+
+    <div
+      class="vote-modal vote-direct is-hidden"
+      id="voteDirectModal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="voteDirectTitle"
+      aria-hidden="true"
+    >
+      <div class="vote-modal__backdrop" aria-hidden="true"></div>
+      <div class="vote-direct__panel vote-modal__panel">
+        <span class="section-label">So voce no ar</span>
+        <h3 class="vote-direct__title" id="voteDirectTitle">O que manda?</h3>
+        <div class="vote-direct__choices">
+          <button class="vote-choice vote-choice--yes" id="voteDirectYes" type="button">Tocar ja</button>
+          <button class="vote-choice vote-choice--no" id="voteDirectNo" type="button">Na fila</button>
+        </div>
+        <button class="text-button vote-direct__cancel" id="voteDirectCancel" type="button">Cancelar</button>
+      </div>
+    </div>
+
+    <noscript>Ative JavaScript para usar o player da Alta Cupula.</noscript>
+    <script src="config.js"></script>
+    <script src="vendor/hls.min.js"></script>
+    <script src="ascii-guitarist.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

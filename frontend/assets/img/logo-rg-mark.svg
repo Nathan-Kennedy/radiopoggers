@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" role="img" aria-labelledby="title">
+  <title id="title">RG - RADIO NO GRALE</title>
+  <defs>
+    <style>
+      .rg {
+        font-family: "Bebas Neue", Impact, sans-serif;
+        font-size: 21.6px;
+        letter-spacing: 0.04em;
+        fill: #e11d2e;
+      }
+    </style>
+  </defs>
+  <rect x="4" y="4" width="44" height="44" fill="rgba(225, 29, 46, 0.18)"/>
+  <rect x="0" y="0" width="44" height="44" fill="#070707" stroke="#e11d2e" stroke-width="2"/>
+  <text class="rg" x="22" y="30.5" text-anchor="middle">RG</text>
+</svg>

@@ -1,0 +1,3 @@
+# Token do bot Discord (Developer Portal → Bot → Reset Token → copiar).
+# Salve como: data/discord-bot-token.txt (nao commite o token real)
+# Exemplo: MTUx...abc.xyz

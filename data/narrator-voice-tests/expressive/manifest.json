@@ -1,0 +1,41 @@
+{
+  "engine": "Francisca (edge-tts pt-BR) + non-verbal (ChatTTS)",
+  "voice_speech": "pt-BR-FranciscaNeural",
+  "markers": [
+    "{pause}",
+    "{laugh}",
+    "{laugh:soft}",
+    "{yawn}",
+    "{sigh}",
+    "{breath}"
+  ],
+  "samples": [
+    {
+      "id": "francisca-expressive-v1-radio-completa",
+      "label": "Francisca expressiva — vinheta completa da radio",
+      "description": "Locutora pt-BR (Francisca) + risada natural no meio e no final, pausas sedutoras e respiracao leve.",
+      "script": "Olá, ouvinte lindo! {breath} Você sintonizou na Rádio no Grale, a Alta Cúpula que não te deixa ficar parado! {pause:450ms} A noite está pegando fogo, o som está absurdamente bom, e eu estou aqui só pra te manter colado nessa frequência. {laugh:soft} Vira o volume, sente o grave, deixa o corpo balançar… e vem comigo até o amanhecer! {pause:300ms} {laugh:full}",
+      "file": "francisca-expressive-v1-radio-completa.mp3",
+      "duration_ms": 23703,
+      "mime_type": "audio/mpeg"
+    },
+    {
+      "id": "francisca-expressive-v2-madrugada",
+      "label": "Francisca expressiva — locutora da madrugada",
+      "description": "Tom mais intimo: suspiro, bocejo leve e risada curta no fechamento.",
+      "script": "Você ligou na Rádio no Grale… {sigh} Alta Cúpula no ar, música quente, energia lá em cima. {pause:500ms} Fica comigo, não desliga esse radinho. {yawn} Desculpa, essa faixa me pegou… {laugh:light} Gira o volume e sente o grave te pegar de jeito!",
+      "file": "francisca-expressive-v2-madrugada.mp3",
+      "duration_ms": 18814,
+      "mime_type": "audio/mpeg"
+    },
+    {
+      "id": "francisca-expressive-v3-energia-pura",
+      "label": "Francisca expressiva — alta energia",
+      "description": "Mais animada: risada no meio da frase e fechamento com risada cheia.",
+      "script": "Rádio no Grale no ar! {breath} Alta Cúpula, som quente, eu aqui só por você! {laugh} Não dá pra ficar parado ouvindo isso! {pause:250ms} Cola na frequência, vira o volume no máximo… vem! {laugh:full}",
+      "file": "francisca-expressive-v3-energia-pura.mp3",
+      "duration_ms": 14217,
+      "mime_type": "audio/mpeg"
+    }
+  ]
+}

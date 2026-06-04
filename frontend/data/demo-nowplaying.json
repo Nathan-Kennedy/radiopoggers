@@ -1,0 +1,60 @@
+{
+  "is_online": true,
+  "station": {
+    "name": "RadioPoggers Demo",
+    "listen_url": "demo://radiopoggers",
+    "mounts": [
+      {
+        "is_default": true,
+        "url": "demo://radiopoggers",
+        "bitrate": 128,
+        "format": "browser-demo"
+      }
+    ]
+  },
+  "listeners": {
+    "current": 7,
+    "unique": 7
+  },
+  "live": {
+    "is_live": false
+  },
+  "now_playing": {
+    "elapsed": 48,
+    "duration": 214,
+    "song": {
+      "title": "Midnight Lobby",
+      "artist": "RadioPoggers",
+      "album": "Demo Session",
+      "art": "assets/img/cover-fallback.svg",
+      "text": "RadioPoggers - Midnight Lobby"
+    }
+  },
+  "song_history": [
+    {
+      "song": {
+        "title": "Neon Queue",
+        "artist": "AutoDJ",
+        "album": "Demo Session",
+        "art": "assets/img/cover-fallback.svg"
+      }
+    },
+    {
+      "song": {
+        "title": "Basement Signal",
+        "artist": "RadioPoggers",
+        "album": "Demo Session",
+        "art": "assets/img/cover-fallback.svg"
+      }
+    },
+    {
+      "song": {
+        "title": "Pixel Night",
+        "artist": "Local Library",
+        "album": "Demo Session",
+        "art": "assets/img/cover-fallback.svg"
+      }
+    }
+  ]
+}
+

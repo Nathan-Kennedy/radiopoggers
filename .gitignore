@@ -1,0 +1,54 @@
+# Pasta literal "~/" no projeto (configs AzuraCast locais)
+~/
+
+# Segredos e dados locais — nunca publicar
+data/gemini-api-key.txt
+data/discord-bot-token.txt
+data/azuracast-api-key.txt
+data/spotify-api-credentials.txt
+data/discord-bot-config.json
+data/dev-ssl/
+data/dev-access-hosts.txt
+data/*.pfx
+data/*.key
+data/*.pem
+data/logs/
+data/*.log
+data/*.pid
+
+# Python / Node
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+node_modules/
+.env
+.env.*
+
+# IDE
+.idea/
+*.iml
+.vs/
+**/.vs/
+
+# Config do site com IP/chaves (use frontend/config.example.js)
+frontend/config.js
+
+# Biblioteca de músicas local (caminhos longos / arquivos grandes)
+library/Inbox/
+library/**/*.mp3
+library/**/*.flac
+library/**/*.m4a
+
+# Cache de modelos TTS / ML
+data/chattts-cache/
+
+# Builds e releases locais
+dist/
+apps/radiopoggers_app/build/
+apps/radiopoggers_app/.dart_tool/
+
+# Android signing
+apps/radiopoggers_app/android/key.properties
+**/*.jks
+**/*.keystore

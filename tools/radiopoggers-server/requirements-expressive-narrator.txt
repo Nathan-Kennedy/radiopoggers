@@ -1,0 +1,9 @@
+# Narradora expressiva Francisca (pt-BR + risadas/bocejos naturais)
+# Instalar: .\scripts\install-expressive-narrator.ps1
+
+edge-tts>=6.1.12
+pydub>=0.25.1
+numpy>=1.24.0
+torch>=2.1.0
+torchaudio>=2.1.0
+ChatTTS>=0.2.4
