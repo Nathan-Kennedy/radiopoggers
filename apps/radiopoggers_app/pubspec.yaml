@@ -1,7 +1,7 @@
 name: radiopoggers_app
 description: RADIO NO GRALE — app nativo Windows e Android.
 publish_to: "none"
-version: 1.1.0+9
+version: 1.1.0+10
 
 environment:
   sdk: ">=3.5.0 <4.0.0"

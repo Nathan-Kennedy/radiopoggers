@@ -120,13 +120,16 @@ if (Test-Path $pubspecPath) {
   }
 }
 $releaseManifestPath = Join-Path $root "data\app-release.json"
+$versionLabel = $tagName.TrimStart('v', 'V')
 @{
   tag_name = $tagName
-  version = $tagName.TrimStart('v', 'V')
+  version = $versionLabel
   release_page_url = ""
   notes = "APK em dist/app-release/RadioPoggers-android.apk"
 } | ConvertTo-Json | Set-Content -Path $releaseManifestPath -Encoding utf8
-Write-Host "[ok] Manifesto de update: data\app-release.json ($tagName)"
+$versionTxtPath = Join-Path $outDir "VERSION.txt"
+Set-Content -Path $versionTxtPath -Value $tagName -Encoding utf8 -NoNewline
+Write-Host "[ok] Update: data\app-release.json + dist\app-release\VERSION.txt ($tagName)"
 
 Write-Host ""
 Write-Host "[ok] Release em: $outDir"

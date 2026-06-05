@@ -121,7 +121,14 @@ Sem keystore, só APK debug funciona em outros aparelhos.
 
 **Importante:** o app tenta **GitHub Releases** (`latest`) e, se não achar, a **API do operador** (`GET /api/app/release` + APK em `dist/app-release/`). O manifesto `data/app-release.json` é gerado ao rodar `package-app-release.ps1`. Tag com build: `v1.1.0+8`. Em debug (`flutter run`) o gate não bloqueia.
 
-Se aparecer “já na versão mais recente” mas você publicou APK novo: quase sempre falta **release no GitHub** ou **`app-release.json` + APK** na máquina da API (não basta só `git push`).
+Se aparecer “já na versão mais recente” mas você publicou APK novo: no **PC da rádio** (não só no git) rode `.\scripts\package-app-release.ps1`, confira `dist\app-release\VERSION.txt` e o APK, **reinicie a API**. A API usa `VERSION.txt` (prioridade) e depois `data/app-release.json`.
+
+Checklist operador após build novo:
+
+1. `.\scripts\package-app-release.ps1`
+2. Confirmar `dist\app-release\VERSION.txt` (ex. `v1.1.0+10`) e `RadioPoggers-android.apk`
+3. Reiniciar `start-local-api.ps1`
+4. Testar no navegador: `http://127.0.0.1:8765/api/app/release` → `tag_name` mais novo que o app dos amigos
 
 ## Inno Setup (opcional)
 

@@ -10,6 +10,7 @@ com o AzuraCast.
 from __future__ import annotations
 
 import base64
+import hashlib
 import json
 import os
 import random
@@ -149,7 +150,9 @@ PUBLIC_AZURACAST_BASE_URL = (
 AZURACAST_API_KEY_FILE = DATA_DIR / "azuracast-api-key.txt"
 MAINTENANCE_FILE = DATA_DIR / "maintenance.json"
 APP_RELEASE_MANIFEST = DATA_DIR / "app-release.json"
-APP_RELEASE_APK_DEFAULT = PROJECT_ROOT / "dist" / "app-release" / "RadioPoggers-android.apk"
+APP_RELEASE_DIR = PROJECT_ROOT / "dist" / "app-release"
+APP_RELEASE_APK_DEFAULT = APP_RELEASE_DIR / "RadioPoggers-android.apk"
+APP_RELEASE_VERSION_FILE = APP_RELEASE_DIR / "VERSION.txt"
 
 
 def load_app_release_manifest() -> dict[str, Any] | None:
@@ -161,6 +164,57 @@ def load_app_release_manifest() -> dict[str, Any] | None:
         return raw if isinstance(raw, dict) else None
     except (OSError, json.JSONDecodeError, TypeError, ValueError):
         return None
+
+
+def _read_app_release_version_label() -> str:
+    """Fonte preferida: dist/app-release/VERSION.txt (gerado no empacote)."""
+    try:
+        if APP_RELEASE_VERSION_FILE.is_file():
+            label = APP_RELEASE_VERSION_FILE.read_text(encoding="utf-8").strip()
+            if label:
+                return label
+    except OSError:
+        pass
+    manifest = load_app_release_manifest()
+    if manifest:
+        tag = str(manifest.get("tag_name") or manifest.get("version") or "").strip()
+        if tag:
+            return tag
+    return ""
+
+
+def build_app_release_public() -> dict[str, Any] | None:
+    """Payload unificado para /api/app/release (VERSION.txt > app-release.json)."""
+    manifest = load_app_release_manifest() or {}
+    apk_path = resolve_app_release_apk_path(manifest if manifest else None)
+    label = _read_app_release_version_label()
+    if not label and not apk_path:
+        return None
+
+    tag = label.strip()
+    if tag and not tag.lower().startswith("v"):
+        tag = f"v{tag}"
+    version = tag[1:] if tag.lower().startswith("v") else tag
+
+    apk_sha256: str | None = None
+    apk_size: int | None = None
+    if apk_path and apk_path.is_file():
+        try:
+            apk_size = apk_path.stat().st_size
+            apk_sha256 = hashlib.sha256(apk_path.read_bytes()).hexdigest()
+        except OSError:
+            apk_sha256 = None
+
+    return {
+        "tag_name": tag,
+        "version": str(manifest.get("version") or version).strip().lstrip("vV"),
+        "release_page_url": str(manifest.get("release_page_url") or "").strip(),
+        "android_download_url": "/api/app/release/apk" if apk_path else None,
+        "apk_available": bool(apk_path),
+        "apk_sha256": apk_sha256,
+        "apk_size_bytes": apk_size,
+        "version_source": "VERSION.txt" if APP_RELEASE_VERSION_FILE.is_file() else "app-release.json",
+    }
 
 
 def resolve_app_release_apk_path(manifest: dict[str, Any] | None = None) -> Path | None:
@@ -4176,23 +4230,11 @@ class RadioPoggersHandler(BaseHTTPRequestHandler):
         path, query = parse_request_path(self.path)
 
         if path == "/api/app/release":
-            manifest = load_app_release_manifest()
-            if not manifest:
+            payload = build_app_release_public()
+            if not payload:
                 json_response(self, 404, {"ok": False, "error": "app_release_not_configured"})
                 return
-            apk_path = resolve_app_release_apk_path(manifest)
-            tag = str(manifest.get("tag_name") or manifest.get("version") or "").strip()
-            version = str(manifest.get("version") or tag).strip()
-            if tag and not tag.lower().startswith("v"):
-                tag = f"v{tag}"
-            json_response(self, 200, {
-                "ok": True,
-                "tag_name": tag,
-                "version": version,
-                "release_page_url": str(manifest.get("release_page_url") or "").strip(),
-                "android_download_url": "/api/app/release/apk" if apk_path else None,
-                "apk_available": bool(apk_path),
-            })
+            json_response(self, 200, {"ok": True, **payload})
             return
 
         if path == "/api/app/release/apk":
@@ -4207,7 +4249,7 @@ class RadioPoggersHandler(BaseHTTPRequestHandler):
         if path == "/api/health":
             azuracast_key = resolve_azuracast_api_key()
             docker_skip = bool(shutil.which("docker"))
-            release_manifest = load_app_release_manifest()
+            release_public = build_app_release_public()
             json_response(self, 200, {
                 "ok": True,
                 "station": STATION_SHORTCODE,
@@ -4229,9 +4271,10 @@ class RadioPoggersHandler(BaseHTTPRequestHandler):
                 },
                 "maintenance": load_maintenance_status(),
                 "app_release": {
-                    "configured": bool(release_manifest),
-                    "tag_name": (release_manifest or {}).get("tag_name"),
-                    "apk_available": resolve_app_release_apk_path(release_manifest) is not None,
+                    "configured": bool(release_public),
+                    "tag_name": (release_public or {}).get("tag_name"),
+                    "version_source": (release_public or {}).get("version_source"),
+                    "apk_available": (release_public or {}).get("apk_available"),
                 },
             })
             return

@@ -10,6 +10,7 @@ import 'package:open_filex/open_filex.dart';
 import 'package:package_info_plus/package_info_plus.dart';
 import 'package:path/path.dart' as p;
 import 'package:path_provider/path_provider.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import '../core/app_release_config.dart';
@@ -37,6 +38,7 @@ class AppUpdateInfo {
     required this.androidDownloadUrl,
     this.windowsSha256,
     this.trustedApiBaseUrl,
+    this.expectedApkSha256,
   });
 
   final String version;
@@ -48,9 +50,32 @@ class AppUpdateInfo {
 
   /// Quando o APK vem da API do operador, downloads só desse host.
   final String? trustedApiBaseUrl;
+
+  /// SHA256 do APK na API (detecta APK novo com mesmo número de versão).
+  final String? expectedApkSha256;
+}
+
+class _ApiReleaseSnapshot {
+  const _ApiReleaseSnapshot({
+    required this.baseUrl,
+    required this.json,
+    required this.remoteLabel,
+    required this.versionSource,
+    required this.apkAvailable,
+    this.apkSha256,
+  });
+
+  final String baseUrl;
+  final Map<String, dynamic> json;
+  final String remoteLabel;
+  final String versionSource;
+  final bool apkAvailable;
+  final String? apkSha256;
 }
 
 class AppUpdateService {
+  static const _installedApkShaKey = 'installed_apk_sha256';
+
   static bool _allowedGithubHost(Uri uri) {
     final h = uri.host.toLowerCase();
     return h == 'github.com' || h.endsWith('.githubusercontent.com') || h == 'api.github.com';
@@ -111,6 +136,33 @@ class AppUpdateService {
     return remote.build > localBuild;
   }
 
+  static String _remoteLabelFromApi(Map<String, dynamic> json) {
+    final tag = json['tag_name']?.toString().trim() ?? '';
+    if (tag.isNotEmpty) return tag.toLowerCase().startsWith('v') ? tag : 'v$tag';
+    final ver = json['version']?.toString().trim() ?? '';
+    if (ver.isEmpty) return '?';
+    return ver.toLowerCase().startsWith('v') ? ver : 'v$ver';
+  }
+
+  static Future<bool> _apkOnServerDiffersFromInstalled(String? remoteSha) async {
+    if (remoteSha == null || remoteSha.isEmpty) return false;
+    final prefs = await SharedPreferences.getInstance();
+    final saved = prefs.getString(_installedApkShaKey);
+    if (saved == null || saved.isEmpty) return false;
+    return saved.toLowerCase() != remoteSha.toLowerCase();
+  }
+
+  static Future<void> rememberInstalledApkSha(String sha) async {
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setString(_installedApkShaKey, sha.toLowerCase());
+  }
+
+  static Future<bool> _shouldOfferApiUpdate(String remoteLabel, PackageInfo pkg, String? remoteSha) async {
+    if (remoteLabel.isEmpty || remoteLabel == '?') return false;
+    if (isUpdateRequired(remoteLabel, pkg)) return true;
+    return _apkOnServerDiffersFromInstalled(remoteSha);
+  }
+
   static Future<AppUpdateCheckResult> checkForUpdate({String? apiBaseUrl}) async {
     final pkg = await PackageInfo.fromPlatform();
     final localLabel = '${pkg.version}+${pkg.buildNumber}';
@@ -132,23 +184,37 @@ class AppUpdateService {
     final api = apiBaseUrl?.trim();
     if (api != null && api.isNotEmpty) {
       try {
-        final apiInfo = await _fetchApiUpdate(api, pkg);
+        final snapshot = await _fetchApiReleaseSnapshot(api);
+        if (snapshot == null) {
+          return AppUpdateCheckResult(
+            status: AppUpdateStatus.checkFailed,
+            message:
+                'API sem release configurada. No PC da rádio: rode .\\scripts\\package-app-release.ps1 '
+                'e reinicie o servidor (precisa de dist/app-release/VERSION.txt e o APK).',
+          );
+        }
+        final apiInfo = await _apiInfoFromSnapshot(snapshot, pkg);
         if (apiInfo != null) {
           return AppUpdateCheckResult(status: AppUpdateStatus.available, info: apiInfo);
         }
+        final remote = snapshot.remoteLabel;
+        final src = snapshot.versionSource;
+        final apk = snapshot.apkAvailable ? 'APK no servidor' : 'sem APK no servidor';
+        return AppUpdateCheckResult(
+          status: AppUpdateStatus.upToDate,
+          message:
+              'App instalado: $localLabel. API ($src): $remote ($apk). '
+              'Se você gerou APK novo e ainda não aparece aqui, atualize dist/app-release/ no PC da rádio '
+              'e reinicie a API.',
+        );
       } catch (e) {
         if (kDebugMode) debugPrint('Update API: $e');
         return AppUpdateCheckResult(
           status: AppUpdateStatus.checkFailed,
           message:
-              'Não foi possível verificar atualização na API ($api). Confira se o servidor está no ar e se data/app-release.json existe.',
+              'Não foi possível verificar atualização na API ($api). Confira se o servidor está no ar.',
         );
       }
-
-      return AppUpdateCheckResult(
-        status: AppUpdateStatus.upToDate,
-        message: 'Versão local $localLabel — mesma da API do operador.',
-      );
     }
 
     if (githubError != null) {
@@ -208,7 +274,7 @@ class AppUpdateService {
     );
   }
 
-  static Future<AppUpdateInfo?> _fetchApiUpdate(String apiBaseUrl, PackageInfo pkg) async {
+  static Future<_ApiReleaseSnapshot?> _fetchApiReleaseSnapshot(String apiBaseUrl) async {
     final base = apiBaseUrl.replaceAll(RegExp(r'/+$'), '');
     final uri = Uri.parse('$base/api/app/release');
     final res = await http.get(uri).timeout(const Duration(seconds: 12));
@@ -220,23 +286,39 @@ class AppUpdateService {
     final json = jsonDecode(res.body) as Map<String, dynamic>;
     if (json['ok'] != true) return null;
 
-    final tag = json['tag_name']?.toString() ?? '';
-    if (tag.isEmpty || !isUpdateRequired(tag, pkg)) return null;
+    return _ApiReleaseSnapshot(
+      baseUrl: base,
+      json: json,
+      remoteLabel: _remoteLabelFromApi(json),
+      versionSource: json['version_source']?.toString() ?? 'app-release.json',
+      apkAvailable: json['apk_available'] == true,
+      apkSha256: json['apk_sha256']?.toString(),
+    );
+  }
 
+  static Future<AppUpdateInfo?> _apiInfoFromSnapshot(_ApiReleaseSnapshot snapshot, PackageInfo pkg) async {
+    final tag = snapshot.remoteLabel;
+    final remoteSha = snapshot.apkSha256;
+    if (!await _shouldOfferApiUpdate(tag, pkg, remoteSha)) return null;
+
+    final json = snapshot.json;
     final version = (json['version']?.toString() ?? tag).trim();
     final displayVersion = version.startsWith('v') ? version.substring(1) : version;
     final apkRaw = json['android_download_url']?.toString();
     final apkUrl = apkRaw != null && apkRaw.isNotEmpty
-        ? resolveDownloadUrl(apkRaw, apiBaseUrl: base)
+        ? resolveDownloadUrl(apkRaw, apiBaseUrl: snapshot.baseUrl)
         : null;
+
+    if (apkUrl == null) return null;
 
     return AppUpdateInfo(
       version: displayVersion,
-      tagName: tag.startsWith('v') ? tag : 'v$tag',
-      releasePageUrl: json['release_page_url']?.toString() ?? '$base/api/app/release',
+      tagName: tag,
+      releasePageUrl: json['release_page_url']?.toString() ?? '${snapshot.baseUrl}/api/app/release',
       windowsDownloadUrl: null,
       androidDownloadUrl: apkUrl,
-      trustedApiBaseUrl: base,
+      trustedApiBaseUrl: snapshot.baseUrl,
+      expectedApkSha256: remoteSha,
     );
   }
 
@@ -427,6 +509,8 @@ start "" "${p.join(installDir, 'radiopoggers_app.exe').replaceAll('/', '\\')}"
       await sink.flush();
       await sink.close();
       onProgress?.call(1);
+      final hash = sha256.convert(await File(dest).readAsBytes()).toString();
+      await rememberInstalledApkSha(hash);
     } finally {
       client.close();
     }

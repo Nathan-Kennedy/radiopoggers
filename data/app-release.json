@@ -1,6 +1,6 @@
 {
-  "tag_name": "v1.1.0+9",
-  "version": "1.1.0+9",
+  "tag_name": "v1.1.0+10",
+  "version": "1.1.0+10",
   "release_page_url": "",
-  "notes": "ASCII mobile otimizado + player na notificacao Android"
+  "notes": "VERSION.txt em dist/app-release tem prioridade na API de update"
 }
