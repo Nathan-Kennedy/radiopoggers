@@ -7,6 +7,7 @@ import '../library/library_screen.dart';
 import '../more/more_screen.dart';
 import '../on_air/on_air_screen.dart';
 import '../spotify/tocar_screen.dart';
+import '../vote/vote_direct_modal.dart';
 import '../vote/vote_overlay.dart';
 
 class AppShell extends StatefulWidget {
@@ -77,6 +78,7 @@ class _AppShellState extends State<AppShell> {
                     ],
                   ),
           ),
+          if (c.voteDirectVisible) VoteDirectModal(controller: c),
           if (c.voteOverlayVisible) VoteOverlay(controller: c),
         ],
       ),

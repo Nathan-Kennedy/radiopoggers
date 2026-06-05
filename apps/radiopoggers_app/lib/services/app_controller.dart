@@ -95,6 +95,17 @@ class AppController extends ChangeNotifier {
   String? _voteOverlayDismissedId;
   String? _lastHandledClosedVoteId;
   Timer? _voteCountdownTimer;
+  Timer? _voteCooldownTimer;
+
+  bool voteSystemEnabled = true;
+  bool azuracastRequestsAvailable = false;
+  double voteActionCooldownRemainingSec = 0;
+  int voteActionCooldownSec = 0;
+
+  String? votePendingDirectType;
+  Map<String, dynamic>? votePendingDirectPayload;
+  bool showVoteDirectModal = false;
+  bool voteDirectBusy = false;
 
   bool voiceRecording = false;
   bool voicePreviewReady = false;
@@ -437,7 +448,12 @@ class AppController extends ChangeNotifier {
 
   bool get canParticipateInVote => streamPlaying && connectionBadgeOnline;
 
+  bool get voteDirectVisible => showVoteDirectModal && votePendingDirectType != null;
+
+  bool get canRequestOnRadio => apiOnline && azuracastRequestsAvailable;
+
   bool get voteOverlayVisible {
+    if (voteDirectVisible) return false;
     final vote = activeVote;
     if (vote == null) return false;
     final phase = vote['phase']?.toString() ?? '';
@@ -445,6 +461,49 @@ class AppController extends ChangeNotifier {
     final id = vote['id']?.toString() ?? '';
     if (id.isNotEmpty && _voteOverlayDismissedId == id) return false;
     return showVoteOverlay;
+  }
+
+  static const _voteActionCooldownTypes = {'skip_track', 'library_request', 'library_clear'};
+
+  bool get isVoteEnabled => voteSystemEnabled && apiOnline;
+
+  bool voteActionCooldownBlocked(String voteType) {
+    if (!_voteActionCooldownTypes.contains(voteType)) return false;
+    return voteActionCooldownRemainingSec > 0;
+  }
+
+  static ({String title, String yes, String no}) voteDirectCopyFor(String voteType) {
+    return switch (voteType) {
+      'skip_track' => (title: 'Pular a faixa?', yes: 'Pular', no: 'Deixa rolar'),
+      'library_clear' => (title: 'Zerar Minha playlist?', yes: 'Zerar', no: 'Manter'),
+      'spotify_import' => (title: 'Playlist pronta!', yes: 'Tocar ja (pula)', no: 'Deixa rolar'),
+      _ => (title: 'Pedir na radio?', yes: 'Tocar ja', no: 'Na fila'),
+    };
+  }
+
+  String voteDirectModalTitle({
+    required String type,
+    required Map<String, dynamic> payload,
+    required String fallbackTitle,
+  }) {
+    if (type == 'library_request') {
+      final title = payload['title']?.toString() ?? 'Faixa';
+      final artist = payload['artist']?.toString() ?? '';
+      final suffix = artist.isNotEmpty ? ' — $artist' : '';
+      return 'Pedir $title$suffix?';
+    }
+    if (type == 'library_clear') {
+      final count = (payload['track_count'] as num?)?.toInt() ?? (payload['count'] as num?)?.toInt() ?? 0;
+      final suffix = count > 0 ? ' ($count faixa(s))' : '';
+      return 'Zerar Minha playlist$suffix?';
+    }
+    if (type == 'spotify_import') {
+      final playlist = payload['playlist_title']?.toString();
+      if (playlist != null && playlist.isNotEmpty) return '$playlist — tocar agora?';
+      final track = payload['title']?.toString();
+      if (track != null && track.isNotEmpty) return 'Comecar com $track?';
+    }
+    return fallbackTitle;
   }
 
   bool get voteSessionActive {
@@ -560,6 +619,11 @@ class AppController extends ChangeNotifier {
       final health = await api!.health();
       apiOnline = true;
       _applyMaintenanceFromHealth(health);
+      _applyVoteSystemStatus(health['vote_system']);
+      final az = health['azuracast'];
+      if (az is Map) {
+        azuracastRequestsAvailable = az['requests_available'] == true;
+      }
       _mikuNarratorEnabled = health['miku_narrator'] != false;
       if (maintenanceBlocksPlayback && streamPlaying) {
         await stream.pause();
@@ -928,6 +992,200 @@ class AppController extends ChangeNotifier {
     notifyListeners();
   }
 
+  String _trackArtistLine(Map<String, dynamic> track) {
+    final artists = track['artists'];
+    if (artists is List) {
+      return artists.map((e) => e.toString()).where((s) => s.isNotEmpty).join(', ');
+    }
+    return track['artist']?.toString() ?? 'Artista';
+  }
+
+  String _libraryRequestBlockedMessage() {
+    if (!apiOnline) {
+      return 'Pedir na radio exige a API em ${settings.apiBaseUrl}.';
+    }
+    return 'Pedir na radio exige API key do AzuraCast em data/azuracast-api-key.txt no PC da radio.';
+  }
+
+  String _voteActionCooldownMessage() {
+    final waitSec = voteActionCooldownRemainingSec.ceil();
+    return 'Aguarde ${waitSec}s antes de pular, pedir musica ou zerar a playlist.';
+  }
+
+  void _applyVoteSystemStatus(dynamic raw) {
+    if (raw is! Map) return;
+    final block = raw is Map<String, dynamic> ? raw : raw.cast<String, dynamic>();
+    voteSystemEnabled = block['enabled'] != false;
+    final configured = (block['action_cooldown_sec'] as num?)?.toDouble();
+    if (configured != null && configured > 0) {
+      voteActionCooldownSec = configured.toInt();
+    }
+    final remaining = (block['action_cooldown_remaining_sec'] as num?)?.toDouble();
+    if (remaining != null) {
+      voteActionCooldownRemainingSec = remaining < 0 ? 0 : remaining;
+      _syncVoteCooldownTicker();
+    }
+  }
+
+  void _syncVoteCooldownTicker() {
+    if (voteActionCooldownRemainingSec <= 0) {
+      _voteCooldownTimer?.cancel();
+      _voteCooldownTimer = null;
+      return;
+    }
+    if (_voteCooldownTimer != null) return;
+    _voteCooldownTimer = Timer.periodic(const Duration(seconds: 1), (_) {
+      if (voteActionCooldownRemainingSec <= 0) {
+        _voteCooldownTimer?.cancel();
+        _voteCooldownTimer = null;
+        notifyListeners();
+        return;
+      }
+      voteActionCooldownRemainingSec = max(0, voteActionCooldownRemainingSec - 1);
+      notifyListeners();
+    });
+  }
+
+  bool _usesCollectiveVoteUi(String voteType) {
+    return voteType == 'library_request' || voteType == 'library_clear' || voteType == 'spotify_import';
+  }
+
+  void hideVoteDirectModal() {
+    showVoteDirectModal = false;
+    votePendingDirectType = null;
+    votePendingDirectPayload = null;
+    voteDirectBusy = false;
+    notifyListeners();
+  }
+
+  void _showVoteDirectModal(String voteType, Map<String, dynamic> payload) {
+    showVoteOverlay = false;
+    votePendingDirectType = voteType;
+    votePendingDirectPayload = Map<String, dynamic>.from(payload);
+    showVoteDirectModal = true;
+    voteDirectBusy = false;
+    notifyListeners();
+  }
+
+  Future<void> beginVoteFlow(String voteType, Map<String, dynamic> payload) async {
+    if (api == null || !apiOnline) {
+      librarySummary = 'API offline — nao da para votar agora.';
+      notifyListeners();
+      return;
+    }
+
+    final safePayload = Map<String, dynamic>.from(payload);
+
+    if (voteActionCooldownBlocked(voteType)) {
+      librarySummary = _voteActionCooldownMessage();
+      notifyListeners();
+      return;
+    }
+
+    if (!isVoteEnabled) {
+      if (voteType == 'library_request') {
+        final trackId = safePayload['track_id']?.toString() ?? '';
+        if (trackId.isEmpty) {
+          librarySummary = 'Pedido falhou: faixa sem ID.';
+          notifyListeners();
+          return;
+        }
+        try {
+          final result = await api!.libraryRequest(trackId);
+          librarySummary = result['message']?.toString() ?? 'Pedido enviado.';
+        } catch (e) {
+          librarySummary = 'Pedido falhou: $e';
+        }
+        notifyListeners();
+        return;
+      }
+      librarySummary = 'Votacao desligada ou API indisponivel.';
+      notifyListeners();
+      return;
+    }
+
+    try {
+      await _sendHeartbeat();
+      final audience = await api!.audienceCount();
+      _applyVoteSystemStatus(audience);
+      audienceTotalOnSite = (audience['total_on_site'] as num?)?.toInt() ?? audienceTotalOnSite;
+      audienceEligible = (audience['eligible'] as num?)?.toInt() ?? audienceEligible;
+      final soloOnSite = audienceTotalOnSite <= 1;
+
+      if (soloOnSite) {
+        _showVoteDirectModal(voteType, safePayload);
+        librarySummary = _usesCollectiveVoteUi(voteType)
+            ? 'So voce no ar — Tocar ja pula; Na fila so enfileira.'
+            : 'So voce no ar — confirme no modal.';
+        notifyListeners();
+        return;
+      }
+
+      final data = await api!.voteStart(
+        type: voteType,
+        proposerId: listenerId,
+        payload: safePayload,
+      );
+      _applyVoteSystemStatus(data);
+      _applyVoteUpdate(_asVoteMap(data['vote']));
+      hideVoteDirectModal();
+      librarySummary = data['vote']?['solo'] == true
+          ? (_usesCollectiveVoteUi(voteType)
+              ? 'So voce no ar — vote Tocar ja ou Na fila.'
+              : 'So voce no ar — vote agora.')
+          : 'Votacao aberta! A galera decide agora.';
+      notifyListeners();
+    } catch (e) {
+      final message = e.toString();
+      if (message.contains('votacao em andamento')) {
+        try {
+          final data = await api!.voteActive();
+          _applyVoteSystemStatus(data);
+          _applyVoteUpdate(_asVoteMap(data['vote']));
+          librarySummary = 'Ja existe uma votacao em andamento — participe no modal.';
+          notifyListeners();
+          return;
+        } catch (_) {}
+      }
+      librarySummary = 'Votacao falhou: $message';
+      notifyListeners();
+    }
+  }
+
+  Future<void> executeDirectVote(String choice) async {
+    final type = votePendingDirectType;
+    final payload = votePendingDirectPayload;
+    if (type == null || payload == null || api == null) return;
+
+    voteDirectBusy = true;
+    notifyListeners();
+
+    try {
+      final result = await api!.voteExecuteDirect(
+        type: type,
+        proposerId: listenerId,
+        choice: choice,
+        payload: payload,
+      );
+      hideVoteDirectModal();
+      _applyVoteSystemStatus(result);
+      librarySummary = result['message']?.toString() ?? 'Comando executado.';
+      notifyListeners();
+      Future<void>.delayed(const Duration(seconds: 2), refreshNowPlaying);
+    } catch (e) {
+      voteDirectBusy = false;
+      final message = e.toString();
+      if ((message.contains('votacao coletiva') || message.contains('Mais de um ouvinte')) &&
+          _usesCollectiveVoteUi(type)) {
+        hideVoteDirectModal();
+        await beginVoteFlow(type, payload);
+        return;
+      }
+      librarySummary = 'Comando falhou: $message';
+      notifyListeners();
+    }
+  }
+
   Future<void> requestTrack(Map<String, dynamic> track) async {
     final trackId = resolveLibraryPreviewId(track);
     if (trackId.isEmpty) {
@@ -935,9 +1193,16 @@ class AppController extends ChangeNotifier {
       notifyListeners();
       return;
     }
-    await api!.libraryRequest(trackId);
-    librarySummary = 'Pedido enviado para a fila.';
-    notifyListeners();
+    if (!canRequestOnRadio) {
+      librarySummary = _libraryRequestBlockedMessage();
+      notifyListeners();
+      return;
+    }
+    await beginVoteFlow('library_request', {
+      'track_id': trackId,
+      'title': track['title']?.toString() ?? 'Faixa',
+      'artist': _trackArtistLine(track),
+    });
   }
 
   Future<void> _sendHeartbeat() async {
@@ -954,6 +1219,7 @@ class AppController extends ChangeNotifier {
     if (api == null || !apiOnline) return;
     try {
       final data = await api!.audienceCount();
+      _applyVoteSystemStatus(data);
       audienceTotalOnSite = (data['total_on_site'] as num?)?.toInt() ?? audienceTotalOnSite;
       audienceEligible = (data['eligible'] as num?)?.toInt() ?? audienceEligible;
       notifyListeners();
@@ -964,6 +1230,7 @@ class AppController extends ChangeNotifier {
     if (api == null || !apiOnline) return;
     try {
       final data = await api!.voteActive();
+      _applyVoteSystemStatus(data);
       _applyVoteUpdate(_asVoteMap(data['vote']));
     } catch (_) {}
   }
@@ -1003,6 +1270,9 @@ class AppController extends ChangeNotifier {
     final prevId = activeVote?['id']?.toString();
     if (id.isNotEmpty && id != prevId) {
       _voteOverlayDismissedId = null;
+      showVoteDirectModal = false;
+      votePendingDirectType = null;
+      votePendingDirectPayload = null;
     }
 
     activeVote = Map<String, dynamic>.from(vote);
@@ -1055,14 +1325,12 @@ class AppController extends ChangeNotifier {
 
   Future<void> startSkipVote() async {
     if (api == null || !apiOnline) return;
-    try {
-      final data = await api!.voteStart(type: 'skip_track', proposerId: listenerId);
-      _applyVoteUpdate(_asVoteMap(data['vote']));
-      voteUiMessage = 'Votação para pular faixa';
-    } catch (e) {
-      voteUiMessage = e.toString();
-      notifyListeners();
-    }
+    await beginVoteFlow('skip_track', {
+      'title': trackTitle,
+      'artist': trackArtist,
+    });
+    voteUiMessage = librarySummary;
+    notifyListeners();
   }
 
   Future<void> castVote(String choice) async {
@@ -1753,6 +2021,7 @@ class AppController extends ChangeNotifier {
     _healthTimer?.cancel();
     _heartbeatTimer?.cancel();
     _votePollTimer?.cancel();
+    _voteCooldownTimer?.cancel();
     _voteCountdownTimer?.cancel();
     _voiceDropPollTimer?.cancel();
     _audioMeterTimer?.cancel();
