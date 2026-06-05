@@ -792,6 +792,8 @@ class AppController extends ChangeNotifier {
 
   Future<void> togglePlay() async {
     await stream.ensureInitialized();
+    await RadioAudioBridge.initIfNeeded();
+    _attachBackgroundPlayback();
     if (streamPlaying) {
       await stream.pause();
       streamPlaying = false;
