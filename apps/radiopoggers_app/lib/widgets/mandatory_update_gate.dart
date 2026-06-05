@@ -57,10 +57,8 @@ class _MandatoryUpdateGateState extends State<MandatoryUpdateGate> {
         setState(() => _phase = _GatePhase.ready);
         return;
       case AppUpdateStatus.checkFailed:
-        setState(() {
-          _phase = _GatePhase.checkFailed;
-          _error = result.message;
-        });
+        // Não bloqueia o uso da rádio se a API ainda não tiver release publicada.
+        setState(() => _phase = _GatePhase.ready);
         return;
       case AppUpdateStatus.available:
         setState(() {

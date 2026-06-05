@@ -31,7 +31,7 @@ import 'voice_drop_processor.dart';
 
 class AppController extends ChangeNotifier {
   AppController() {
-    stream = StreamPlayerService(sharedPlayer: RadioAudioBridge.handler?.player);
+    stream = StreamPlayerService();
     _init();
   }
 
@@ -176,7 +176,6 @@ class AppController extends ChangeNotifier {
     await ascii.loadAll();
     _loadNarratorSamples();
     _bindOverlayEvents();
-    _attachBackgroundPlayback();
     await _checkApi();
     loading = false;
     notifyListeners();
@@ -791,36 +790,36 @@ class AppController extends ChangeNotifier {
   }
 
   Future<void> togglePlay() async {
-    await stream.ensureInitialized();
-    await RadioAudioBridge.initIfNeeded();
-    _attachBackgroundPlayback();
-    if (streamPlaying) {
-      await stream.pause();
-      streamPlaying = false;
-      asciiStageMode = 'idle';
-      streamPlayError = null;
-    } else {
-      if (!radioPlayAllowed) {
-        _recomputeConnectionLabel();
-        notifyListeners();
-        return;
-      }
-      try {
+    try {
+      await stream.ensureInitialized();
+      if (streamPlaying) {
+        await stream.pause();
+        streamPlaying = false;
+        asciiStageMode = 'idle';
+        streamPlayError = null;
+      } else {
+        if (!radioPlayAllowed) {
+          _recomputeConnectionLabel();
+          notifyListeners();
+          return;
+        }
         await stream.playStream(settings);
         await stream.setVolume(volume);
         streamPlaying = true;
         asciiStageMode = 'play';
         streamPlayError = null;
-      } catch (e) {
-        streamPlaying = false;
-        asciiStageMode = 'idle';
-        streamPlayError = 'Não foi possível abrir o stream. Verifique a URL em Mais ou aguarde a estação voltar.';
       }
+      _recomputeConnectionLabel();
+      notifyListeners();
+      _sendHeartbeat();
+    } catch (e, st) {
+      if (kDebugMode) debugPrint('togglePlay: $e\n$st');
+      streamPlaying = false;
+      asciiStageMode = 'idle';
+      streamPlayError = 'Erro ao tocar a rádio: $e';
+      _recomputeConnectionLabel();
+      notifyListeners();
     }
-    _recomputeConnectionLabel();
-    _syncBackgroundPlayback();
-    notifyListeners();
-    _sendHeartbeat();
   }
 
   Future<void> setVolumeLevel(double v) async {

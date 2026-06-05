@@ -1,6 +1,6 @@
 {
-  "tag_name": "v1.1.0+11",
-  "version": "1.1.0+11",
+  "tag_name": "v1.1.0+12",
+  "version": "1.1.0+12",
   "release_page_url": "",
   "notes": "VERSION.txt em dist/app-release tem prioridade na API de update"
 }

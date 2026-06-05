@@ -189,8 +189,7 @@ class AppUpdateService {
           return AppUpdateCheckResult(
             status: AppUpdateStatus.checkFailed,
             message:
-                'API sem release configurada. No PC da rádio: rode .\\scripts\\package-app-release.ps1 '
-                'e reinicie o servidor (precisa de dist/app-release/VERSION.txt e o APK).',
+                'Update: API sem release ($api). No PC da rádio rode package-app-release.ps1 e reinicie a API.',
           );
         }
         final apiInfo = await _apiInfoFromSnapshot(snapshot, pkg);
