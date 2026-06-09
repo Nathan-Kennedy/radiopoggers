@@ -194,6 +194,7 @@ class AppController extends ChangeNotifier {
       _startTimers();
       unawaited(loadSpotifyData());
     }
+    _attachBackgroundPlayback();
   }
 
   void _attachBackgroundPlayback() {
@@ -876,6 +877,7 @@ class AppController extends ChangeNotifier {
       _recomputeConnectionLabel();
       notifyListeners();
       _sendHeartbeat();
+      _syncBackgroundPlayback();
     } catch (e, st) {
       if (kDebugMode) debugPrint('togglePlay: $e\n$st');
       streamPlaying = false;

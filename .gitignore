@@ -49,6 +49,10 @@ dist/
 apps/radiopoggers_app/build/
 apps/radiopoggers_app/.dart_tool/
 
+# Dados de runtime (nao versionar)
+data/voice-drops/
+data/spotdl-*
+
 # Android signing
 apps/radiopoggers_app/android/key.properties
 **/*.jks

@@ -1,6 +1,6 @@
-{
-  "tag_name": "v1.1.0+13",
-  "version": "1.1.0+13",
-  "release_page_url": "",
-  "notes": "VERSION.txt em dist/app-release tem prioridade na API de update"
+﻿{
+    "release_page_url":  "",
+    "tag_name":  "v1.1.0+13",
+    "version":  "1.1.0+13",
+    "notes":  "APK em dist/app-release/RadioPoggers-android.apk"
 }

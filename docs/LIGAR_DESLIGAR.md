@@ -180,13 +180,19 @@ docker exec azuracast bash -lc "cd /var/azuracast/www && php backend/bin/console
 
 ---
 
-## Apos reiniciar o PC
+### Apos reiniciar o PC
 
 1. Abrir **Docker Desktop** (aguardar Running).
-2. `.\scripts\start-radio.ps1` (se `docker ps` nao mostrar azuracast).
-3. `.\scripts\start-full-stack.ps1 -SkipAzuraCast -OpenBrowser`  
+2. `.\\scripts\\start-radio.ps1` (se `docker ps` nao mostrar azuracast).
+3. `.\\scripts\\start-full-stack.ps1 -SkipAzuraCast -OpenBrowser`  \
    **ou** os dois terminais: `start-local-api.ps1` + `serve-frontend.ps1 -Open`.
-4. Ctrl+F5 em `http://localhost:5500/frontend/`.
+4. **Se for acessar pelo celular via ZeroTier:** confira se a API responde pelo IP da VPN:
+   ```powershell
+   powershell -Command "Get-NetIPAddress -InterfaceAlias 'ZeroTier*' -AddressFamily IPv4"
+   curl http://SEU_IP_ZEROTIER:8765/api/health
+   ```
+   Se falhar, veja **docs/RUNBOOK_ATUAL.md** secao "API local nao responde pelo ZeroTier".
+5. Ctrl+F5 em `http://localhost:5500/frontend/`.
 
 ---
 

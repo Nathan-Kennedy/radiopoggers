@@ -437,7 +437,30 @@ Duplicate prevention yielded no playable song
 
 Se porta ocupada, mate processo antigo ou reinicie o script.
 
-**Importante:** `python tools\radiopoggers-server\server.py` sozinho escuta em `127.0.0.1` e **nao** carrega `azuracast-api-key.txt` automaticamente. Para Pedir na estante + celular na LAN, use **`start-local-api.ps1`**.
+**Importante:** `python tools\\radiopoggers-server\\server.py` sozinho escuta em `127.0.0.1` e **nao** carrega `azuracast-api-key.txt` automaticamente. Para Pedir na estante + celular na LAN, use **`start-local-api.ps1`**.
+
+### API local nao responde pelo ZeroTier (celular nao conecta)
+
+A API local (`start-local-api.ps1`) escuta em `0.0.0.0:8765`, portanto aceita conexoes da interface ZeroTier (`10.6.x.x`). Se o celular nao conectar:
+
+1. **Confira o IP do ZeroTier e teste:**
+   ```powershell
+   powershell -Command "Get-NetIPAddress -InterfaceAlias 'ZeroTier*' -AddressFamily IPv4 | Select-Object InterfaceAlias,IPAddress"
+   curl http://10.6.219.56:8765/api/health
+   ```
+
+2. **Duplicidade de servidor Python na porta 8765** — as vezes um processo antigo fica escutando em `127.0.0.1` so e bloqueia novas conexoes:
+   ```powershell
+   taskkill /F /FI "PID gt 0" 2>$null
+   .\scripts\start-local-api.ps1
+   ```
+
+3. **Firewall:** confira se as regras `RadioPoggers*` cobrem a porta 8765:
+   ```powershell
+   Get-NetFirewallRule -DisplayName "RadioPoggers*" | Get-NetFirewallPortFilter
+   ```
+
+4. **No celular:** confira se o device esta **autorizado** no [ZeroTier Central](https://my.zerotier.com/) e se a rota `10.6.219.0/24` esta configurada como managed route.
 
 ### Preview Ouvir falha mas estante lista faixas
 

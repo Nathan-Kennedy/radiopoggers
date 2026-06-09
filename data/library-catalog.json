@@ -1,12 +1,48 @@
 {
-  "revision": 1,
-  "generated_at": "2026-06-04T05:45:59Z",
+  "revision": 6,
+  "generated_at": "2026-06-05T01:32:03Z",
   "summary": {
-    "tracks": 239,
-    "artists": 65,
-    "albums": 105
+    "tracks": 289,
+    "artists": 108,
+    "albums": 152
   },
   "tracks": [
+    {
+      "id": "3GWq178RXxxXnuGOpuJ6MZ",
+      "spotify_id": "3GWq178RXxxXnuGOpuJ6MZ",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/3GWq178RXxxXnuGOpuJ6MZ",
+      "title": "blackout blackout",
+      "artists": [
+        "all things break"
+      ],
+      "album": "blackout blackout",
+      "duration_ms": 138000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2736e6e816d5fdb9941d54af0b6",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1E34SjfnXUp86X\\all things break - blackout blackout.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1E34SjfnXUp86X"
+      ]
+    },
+    {
+      "id": "1QLJZ0k0nRDlbKoTGtyKJQ",
+      "spotify_id": "1QLJZ0k0nRDlbKoTGtyKJQ",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/1QLJZ0k0nRDlbKoTGtyKJQ",
+      "title": "stay",
+      "artists": [
+        "all things break"
+      ],
+      "album": "stay",
+      "duration_ms": 191000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2739eda06da47a52c0dfe97fea4",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1E34SjfnXUp86X\\all things break - stay.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1E34SjfnXUp86X"
+      ]
+    },
     {
       "id": "2tS8YJJOiTxo4JdVidzs1t",
       "spotify_id": "2tS8YJJOiTxo4JdVidzs1t",
@@ -854,6 +890,190 @@
       ]
     },
     {
+      "id": "3xOveMxnSatyDgQTGIfcMg",
+      "spotify_id": "3xOveMxnSatyDgQTGIfcMg",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/3xOveMxnSatyDgQTGIfcMg",
+      "title": "Confess",
+      "artists": [
+        "April Girl"
+      ],
+      "album": "Longer Days",
+      "duration_ms": 170000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273c314d6cc9d5fbd808ed1bbea",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1E34SjfnXUp86X\\April Girl - Confess.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1E34SjfnXUp86X"
+      ]
+    },
+    {
+      "id": "0z0g9lFIF3FGXpJTDGEgJs",
+      "spotify_id": "0z0g9lFIF3FGXpJTDGEgJs",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/0z0g9lFIF3FGXpJTDGEgJs",
+      "title": "I Drive",
+      "artists": [
+        "April Girl"
+      ],
+      "album": "Intro",
+      "duration_ms": 191000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2732771f6118036856e298cc313",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1E34SjfnXUp86X\\April Girl - I Drive.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1E34SjfnXUp86X"
+      ]
+    },
+    {
+      "id": "2J5fHq5DxZKVUqC5VHnYAw",
+      "spotify_id": "2J5fHq5DxZKVUqC5VHnYAw",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/2J5fHq5DxZKVUqC5VHnYAw",
+      "title": "Into You",
+      "artists": [
+        "April Girl"
+      ],
+      "album": "Longer Days",
+      "duration_ms": 194000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273c314d6cc9d5fbd808ed1bbea",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1E34SjfnXUp86X\\April Girl - Into You.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1E34SjfnXUp86X"
+      ]
+    },
+    {
+      "id": "6ogAI7hxJhcpH04xFuwGn4",
+      "spotify_id": "6ogAI7hxJhcpH04xFuwGn4",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/6ogAI7hxJhcpH04xFuwGn4",
+      "title": "Slide",
+      "artists": [
+        "April Girl"
+      ],
+      "album": "Slide",
+      "duration_ms": 174000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273109ac7b58649e6ce6a44e5d4",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1E34SjfnXUp86X\\April Girl - Slide.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1E34SjfnXUp86X"
+      ]
+    },
+    {
+      "id": "6G9Q0Br0TIdJuvaL3dTsoz",
+      "spotify_id": "6G9Q0Br0TIdJuvaL3dTsoz",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/6G9Q0Br0TIdJuvaL3dTsoz",
+      "title": "Goosebumps",
+      "artists": [
+        "Astrality"
+      ],
+      "album": "Goosebumps",
+      "duration_ms": 239000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b27372775e60dbbd5f361804c6d6",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1E34SjfnXUp86X\\Astrality - Goosebumps.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1E34SjfnXUp86X"
+      ]
+    },
+    {
+      "id": "7agDigat5F6DfXVDGbKYIq",
+      "spotify_id": "7agDigat5F6DfXVDGbKYIq",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/7agDigat5F6DfXVDGbKYIq",
+      "title": "Need You",
+      "artists": [
+        "Astrality"
+      ],
+      "album": "Need You",
+      "duration_ms": 159000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273fa16633711ce5f8515ff26b4",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1E34SjfnXUp86X\\Astrality - Need You.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1E34SjfnXUp86X"
+      ]
+    },
+    {
+      "id": "2MjUXeQsfJAFhSXvpojmQX",
+      "spotify_id": "2MjUXeQsfJAFhSXvpojmQX",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/2MjUXeQsfJAFhSXvpojmQX",
+      "title": "Can't Go Back",
+      "artists": [
+        "Astrality",
+        "James French"
+      ],
+      "album": "Can't Go Back",
+      "duration_ms": 155000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273b8da27d765de2a37b421e52c",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1E34SjfnXUp86X\\Astrality, James French - Can't Go Back.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1E34SjfnXUp86X"
+      ]
+    },
+    {
+      "id": "0hXpNsYnw831qvqCDOCbz5",
+      "spotify_id": "0hXpNsYnw831qvqCDOCbz5",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/0hXpNsYnw831qvqCDOCbz5",
+      "title": "Leave Behind",
+      "artists": [
+        "Astrality",
+        "Krysta Youngs",
+        "Andro"
+      ],
+      "album": "Leave Behind",
+      "duration_ms": 206000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2733cae38d43228be98b706edf0",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1E34SjfnXUp86X\\Astrality, Krysta Youngs, Andro - Leave Behind.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1E34SjfnXUp86X"
+      ]
+    },
+    {
+      "id": "4ZYL4h2sQEWVBXoSuLcMEA",
+      "spotify_id": "4ZYL4h2sQEWVBXoSuLcMEA",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/4ZYL4h2sQEWVBXoSuLcMEA",
+      "title": "Cherish",
+      "artists": [
+        "Badflite"
+      ],
+      "album": "Cherish",
+      "duration_ms": 204000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2732a73efc5ad730e21ceba4026",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1E34SjfnXUp86X\\Badflite - Cherish.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1E34SjfnXUp86X"
+      ]
+    },
+    {
+      "id": "51cFeWmtepORxbaTbjlkmi",
+      "spotify_id": "51cFeWmtepORxbaTbjlkmi",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/51cFeWmtepORxbaTbjlkmi",
+      "title": "Where the Sun Goes Down - Extended",
+      "artists": [
+        "Badflite",
+        "RYVM"
+      ],
+      "album": "Where the Sun Goes Down",
+      "duration_ms": 221000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273a61317716096878ba1614c8b",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1E34SjfnXUp86X\\Badflite, RYVM - Where the Sun Goes Down - Extended.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1E34SjfnXUp86X"
+      ]
+    },
+    {
       "id": "0TwBtDAWpkpM3srywFVOV5",
       "spotify_id": "0TwBtDAWpkpM3srywFVOV5",
       "isrc": "",
@@ -1053,6 +1273,43 @@
       ]
     },
     {
+      "id": "1LbbbqPu0xLOb87DhIb2lF",
+      "spotify_id": "1LbbbqPu0xLOb87DhIb2lF",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/1LbbbqPu0xLOb87DhIb2lF",
+      "title": "all that i can say",
+      "artists": [
+        "CANNA",
+        "maaple"
+      ],
+      "album": "all that i can say",
+      "duration_ms": 173000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273e8016f43f0341580cc9d9da7",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1E34SjfnXUp86X\\CANNA, maaple - all that i can say.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1E34SjfnXUp86X"
+      ]
+    },
+    {
+      "id": "5ml6MvysYO6HoXCFw4uY1c",
+      "spotify_id": "5ml6MvysYO6HoXCFw4uY1c",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/5ml6MvysYO6HoXCFw4uY1c",
+      "title": "WHERE DOES YOUR LOVE GO?",
+      "artists": [
+        "CHAIME"
+      ],
+      "album": "WHERE DOES YOUR LOVE GO?",
+      "duration_ms": 213000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2731ba02efb9d82b761d69796e4",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1E34SjfnXUp86X\\CHAIME - WHERE DOES YOUR LOVE GO.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1E34SjfnXUp86X"
+      ]
+    },
+    {
       "id": "0DiWol3AO6WpXZgp0goxAV",
       "spotify_id": "0DiWol3AO6WpXZgp0goxAV",
       "isrc": "",
@@ -1068,6 +1325,97 @@
       "status": "ready",
       "sources": [
         "playlist-37i9dQZF1E8JuTpPiqjZ12"
+      ]
+    },
+    {
+      "id": "2kWwTQdFg2Phlu5grf9bQg",
+      "spotify_id": "2kWwTQdFg2Phlu5grf9bQg",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/2kWwTQdFg2Phlu5grf9bQg",
+      "title": "99 Eyes",
+      "artists": [
+        "Daydream Affiliate"
+      ],
+      "album": "99 Eyes",
+      "duration_ms": 154000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b27326c3e009ae9f2a9e28bd40fa",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1E34SjfnXUp86X\\Daydream Affiliate - 99 Eyes.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1E34SjfnXUp86X"
+      ]
+    },
+    {
+      "id": "1cIwWZ0UUervIBRfl8mwzc",
+      "spotify_id": "1cIwWZ0UUervIBRfl8mwzc",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/1cIwWZ0UUervIBRfl8mwzc",
+      "title": "Playback",
+      "artists": [
+        "Daydream Affiliate"
+      ],
+      "album": "Clocks",
+      "duration_ms": 140000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273b0f1ea4addf4172b39b16b4f",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1E34SjfnXUp86X\\Daydream Affiliate - Playback.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1E34SjfnXUp86X"
+      ]
+    },
+    {
+      "id": "0rGQo2MwygwsKrvRDpCIx2",
+      "spotify_id": "0rGQo2MwygwsKrvRDpCIx2",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/0rGQo2MwygwsKrvRDpCIx2",
+      "title": "You're Still Here",
+      "artists": [
+        "deep dispatch"
+      ],
+      "album": "You're Still Here",
+      "duration_ms": 152000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b27325f671e6473a6a4a0ef9e11c",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1E34SjfnXUp86X\\deep dispatch - You're Still Here.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1E34SjfnXUp86X"
+      ]
+    },
+    {
+      "id": "4L6I4Jj8kLkzYipPOjsxdT",
+      "spotify_id": "4L6I4Jj8kLkzYipPOjsxdT",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/4L6I4Jj8kLkzYipPOjsxdT",
+      "title": "I got you",
+      "artists": [
+        "Disclaimer"
+      ],
+      "album": "I got you",
+      "duration_ms": 150000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273aa9ca40fc80848032d2d6425",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1E34SjfnXUp86X\\Disclaimer - I got you.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1E34SjfnXUp86X"
+      ]
+    },
+    {
+      "id": "3ZnFQ1vBuSp9ec7gGAGsEm",
+      "spotify_id": "3ZnFQ1vBuSp9ec7gGAGsEm",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/3ZnFQ1vBuSp9ec7gGAGsEm",
+      "title": "Enjoy the Silence - Don Diablo Version",
+      "artists": [
+        "Don Diablo",
+        "MONO|CHROME"
+      ],
+      "album": "Enjoy the Silence (Don Diablo Version)",
+      "duration_ms": 200000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273f0ed95b4e3edfe57e65eec27",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1E34SjfnXUp86X\\Don Diablo, MONOCHROME - Enjoy the Silence - Don Diablo Version.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1E34SjfnXUp86X"
       ]
     },
     {
@@ -1169,6 +1517,43 @@
       ]
     },
     {
+      "id": "0vbey7UHmq5YAzMN9TLB6i",
+      "spotify_id": "0vbey7UHmq5YAzMN9TLB6i",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/0vbey7UHmq5YAzMN9TLB6i",
+      "title": "When I'm into You",
+      "artists": [
+        "GOBAITH"
+      ],
+      "album": "When I'm into You",
+      "duration_ms": 172000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b27336453e6840c28dd1dcdea80b",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1E34SjfnXUp86X\\GOBAITH - When I'm into You.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1E34SjfnXUp86X"
+      ]
+    },
+    {
+      "id": "1CRaZYLRKh6GXWKc4PMpKF",
+      "spotify_id": "1CRaZYLRKh6GXWKc4PMpKF",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/1CRaZYLRKh6GXWKc4PMpKF",
+      "title": "Dreaming Of You",
+      "artists": [
+        "GOBAITH",
+        "CERES"
+      ],
+      "album": "Dreaming Of You",
+      "duration_ms": 144000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b27396b523309ddc68984cf0455b",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1E34SjfnXUp86X\\GOBAITH, CERES - Dreaming Of You.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1E34SjfnXUp86X"
+      ]
+    },
+    {
       "id": "0eqH0ALoDQevq59YcQ53KE",
       "spotify_id": "0eqH0ALoDQevq59YcQ53KE",
       "isrc": "",
@@ -1206,6 +1591,60 @@
       ]
     },
     {
+      "id": "6u4CLgult9hhrCqr86B5JW",
+      "spotify_id": "6u4CLgult9hhrCqr86B5JW",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/6u4CLgult9hhrCqr86B5JW",
+      "title": "Hear My Call",
+      "artists": [
+        "H:dn"
+      ],
+      "album": "Hear My Call",
+      "duration_ms": 172000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b27367f0f4a78089160ac415047b",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1E34SjfnXUp86X\\H-dn - Hear My Call.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1E34SjfnXUp86X"
+      ]
+    },
+    {
+      "id": "6ouaFbSkK136LinzuwUxT0",
+      "spotify_id": "6ouaFbSkK136LinzuwUxT0",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/6ouaFbSkK136LinzuwUxT0",
+      "title": "Turn The Lights Off",
+      "artists": [
+        "H:dn"
+      ],
+      "album": "Turn The Lights Off",
+      "duration_ms": 144000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b27358774152a41cad576e61bf47",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1E34SjfnXUp86X\\H-dn - Turn The Lights Off.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1E34SjfnXUp86X"
+      ]
+    },
+    {
+      "id": "1ZVjrE1mB1J5m3VHQvL9Bo",
+      "spotify_id": "1ZVjrE1mB1J5m3VHQvL9Bo",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/1ZVjrE1mB1J5m3VHQvL9Bo",
+      "title": "stay here don't go",
+      "artists": [
+        "i'm loam"
+      ],
+      "album": "stay here don't go",
+      "duration_ms": 177000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273157c8162876b7d6d8a29f08e",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1E34SjfnXUp86X\\i'm loam - stay here don't go.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1E34SjfnXUp86X"
+      ]
+    },
+    {
       "id": "2U8NXPTXZWG2O0ye2sYRiH",
       "spotify_id": "2U8NXPTXZWG2O0ye2sYRiH",
       "isrc": "",
@@ -1222,6 +1661,64 @@
       "status": "ready",
       "sources": [
         "playlist-37i9dQZF1E8JuTpPiqjZ12"
+      ]
+    },
+    {
+      "id": "64fXwFNr6wKQLAjFTYDvbe",
+      "spotify_id": "64fXwFNr6wKQLAjFTYDvbe",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/64fXwFNr6wKQLAjFTYDvbe",
+      "title": "Reverie",
+      "artists": [
+        "INNERVERSE"
+      ],
+      "album": "Reverie",
+      "duration_ms": 223000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273225a5b865f4e3a93a2b9f7d6",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1E34SjfnXUp86X\\INNERVERSE - Reverie.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1E34SjfnXUp86X"
+      ]
+    },
+    {
+      "id": "356zh8gZWsTSQqtJBUpJ3b",
+      "spotify_id": "356zh8gZWsTSQqtJBUpJ3b",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/356zh8gZWsTSQqtJBUpJ3b",
+      "title": "Life with You",
+      "artists": [
+        "INNERVERSE",
+        "Paul Schulze",
+        "Oliver Cricket",
+        "Courtney Storm"
+      ],
+      "album": "Life with You",
+      "duration_ms": 158000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b27394099cea9b340c3aaadf8685",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1E34SjfnXUp86X\\INNERVERSE, Paul Schulze, Oliver Cricket, Courtney Storm - Life with You.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1E34SjfnXUp86X"
+      ]
+    },
+    {
+      "id": "1oNOo7KjMigs4pvVPzFhLT",
+      "spotify_id": "1oNOo7KjMigs4pvVPzFhLT",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/1oNOo7KjMigs4pvVPzFhLT",
+      "title": "High",
+      "artists": [
+        "James Carter",
+        "BARBZ"
+      ],
+      "album": "High",
+      "duration_ms": 158000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273c836f7719be6a1e69c42c88a",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1E34SjfnXUp86X\\James Carter, BARBZ - High.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1E34SjfnXUp86X"
       ]
     },
     {
@@ -1260,6 +1757,43 @@
       "status": "ready",
       "sources": [
         "playlist-37i9dQZF1DZ06evO47cwRq"
+      ]
+    },
+    {
+      "id": "6naA2kx3P4uRTjWbNuSdDX",
+      "spotify_id": "6naA2kx3P4uRTjWbNuSdDX",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/6naA2kx3P4uRTjWbNuSdDX",
+      "title": "Dreamin' About You",
+      "artists": [
+        "Josh Hunter",
+        "Lily Denning"
+      ],
+      "album": "Dreamin' About You",
+      "duration_ms": 147000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2737503e0625ccd04164952a535",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1E34SjfnXUp86X\\Josh Hunter, Lily Denning - Dreamin' About You.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1E34SjfnXUp86X"
+      ]
+    },
+    {
+      "id": "7mNXqJNUEPqiALzp1I9Yk1",
+      "spotify_id": "7mNXqJNUEPqiALzp1I9Yk1",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/7mNXqJNUEPqiALzp1I9Yk1",
+      "title": "Losing You",
+      "artists": [
+        "Julien Fade"
+      ],
+      "album": "Losing You",
+      "duration_ms": 174000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2737803191398d1738e3b0cea75",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1E34SjfnXUp86X\\Julien Fade - Losing You.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1E34SjfnXUp86X"
       ]
     },
     {
@@ -2204,6 +2738,60 @@
       ]
     },
     {
+      "id": "2Wnh4TOvini4Evajt72qgl",
+      "spotify_id": "2Wnh4TOvini4Evajt72qgl",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/2Wnh4TOvini4Evajt72qgl",
+      "title": "Fragile Soul",
+      "artists": [
+        "Lonelysoul."
+      ],
+      "album": "Fragile Soul",
+      "duration_ms": 196000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273c2ee94ec948bbfbb7a171d2f",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1E34SjfnXUp86X\\Lonelysoul. - Fragile Soul.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1E34SjfnXUp86X"
+      ]
+    },
+    {
+      "id": "6nHyY8kHh39ZB4SfsQ35zD",
+      "spotify_id": "6nHyY8kHh39ZB4SfsQ35zD",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/6nHyY8kHh39ZB4SfsQ35zD",
+      "title": "Glow",
+      "artists": [
+        "MA:RK"
+      ],
+      "album": "Glow",
+      "duration_ms": 159000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273e49889a1e67d51ac86b7a6b3",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1E34SjfnXUp86X\\MA-RK - Glow.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1E34SjfnXUp86X"
+      ]
+    },
+    {
+      "id": "6zebgbvTnD3NsCgNgRRnk8",
+      "spotify_id": "6zebgbvTnD3NsCgNgRRnk8",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/6zebgbvTnD3NsCgNgRRnk8",
+      "title": "That's Where I Should Be",
+      "artists": [
+        "MA:RK"
+      ],
+      "album": "That's Where I Should Be",
+      "duration_ms": 142000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273e71ae0799aa67e9854a74d56",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1E34SjfnXUp86X\\MA-RK - That's Where I Should Be.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1E34SjfnXUp86X"
+      ]
+    },
+    {
       "id": "4eMZmxNNIXtEPmBcIp8W6C",
       "spotify_id": "4eMZmxNNIXtEPmBcIp8W6C",
       "isrc": "",
@@ -2260,6 +2848,24 @@
       ]
     },
     {
+      "id": "0O8CNTiKbHeauSkNoSL7xc",
+      "spotify_id": "0O8CNTiKbHeauSkNoSL7xc",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/0O8CNTiKbHeauSkNoSL7xc",
+      "title": "Lost",
+      "artists": [
+        "Maxomar"
+      ],
+      "album": "Lost",
+      "duration_ms": 191000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273046817915517cd729c22fc33",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1E34SjfnXUp86X\\Maxomar - Lost.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1E34SjfnXUp86X"
+      ]
+    },
+    {
       "id": "05WwSaiYhcaDS3OWSK1OFh",
       "spotify_id": "05WwSaiYhcaDS3OWSK1OFh",
       "isrc": "",
@@ -2295,6 +2901,114 @@
       "status": "ready",
       "sources": [
         "playlist-37i9dQZF1E8JuTpPiqjZ12"
+      ]
+    },
+    {
+      "id": "3wP52QOzRDhXbgkcdt2qd8",
+      "spotify_id": "3wP52QOzRDhXbgkcdt2qd8",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/3wP52QOzRDhXbgkcdt2qd8",
+      "title": "Give In",
+      "artists": [
+        "MIND"
+      ],
+      "album": "Dreams",
+      "duration_ms": 199000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2739e066302c107dc5ec6ecfc69",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1E34SjfnXUp86X\\MIND - Give In.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1E34SjfnXUp86X"
+      ]
+    },
+    {
+      "id": "6RLBwMcxEX9QS2XYO7Xc52",
+      "spotify_id": "6RLBwMcxEX9QS2XYO7Xc52",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/6RLBwMcxEX9QS2XYO7Xc52",
+      "title": "Heartbeat",
+      "artists": [
+        "MIND"
+      ],
+      "album": "Are You Real?",
+      "duration_ms": 148000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2738ef973d8db6c45b50c29bdf9",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1E34SjfnXUp86X\\MIND - Heartbeat.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1E34SjfnXUp86X"
+      ]
+    },
+    {
+      "id": "06fqBUtCFsSomwcG1Mvgzr",
+      "spotify_id": "06fqBUtCFsSomwcG1Mvgzr",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/06fqBUtCFsSomwcG1Mvgzr",
+      "title": "Jump",
+      "artists": [
+        "MIND"
+      ],
+      "album": "Jump",
+      "duration_ms": 284000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273053721456aa043e2a582864c",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1E34SjfnXUp86X\\MIND - Jump.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1E34SjfnXUp86X"
+      ]
+    },
+    {
+      "id": "3IWxVPHeBIZgrPuLIa0Avy",
+      "spotify_id": "3IWxVPHeBIZgrPuLIa0Avy",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/3IWxVPHeBIZgrPuLIa0Avy",
+      "title": "Out of Reach",
+      "artists": [
+        "MIND"
+      ],
+      "album": "Dreams",
+      "duration_ms": 159000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2739e066302c107dc5ec6ecfc69",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1E34SjfnXUp86X\\MIND - Out of Reach.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1E34SjfnXUp86X"
+      ]
+    },
+    {
+      "id": "7ADkaL9vcA3wZAgxZIGy7M",
+      "spotify_id": "7ADkaL9vcA3wZAgxZIGy7M",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/7ADkaL9vcA3wZAgxZIGy7M",
+      "title": "Push It",
+      "artists": [
+        "MIND"
+      ],
+      "album": "Push It",
+      "duration_ms": 153000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b27310b08303755306578b2ac50f",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1E34SjfnXUp86X\\MIND - Push It.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1E34SjfnXUp86X"
+      ]
+    },
+    {
+      "id": "3pMuJthG4asb1jPrP2Llnu",
+      "spotify_id": "3pMuJthG4asb1jPrP2Llnu",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/3pMuJthG4asb1jPrP2Llnu",
+      "title": "Satellite Signal",
+      "artists": [
+        "MIND"
+      ],
+      "album": "Satellite Signal",
+      "duration_ms": 171000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273c0385a9d147446929bb0a27a",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1E34SjfnXUp86X\\MIND - Satellite Signal.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1E34SjfnXUp86X"
       ]
     },
     {
@@ -2445,6 +3159,96 @@
       ]
     },
     {
+      "id": "0Gin2d0Fk3rLBQ29B9AXL2",
+      "spotify_id": "0Gin2d0Fk3rLBQ29B9AXL2",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/0Gin2d0Fk3rLBQ29B9AXL2",
+      "title": "You Said Forever",
+      "artists": [
+        "NM"
+      ],
+      "album": "You Said Forever",
+      "duration_ms": 170000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2738655e2a203a6f2bc6a1e4eb7",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1E34SjfnXUp86X\\NM - You Said Forever.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1E34SjfnXUp86X"
+      ]
+    },
+    {
+      "id": "6sZYTNw51HHsYNEvVrJWPe",
+      "spotify_id": "6sZYTNw51HHsYNEvVrJWPe",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/6sZYTNw51HHsYNEvVrJWPe",
+      "title": "Bloom Again",
+      "artists": [
+        "Nu Aspect"
+      ],
+      "album": "Bloom Again",
+      "duration_ms": 189000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273764be3f8f6cc1042e8f2e52c",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1E34SjfnXUp86X\\Nu Aspect - Bloom Again.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1E34SjfnXUp86X"
+      ]
+    },
+    {
+      "id": "1CRwJZniU25yWLGebkBvqo",
+      "spotify_id": "1CRwJZniU25yWLGebkBvqo",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/1CRwJZniU25yWLGebkBvqo",
+      "title": "Reason",
+      "artists": [
+        "Nu Aspect"
+      ],
+      "album": "Reason",
+      "duration_ms": 229000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b27359625fa2d19a109e8487fdc6",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1E34SjfnXUp86X\\Nu Aspect - Reason.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1E34SjfnXUp86X"
+      ]
+    },
+    {
+      "id": "0C6Sbwuo42ebcvGWeWCSEq",
+      "spotify_id": "0C6Sbwuo42ebcvGWeWCSEq",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/0C6Sbwuo42ebcvGWeWCSEq",
+      "title": "Sweet Release",
+      "artists": [
+        "Nu Aspect"
+      ],
+      "album": "Sweet Release",
+      "duration_ms": 226000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b27379b3feef05b7c7ac70149138",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1E34SjfnXUp86X\\Nu Aspect - Sweet Release.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1E34SjfnXUp86X"
+      ]
+    },
+    {
+      "id": "6StFqlV3c99tjW3hjXtTCL",
+      "spotify_id": "6StFqlV3c99tjW3hjXtTCL",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/6StFqlV3c99tjW3hjXtTCL",
+      "title": "sweet love",
+      "artists": [
+        "origins"
+      ],
+      "album": "sweet love",
+      "duration_ms": 186000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2737a98d09d49f4f2607dd2caed",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1E34SjfnXUp86X\\origins - sweet love.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1E34SjfnXUp86X"
+      ]
+    },
+    {
       "id": "2PpruBYCo4H7WOBJ7Q2EwM",
       "spotify_id": "2PpruBYCo4H7WOBJ7Q2EwM",
       "isrc": "",
@@ -2499,6 +3303,24 @@
       "status": "ready",
       "sources": [
         "playlist-37i9dQZF1E8JuTpPiqjZ12"
+      ]
+    },
+    {
+      "id": "2hEDFR6cn977bNdNwvrZC8",
+      "spotify_id": "2hEDFR6cn977bNdNwvrZC8",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/2hEDFR6cn977bNdNwvrZC8",
+      "title": "Headlights",
+      "artists": [
+        "PLVTO"
+      ],
+      "album": "Headlights",
+      "duration_ms": 130000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b27362e08f31a7ec8fff84f69364",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1E34SjfnXUp86X\\PLVTO - Headlights.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1E34SjfnXUp86X"
       ]
     },
     {
@@ -3549,6 +4371,79 @@
       ]
     },
     {
+      "id": "6WAx8NDZE4V1EW7nCAU7tt",
+      "spotify_id": "6WAx8NDZE4V1EW7nCAU7tt",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/6WAx8NDZE4V1EW7nCAU7tt",
+      "title": "Feeling (Hold On You)",
+      "artists": [
+        "Rules",
+        "MURPHY"
+      ],
+      "album": "Feeling (Hold On You)",
+      "duration_ms": 216000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273fa66d4e4772ba4a63ff8b788",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1E34SjfnXUp86X\\Rules, MURPHY - Feeling (Hold On You).mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1E34SjfnXUp86X"
+      ]
+    },
+    {
+      "id": "1xfSYfJT1YRSUQbzXDHUwq",
+      "spotify_id": "1xfSYfJT1YRSUQbzXDHUwq",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/1xfSYfJT1YRSUQbzXDHUwq",
+      "title": "Daylight",
+      "artists": [
+        "Small Town Kid"
+      ],
+      "album": "When the Feeling Is Gone",
+      "duration_ms": 206000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273393cfb0ec155222baa740df8",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1E34SjfnXUp86X\\Small Town Kid - Daylight.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1E34SjfnXUp86X"
+      ]
+    },
+    {
+      "id": "2ZGSXWF4H5HogHxtKbyckj",
+      "spotify_id": "2ZGSXWF4H5HogHxtKbyckj",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/2ZGSXWF4H5HogHxtKbyckj",
+      "title": "We Run",
+      "artists": [
+        "Small Town Kid"
+      ],
+      "album": "We Run",
+      "duration_ms": 162000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273309cb4fad00c0e67012040c8",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1E34SjfnXUp86X\\Small Town Kid - We Run.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1E34SjfnXUp86X"
+      ]
+    },
+    {
+      "id": "5sCc7Jdb0REQRlo1qgtEeS",
+      "spotify_id": "5sCc7Jdb0REQRlo1qgtEeS",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/5sCc7Jdb0REQRlo1qgtEeS",
+      "title": "4 us",
+      "artists": [
+        "Sonnee"
+      ],
+      "album": "4 us",
+      "duration_ms": 197000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b27367bc561880d6a13c49bebc1e",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1E34SjfnXUp86X\\Sonnee - 4 us.mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1E34SjfnXUp86X"
+      ]
+    },
+    {
       "id": "1CdqVF1ywD0ZO1zXtB9yWa",
       "spotify_id": "1CdqVF1ywD0ZO1zXtB9yWa",
       "isrc": "",
@@ -3801,6 +4696,25 @@
       "status": "ready",
       "sources": [
         "playlist-37i9dQZF1DZ06evO3nODok"
+      ]
+    },
+    {
+      "id": "01Ua40rpS1mSEB45SwEPtP",
+      "spotify_id": "01Ua40rpS1mSEB45SwEPtP",
+      "isrc": "",
+      "spotify_url": "https://open.spotify.com/track/01Ua40rpS1mSEB45SwEPtP",
+      "title": "One More Song (I'll Be On My Way)",
+      "artists": [
+        "Why U So",
+        "Luis Coren"
+      ],
+      "album": "One More Song (I'll Be On My Way)",
+      "duration_ms": 212000,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2732c9e12d52d85df5707c16453",
+      "local_file": "C:\\Projetos Dev\\RadioPoggers\\library\\Inbox\\Spotdl\\playlist-37i9dQZF1E34SjfnXUp86X\\Why U So, Luis Coren - One More Song (I'll Be On My Way).mp3",
+      "status": "ready",
+      "sources": [
+        "playlist-37i9dQZF1E34SjfnXUp86X"
       ]
     },
     {
