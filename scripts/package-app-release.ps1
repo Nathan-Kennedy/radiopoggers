@@ -128,7 +128,7 @@ $versionLabel = $tagName.TrimStart('v', 'V')
   notes = "APK em dist/app-release/RadioPoggers-android.apk"
 } | ConvertTo-Json | Set-Content -Path $releaseManifestPath -Encoding utf8
 $versionTxtPath = Join-Path $outDir "VERSION.txt"
-Set-Content -Path $versionTxtPath -Value $tagName -Encoding utf8 -NoNewline
+[System.IO.File]::WriteAllText($versionTxtPath, $tagName, [System.Text.UTF8Encoding]::new($false))
 Write-Host "[ok] Update: data\app-release.json + dist\app-release\VERSION.txt ($tagName)"
 
 Write-Host ""

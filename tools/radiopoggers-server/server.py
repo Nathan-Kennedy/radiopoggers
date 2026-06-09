@@ -170,7 +170,7 @@ def _read_app_release_version_label() -> str:
     """Fonte preferida: dist/app-release/VERSION.txt (gerado no empacote)."""
     try:
         if APP_RELEASE_VERSION_FILE.is_file():
-            label = APP_RELEASE_VERSION_FILE.read_text(encoding="utf-8").strip()
+            label = APP_RELEASE_VERSION_FILE.read_text(encoding="utf-8").lstrip('\ufeff').strip()
             if label:
                 return label
     except OSError:
